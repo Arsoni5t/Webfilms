@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.logout = _util_session_api_util__WEBPACK_IMPORTED_MODULE_2__["logout"];
   window.signup = _util_session_api_util__WEBPACK_IMPORTED_MODULE_2__["signup"]; // ReactDOM.render(<Root store = {store}/>, root)
 
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Internet"), root);
+  // react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Internet"), root);
 });
 
 /***/ }),
