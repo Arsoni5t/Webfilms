@@ -140,13 +140,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _util_session_api_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util/session_api_util */ "./frontend/util/session_api_util.js");
 
+ // import configureStore from './store/store'
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var root = document.getElementById('root');
+  var root = document.getElementById('root'); // const store = configureStore();
+
   window.login = _util_session_api_util__WEBPACK_IMPORTED_MODULE_2__["login"];
   window.logout = _util_session_api_util__WEBPACK_IMPORTED_MODULE_2__["logout"];
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Webfilms - Coming This Fall"), root);
+  window.signup = _util_session_api_util__WEBPACK_IMPORTED_MODULE_2__["signup"]; // ReactDOM.render(<Root store = {store}/>, root)
+
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Internet"), root);
 });
 
 /***/ }),

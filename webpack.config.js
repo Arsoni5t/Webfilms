@@ -5,7 +5,7 @@ module.exports = {
     entry: "./frontend/webfilms.jsx",
     output: {
         path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
-        filename: "bundle.js"
+        filename: "app/assets/javascripts/bundle.js"
     },
     module: {
         rules: [
