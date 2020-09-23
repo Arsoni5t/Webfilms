@@ -1,3 +1,32 @@
 // Place all the styles related to the sessions_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    display: block;
+    height: 707px;
+    width: auto;
+    background-color: black
+}
+
+.banner{
+    display: block;
+    background-color: black;
+
+    border: solid rgba(120, 120, 120, 0.9);
+    border-width: 0 0 8px 0;
+    border-style: solid;
+    
+    background-image: image-url(banner);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: auto;
+    opacity: 0.5;
+    
+}
+
+.logo{
+    
+    size: 25%
+}
