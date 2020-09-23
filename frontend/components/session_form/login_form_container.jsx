@@ -8,6 +8,8 @@ const mSTP = ({errors}) => ({
     formType: 'Sign In'
 });
 
+
+
 const mDTP = dispatch => ({
     processForm: user => dispatch(login(user))
 });

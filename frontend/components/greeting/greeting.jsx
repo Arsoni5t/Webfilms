@@ -5,7 +5,7 @@ const Greeting = ({ currentUser, logout }) => {
 
     const personalGreeting = () => (
         <div>
-            <h2 className="header-name">Take us to your Leader(no, please don't), {currentUser.email}!</h2>
+            <h2> Welcome {currentUser.email}!</h2>
 
             <button onClick={logout}>Buh Bye</button>
         </div>  

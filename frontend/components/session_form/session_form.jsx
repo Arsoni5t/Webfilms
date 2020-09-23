@@ -7,21 +7,34 @@ class SessionForm extends React.Component {
             email: "",
             password: ""
         };
-        
+        // this.renderErrors = this.renderErrors.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    // renderErrors(){
-    //     return(
+    // renderErrors() {
+    //     return (
     //         <ul>
-    //             {
-    //             this.props.errors.map(error => (
-    //                 <li>{error}</li>
-    //             ))
-    //             }
+    //             {this.props.errors.map((error, id) => (
+    //                 <li key={id}>
+    //                     {error}
+    //                 </li>
+    //             ))}
     //         </ul>
-    //     )
+    //     );
     // }
+
+      renderErrors() {
+         let err = Array.from(this.props.errors);
+        return (
+            <ul>
+                {err.map((error, id) => (
+                    <li key={id}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
 
     update(field){
         return e => {
@@ -37,11 +50,13 @@ class SessionForm extends React.Component {
 
     render(){
         return(
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    Please {this.props.formType}
+            <div >
+                <form onSubmit={this.handleSubmit} >
+                    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
+                    {/* Please {this.props.formType} */}
+                    {this.renderErrors()}
                     <p>
-                        {/* {this.renderErrors()} */}
+                    
                     </p>
                     <label>
                         Email:
