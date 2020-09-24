@@ -38,7 +38,7 @@ const App = () => (
     <div className="banner">
         <header >
 
-            /<h1>WEBFILMS</h1>
+            <h1>WEBFILMS</h1>
             <GreetingContainer />
 
         </header>
