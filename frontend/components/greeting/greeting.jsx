@@ -1,42 +1,54 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import LoginForm from '../login_form'
+
 
 const Greeting = ({ currentUser, logout }) => {
-<div >
 
-   
     const personalGreeting = () => (
-        <div>
+        <div className="banner">
             <h2> Welcome {currentUser.email}!</h2>
 
             <button onClick={logout}>Buh Bye</button>
-        </div>  
+        </div>
 
     );
 
-   const loginSignup = () => (
-           
-        <div> 
-            <Link to="/login">Login</Link>
+    const loginSignup = () => (
+
+        <div>
+
+
+
+            <Link to="/login">
+                <input className="sign-in-button"
+                    type="submit" value="Sign In" />
+            </Link>
             <p></p>
-            <Link to="/signup">Sign up!</Link>
+            <section>
+                <h1 className="unlimited">Unlimited movies, films,<br />
+                flicks, and more</h1>
+                <p className="watch-anywhere">Watch anywhere. Cancel anytime.</p>
+                <p className="ready">Ready to watch? Enter your email to create or restart your membership.</p>
+                <form>
+                    {/* <LoginForm /> */}
+                    <input type="text" className="trial" />
+                </form>
+
+
+
+
+
+                {/* <button className="trial">
+                    <Link to="/signup">Sign up!</Link>
+                </button> */}
+            </section>
+
+
         </div>
     );
- </div>
+
     return currentUser ? personalGreeting() : loginSignup();
 };
-// class Greeting extends React.Component {
-//     constructor(props){
-//         super(props);
-//     }
 
-//     render(){
-//         return(
-           
-//             <div className="banner">
-//                 {currentUser ? personalGreeting() : loginSignup()}
-//             </div>
-//         )
-//     }
-// }
 export default Greeting
