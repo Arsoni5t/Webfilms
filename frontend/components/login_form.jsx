@@ -6,11 +6,17 @@ const LoginPage = ({ currentUser, logout }) => {
     return(
         
     
-        <div className="loginbg">
+        <div className="backgroundlogin">
             <Link to="/" >
                 <img className="logo" src={window.logoUrl} />
             </Link>
 
+            <div className="container">
+                <form>
+
+                </form>
+            </div>
+            
         </div>
     )
     // const personalGreeting = () => (

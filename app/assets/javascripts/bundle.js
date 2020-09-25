@@ -286,13 +286,15 @@ var LoginPage = function LoginPage(_ref) {
   var currentUser = _ref.currentUser,
       logout = _ref.logout;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "loginbg"
+    className: "backgroundlogin"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "logo",
     src: window.logoUrl
-  }))); // const personalGreeting = () => (
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null))); // const personalGreeting = () => (
   //     <div className="banner">
   //         <h2> Welcome {currentUser.email}!</h2>
   //         <button onClick={logout}>Buh Bye</button>
@@ -598,14 +600,15 @@ var Splash = /*#__PURE__*/function (_React$Component) {
         className: "unlimited"
       }, "Unlimited movies, films,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "flicks, and more"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "watch-anywhere"
-      }, "Watch anywhere. Cancel anytime."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "ready"
-      }, "Ready to watch? Enter your email to create or restart your membership."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Watch anywhere. Cancel anytime."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "sign-up"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        size: "70",
         type: "email"
-      })));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "free"
+      }, "TRY 30 DAYS FREE   >")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "ready"
+      }, "Ready to watch? Enter your email to create or restart your membership."));
     }
   }]);
 

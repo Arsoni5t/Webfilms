@@ -17,10 +17,11 @@ class Splash extends React.Component {
                 <h1 className="unlimited">Unlimited movies, films,<br />
                     flicks, and more</h1>
                 <p className="watch-anywhere">Watch anywhere. Cancel anytime.</p>
+                        <form className="sign-up">
+                            <input type="email"/><button className="free">TRY 30 DAYS FREE   ></button>
+                        </form>
                 <p className="ready">Ready to watch? Enter your email to create or restart your membership.</p>
-                <form className="sign-up">
-                    <input size = "70" type="email"/>
-                </form>
+                
             </div>
             
         )
