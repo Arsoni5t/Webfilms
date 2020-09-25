@@ -12,8 +12,12 @@ const LoginPage = ({ currentUser, logout }) => {
             </Link>
 
             <div className="container">
+                
                 <form>
-
+                    <h1 className="white">Sign In</h1>
+                    <input className="login-email" type="email" placeholder="    Email"></input>
+                    <input className="login-pw" type="password" placeholder="    Password"></input>
+                    <input className="login-button" type="submit" value="Sign In"/>
                 </form>
             </div>
             

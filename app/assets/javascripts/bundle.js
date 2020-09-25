@@ -294,7 +294,21 @@ var LoginPage = function LoginPage(_ref) {
     src: window.logoUrl
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null))); // const personalGreeting = () => (
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "white"
+  }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "login-email",
+    type: "email",
+    placeholder: "    Email"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "login-pw",
+    type: "password",
+    placeholder: "    Password"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "login-button",
+    type: "submit",
+    value: "Sign In"
+  })))); // const personalGreeting = () => (
   //     <div className="banner">
   //         <h2> Welcome {currentUser.email}!</h2>
   //         <button onClick={logout}>Buh Bye</button>

@@ -1,11 +1,11 @@
 .container {
     height: 600px;
     width: 400px;
-    background-color: black;
+    // background-color: black;
     margin: auto;
     margin-top: 30px;
-  padding: 10px;
-  opacity: .65;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .backgroundlogin{
@@ -16,15 +16,66 @@
     // border-width: 0 0 8px 0;
     // border-style: solid;
 
-    background-image: image-url(banner);
+    background-image: image-url(bannerlogin);
+    
     background-size: cover;
     background-repeat: no-repeat;
     height: 935px;
-    // // width: auto;
-    opacity: 0.6;
 
+    // // width: auto;
+    // background-color: rgba(0, 0, 0, 0.65);
+    // opacity: .45;
     // background-repeat: no-repeat;
     // background-attachment: fixed;
     // background-position: center;
     
 }
+
+.white {
+    color:white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.login-email{
+    margin-top: 125px;;
+    margin-left: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(55, 55, 55, 1.0);
+    height: 48px;
+    width: 310px;
+    font-size: 16px;
+    color: white;
+}
+
+.login-pw{
+    margin-top: 15px;;
+    margin-left: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(55, 55, 55, 1.0);
+    height: 48px;
+    width: 310px;
+    font-size: 16px;
+    color: white;
+}
+
+.login-button{
+    margin-top: 40px;;
+    margin-left: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    height: 48px;
+    width: 310px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+
