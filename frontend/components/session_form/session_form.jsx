@@ -60,7 +60,7 @@ class SessionForm extends React.Component {
 
                 <img className="devices" src={window.devicesUrl} />
                 <span className="content-top">STEP <strong>1</strong> OF <strong>1</strong></span><br/>
-                <p className="finish">Finish Setting up your account.</p>
+                <p className="finish">Finish setting up your account.</p>
                 <br/>
                 <p className="signupwords">Webfilms is personalized for you. Create </p><br/>
                     <p className="signupwords">a password to watch Webfilms on any</p><br/>

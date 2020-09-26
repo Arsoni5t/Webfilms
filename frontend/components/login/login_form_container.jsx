@@ -6,6 +6,7 @@ import LoginForm from './login_form'
 
 const mSTP = ({errors}) => ({
     errors: errors.session,
+    formType: 'Sign In'
 });
 
 
