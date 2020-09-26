@@ -1,16 +1,11 @@
-<% if logged_in? %>
 
-  <script id="bootstrap-current-user" type="text/javascript">
-
-  	window.currentUser = <%= render("api/users/user.json.jbuilder",
-  		user: current_user).html_safe %>
-          
-  </script>
-
-<% end %>
 
 <script id="bootstrap-logo" type="text/javascript">
   window.logoUrl = `<%=image_url("logo.png")%>`
+</script>
+
+<script id="bootstrap-devices" type="text/javascript">
+window.devicesUrl = `<%=image_url("devices.png")%>`
 </script>
 
 <main id="root"></main>

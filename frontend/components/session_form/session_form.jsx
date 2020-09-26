@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 class SessionForm extends React.Component {
     constructor(props){
@@ -50,28 +51,47 @@ class SessionForm extends React.Component {
 
     render(){
         return(
-            <div >
+            <div id="signup-bg">
+                <Link to="/" >
+                    <img className="logosignup" src={window.logoUrl} />
+                </Link>
+                <Link className="signupsigninlink" to="/login">Sign In</Link>
+                <hr className="hr1"/>
+
+                <img className="devices" src={window.devicesUrl} />
+                <span className="content-top">STEP <strong>1</strong> OF <strong>1</strong></span><br/>
+                <p className="finish">Finish Setting up your account.</p>
+                <br/>
+                <p className="signupwords">Webfilms is personalized for you. Create </p><br/>
+                    <p className="signupwords">a password to watch Webfilms on any</p><br/>
+                <p className="signupwords">device at any time. </p>
+                {/* <span className="content">Welcome Back!</span><br/>
+                <span className="content">Joining Webfilms is easy.</span><br/>
+                <span className="content">Enter your password and you'll be watching in no time</span> */}
                 <form onSubmit={this.handleSubmit} >
                     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
                     {/* Please {this.props.formType} */}
-                    {this.renderErrors()}
+                    {/* {this.renderErrors()}
                     <p>
                     
                     </p>
-                    <label>
+                    <label className="content">
                         Email:
                         <input type="text" value={this.state.email} onChange={this.update('email')}/>
-                    </label>
+                    </label>  
                     <p></p>
-                    <label>
+                    <label className="content">
                         Password:
                         <input type="password" value={this.state.password} onChange={this.update('password')}/>
                     </label>
                     <p></p>
-                    <input type="submit" value={this.props.formType}/>
+                    <input classname="content" type="submit" value={this.props.formType}/> */}
+                    <input className="continue" type="submit" value="CONTINUE" />
 
-                </form>
+                </form> 
+
             </div>
+           
         )
     }
 }

@@ -1,8 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// class LoginForm extends React.Component {
+//     constructor(props){
+//         super(props)
+//         this.state = this.props.user
+//     }
 
-const LoginPage = ({ currentUser, logout }) => {
+//     render(){
+//         return null
+//     }
+// }
+
+const LoginForm = ({ currentUser, logout, login }) => {
     return(
         
     
@@ -13,11 +23,14 @@ const LoginPage = ({ currentUser, logout }) => {
 
             <div className="container">
                 
-                <form>
+                <form >
                     <h1 className="white">Sign In</h1>
                     <input className="login-email" type="email" placeholder="    Email"></input>
                     <input className="login-pw" type="password" placeholder="    Password"></input>
-                    <input className="login-button" type="submit" value="Sign In"/>
+                    <Link to="/index">
+                        <input className="login-button" type="submit" value="Sign In" onClick={login}/>
+                    </Link>
+                    
                 </form>
             </div>
             
@@ -67,4 +80,4 @@ const LoginPage = ({ currentUser, logout }) => {
     // return currentUser ? personalGreeting() : loginSignup();
 };
 
-export default LoginPage
+export default LoginForm

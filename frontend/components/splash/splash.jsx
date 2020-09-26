@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import LoginPage from './../login_form'
+import LoginPage from '../login/login_form'
 
 class Splash extends React.Component {
 
@@ -16,7 +16,7 @@ class Splash extends React.Component {
                 </Link>
                 <h1 className="unlimited">Unlimited movies, films,<br />
                     flicks, and more</h1>
-                <p className="watch-anywhere">Watch anywhere. Cancel anytime.</p>
+                {/* <p className="watch-anywhere">Watch anywhere. Cancel anytime.</p> */}
                         <form className="sign-up">
                             <input type="email"/><button className="free">TRY 30 DAYS FREE   ></button>
                         </form>
