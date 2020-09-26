@@ -12,18 +12,6 @@ class SessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    // renderErrors() {
-    //     return (
-    //         <ul>
-    //             {this.props.errors.map((error, id) => (
-    //                 <li key={id}>
-    //                     {error}
-    //                 </li>
-    //             ))}
-    //         </ul>
-    //     );
-    // }
-
       renderErrors() {
          let err = Array.from(this.props.errors);
         return (
@@ -52,12 +40,18 @@ class SessionForm extends React.Component {
     render(){
         return(
             <div id="signup-bg">
-                <Link to="/" >
-                    <img className="logosignup" src={window.logoUrl} />
-                </Link>
-                <Link className="signupsigninlink" to="/login">Sign In</Link>
-                <hr className="hr1"/>
-
+                <div>
+                    <Link to="/" >
+                        <img className="logosignup" src={window.logoUrl} />
+                    </Link>
+                </div>
+                <div>
+                    <Link className="signupsigninlink" to="/login">Sign In</Link>
+                </div>
+                <div>
+                    <hr className="hr1"/>
+                </div>
+                
                 <img className="devices" src={window.devicesUrl} />
                 <span className="content-top">STEP <strong>1</strong> OF <strong>1</strong></span><br/>
                 <p className="finish">Finish setting up your account.</p>
@@ -86,8 +80,9 @@ class SessionForm extends React.Component {
                     </label>
                     <p></p>
                     <input classname="content" type="submit" value={this.props.formType}/> */}
-                    <input className="continue" type="submit" value="CONTINUE" />
-
+                    <Link to="/signup/regform">
+                        <input className="continue" type="submit" value="CONTINUE" />
+                    </Link>
                 </form> 
 
             </div>

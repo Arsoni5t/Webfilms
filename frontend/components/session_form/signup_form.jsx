@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react'
 
-class LoginForm extends React.Component {
+class SignupForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -12,7 +12,7 @@ class LoginForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.guestLogin = this.guestLogin.bind(this)
     }
-    
+
 
     renderErrors() {
         let err = Array.from(this.props.errors);
@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
         );
     }
 
-    guestLogin(){
+    guestLogin() {
         return e => {
             e.preventDefault();
             this.props.processForm({
@@ -44,33 +44,33 @@ class LoginForm extends React.Component {
     }
 
     handleSubmit() {
-            return e => {
-                e.preventDefault();
-                this.props.processForm(this.state)
-            }
+        return e => {
+            e.preventDefault();
+            this.props.processForm(this.state)
+        }
     }
 
-    render(){
+    render() {
 
         let { email, password } = this.state;
         let { formType } = this.props;
         return (
 
-            
+
 
             <div className="backgroundlogin">
-                
+
                 <Link to="/" >
                     <img className="logo" src={window.logoUrl} />
                 </Link>
 
                 <div className="container">
-                    
+
                     <form >
-                         <h1 className="white">{formType}</h1>
-                        <input className="login-email" type="email" value={email} onChange={this.update("email")} placeholder="    Email"/>
+                        <h1 className="white">{formType}</h1>
+                        <input className="login-email" type="email" value={email} onChange={this.update("email")} placeholder="    Email" />
                         <input className="login-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Password"></input>
-           
+
 
                         <button className="login-button" onClick={this.handleSubmit("login")}>
                             {formType}
@@ -79,13 +79,13 @@ class LoginForm extends React.Component {
                         <button className="login-button" onClick={this.guestLogin()}>
                             Demo Login
                         </button>
-                       
-                       
-                    </form> 
-                    <br/>
+
+
+                    </form>
+                    <br />
                     <div className="errors">
-                            {this.renderErrors()}
-                        </div>
+                        {this.renderErrors()}
+                    </div>
                 </div>
 
             </div>
@@ -94,4 +94,4 @@ class LoginForm extends React.Component {
 
 }
 
-export default LoginForm
+export default SignupForm

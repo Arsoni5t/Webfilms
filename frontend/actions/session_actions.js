@@ -23,12 +23,6 @@ const logoutUser = () => ({
     type: LOGOUT_CURRENT_USER
 });
 
-// export const signup = user => dispatch => (
-//     APIUtil.signup(user)
-//         .then(user => dispatch(receiveCurrentUser(user)),
-//         err => (dispatch(receiveErrors(err.responseJSON)))
-//     )
-// );
 
 export const signup = user => dispatch => (
     APIUtil.signup(user)
@@ -36,16 +30,6 @@ export const signup = user => dispatch => (
             err => (dispatch(receiveErrors(err.responseJSON))
     ))
 );
-
-// export const login = user => dispatch => (
-//     APIUtil.login(user)
-//         .then(user => {
-//             // debugger
-//             dispatch(receiveUser(user))
-//         },
-//     err => (dispatch(receiveErrors(err.responseJSON)))
-//     )
-// );
 
 export const login = user => dispatch => (
     APIUtil.login(user)
@@ -58,9 +42,3 @@ export const logout = () => dispatch => (
     APIUtil.logout()
         .then(() => dispatch(logoutUser()))
 );
-
-// export const logout = () => dispatch => (
-//     APIUtil.logout().then(user => (
-//         dispatch(logoutCurrentUser())
-//     ))
-// );
