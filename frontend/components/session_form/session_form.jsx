@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
+
 class SessionForm extends React.Component {
     constructor(props){
         super(props)
@@ -85,7 +86,21 @@ class SessionForm extends React.Component {
                     </Link>
                     </div>
                 </form> 
-
+                    
+                    {/* <SignupForm className="signupfooter"/> */}
+                    <div className="signupfooter">
+                    <p className="footertop">Questions? Call 1-844-867-5309</p>
+                    <p className="footeritems">FAQ</p>
+                    <p className="footeritems">Help Center</p>
+                    <p className="footeritems">Terms of Use</p>
+                    <p className="footeritems">Privacy</p>
+                    <div >
+                        <p className="footeritems2">Cookie Preferences</p>
+                        <p className="footeritems2">Corporate Information</p>
+                    </div>
+                   
+                    </div>
+                        
             </div>
            
         )

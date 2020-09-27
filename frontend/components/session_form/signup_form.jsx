@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react'
+// import SignupForm from './session_form'
 
 class SignupForm extends React.Component {
     constructor(props) {
@@ -84,12 +85,12 @@ class SignupForm extends React.Component {
                      
                     <form >
                    
-                            <input className="signup-pw" type="email" value={email} onChange={this.update("email")} placeholder="    Email" />
-                            <input className="signup-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Add a password"></input>
+                                <input className="signup-pw" value={email} onChange={this.update("email")} placeholder="    Email" />
+                                <input className="signup-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Add a password"></input>
 
 
                             <button className="completesignupbutton" onClick={this.handleSubmit("signup")}>
-                            COMPLETE SIGN UP
+                            COMPLETE {formType}
                         </button>
                     
 
@@ -99,9 +100,24 @@ class SignupForm extends React.Component {
                     <div className="errorssignup">
                         {this.renderErrors()}
                     </div>
-                </div>
 
+                        <div onClick={this.props.clearErrors}/>
+                </div>
+                   
             </div>
+                {/* <SignupForm className="signupfooter"/> */}
+                <div className="signupfooter">
+                    <p className="footertop">Questions? Call 1-844-867-5309</p>
+                    <p className="footeritems">FAQ</p>
+                    <p className="footeritems">Help Center</p>
+                    <p className="footeritems">Terms of Use</p>
+                    <p className="footeritems">Privacy</p>
+                    <div >
+                        <p className="footeritems2">Cookie Preferences</p>
+                        <p className="footeritems2">Corporate Information</p>
+                    </div>
+
+                </div>
             </div>
         )
     }
