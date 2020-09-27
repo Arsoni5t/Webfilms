@@ -50,6 +50,8 @@ class SignupForm extends React.Component {
         }
     }
 
+    
+
     render() {
 
         let { email, password } = this.state;
@@ -58,36 +60,48 @@ class SignupForm extends React.Component {
 
 
 
-            <div className="backgroundlogin">
-
+            <div id="signup-bg">
+                <div>
                 <Link to="/" >
-                    <img className="logo" src={window.logoUrl} />
+                    <img className="logosignup" src={window.logoUrl} />
                 </Link>
-
-                <div className="container">
-
+                </div>
+                <Link to="/login" className="demologin">Sign In</Link>
+                <div><hr className="hr1" />
+                </div>
+                
+                 <div className="container-signup"> 
+                    <div>
+                        <button className="itsfree">
+                            Enjoy your first month. <strong className="strong">It's free.</strong>
+                        </button>
+                        <div>
+                        <span className="signupstep">STEP <strong className="strong">1</strong> OF <strong className="strong">1</strong></span><br />
+                        <p className="createpw">Create a password to start your free month.</p>
+                        <br />
+                        <p className="ordont">Or don't, and click the login button in the upper right! </p><br />
+                        <p className="ordont">We hate paperwork, too.</p><br />
+                     
                     <form >
-                        <h1 className="white">{formType}</h1>
-                        <input className="login-email" type="email" value={email} onChange={this.update("email")} placeholder="    Email" />
-                        <input className="login-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Password"></input>
+                   
+                            <input className="signup-pw" type="email" value={email} onChange={this.update("email")} placeholder="    Email" />
+                            <input className="signup-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Add a password"></input>
 
 
-                        <button className="login-button" onClick={this.handleSubmit("login")}>
-                            {formType}
+                            <button className="completesignupbutton" onClick={this.handleSubmit("signup")}>
+                            COMPLETE SIGN UP
                         </button>
+                    
 
-                        <button className="login-button" onClick={this.guestLogin()}>
-                            Demo Login
-                        </button>
-
-
-                    </form>
+                    </form>  
+                    </div>
                     <br />
-                    <div className="errors">
+                    <div className="errorssignup">
                         {this.renderErrors()}
                     </div>
                 </div>
 
+            </div>
             </div>
         )
     }

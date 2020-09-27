@@ -7,19 +7,24 @@
 
 .hr1 {
   border-top: 1px solid gray;
-  margin-top: auto;
+  margin-top: 13px;
   color: gray;
 
 }
 
-.signupsigninlink{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    text-decoration: none;
-    margin-left: 1950px;
-    margin-top: 200px;
-}
+// .signupsigninlink{
+//     color: black;
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-size: 19px;
+//     // text-align: right;
+//     // justify-content: space-between;
+//     // text-decoration: none;
+//     // text-align: center;
+//     // margin-bottom: 50px;
+//     // margin-top: 20px;
+//     // margin-left: 1950px;
+//     // margin-top: 200px;
+// }
 
 .content-top{
     display: block;
@@ -82,6 +87,8 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: underline; 
+    text-decoration-color: #e50914
 }
 
 
@@ -101,5 +108,122 @@
 border-top: 1px solid gray;
   margin-bottom: 23px;
   color: gray;
+}
 
+.container-signup {
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+
+ 
+}
+
+.itsfree{
+    margin-top: -10px;;
+    margin: auto;
+    border-radius: 1px;
+    border: none;
+    background-color: #0071eb;
+    height: 60px;
+    width: 440px;
+    font-size: 16px;
+    color: white;
+    font-family: Arial;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.completesignupbutton{
+    display: block;
+    margin-top: 28px;
+    // margin-left: 50px;
+    border-radius: 2px;
+    border: none;
+    background-color: #e50914;
+     height: 50px;
+    width: 440px;
+    font-size: 16px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+}
+
+.signup-pw{
+    // margin-top: 15px;;
+    // margin-left: 50px;
+    margin: auto;
+    margin-top: 8px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    background-color:white;
+    height: 60px;
+    width: 440px;
+    font-size: 16px;
+    color: black;
+}
+
+.ordont{
+    // text-align: center;
+    font-size: 19px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -7px;
+}
+
+.createpw{
+    // text-align: center;
+    font-size: 21px;
+    color: #333333;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.signupstep{
+    display: block;
+    // margin-left: 1000px;
+    margin-top: 50px;
+    // text-align: center;
+    font-size: 13px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logosignup{
+    width: 200px;
+    height: auto;
+    margin-left: 73px;
+    margin-top: 30px;
+}
+
+.justify{
+    justify-content: space-between;
+}
+
+.demologin{
+    // position: relative;
+    float: right;
+    margin-top: -35px;
+    margin-right: 85px;
+    // right: 40px;
+    color: black;
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.demologin:hover{
+    text-decoration: underline;
+}
+
+.errorssignup{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }

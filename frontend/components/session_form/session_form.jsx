@@ -40,20 +40,19 @@ class SessionForm extends React.Component {
     render(){
         return(
             <div id="signup-bg">
+                
                 <div>
                     <Link to="/" >
                         <img className="logosignup" src={window.logoUrl} />
                     </Link>
                 </div>
-                <div>
-                    <Link className="signupsigninlink" to="/login">Sign In</Link>
-                </div>
+                <Link to="/login" className="demologin">Sign In</Link>
                 <div>
                     <hr className="hr1"/>
                 </div>
                 
                 <img className="devices" src={window.devicesUrl} />
-                <span className="content-top">STEP <strong>1</strong> OF <strong>1</strong></span><br/>
+                <span className="content-top">STEP <strong className="strong">1</strong> OF <strong className="strong">1</strong></span><br/>
                 <p className="finish">Finish setting up your account.</p>
                 <br/>
                 <p className="signupwords">Webfilms is personalized for you. Create </p><br/>
@@ -80,9 +79,11 @@ class SessionForm extends React.Component {
                     </label>
                     <p></p>
                     <input classname="content" type="submit" value={this.props.formType}/> */}
+                    <div>
                     <Link to="/signup/regform">
-                        <input className="continue" type="submit" value="CONTINUE" />
+                        <button className="continue"> CONTINUE </button>
                     </Link>
+                    </div>
                 </form> 
 
             </div>

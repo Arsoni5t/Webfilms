@@ -88,10 +88,14 @@ h1 {
     }
 }
 
+.blackbg{
+    background-color: black;
+    height: 100vh;
+}
 
 .banner{
     display: block;
-    background-color: black;
+    // background-color: black;
 
     border: solid rgba(120, 120, 120, 0.8);
     border-width: 0 0 8px 0;
