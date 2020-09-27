@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import LoginPage from '../login/login_form'
+import Enjoy from './enjoy'
 
 class Splash extends React.Component {
 
@@ -27,7 +28,7 @@ class Splash extends React.Component {
                     <p className="ready">Ready to watch? Enter your email to create or restart your membership.</p>
                     <h2 className="watch-anywhere">Watch anywhere. Cancel anytime.</h2>
                 </div>
-                
+                <Enjoy />
             </div>
         )
     }
