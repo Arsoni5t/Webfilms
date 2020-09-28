@@ -26,9 +26,12 @@ class Splash extends React.Component {
                                         </Link>
                             </form>
                     <p className="ready">Ready to watch? Click below to create or restart your membership.</p>
-                    <h2 className="watch-anywhere">Watch anywhere. Cancel anytime.</h2>
+                    <h2 className="watch-anywhere">Watch anywhere. Cancel anytime.</h2>   
                 </div>
-                <Enjoy />
+                <div>
+                    <Enjoy />
+                </div>
+             
             
             </div>
         )

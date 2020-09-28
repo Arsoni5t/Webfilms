@@ -4,15 +4,18 @@ class Enjoy extends React.Component {
 
 
     render() {
-        return <div classname="subbar">
+        return <div className="subbar"> 
             <h2 className="enjoyontv">Enjoy on your TV.</h2>
            
-                <div>
+                <div >
                         
                     <p className="watchon">Watch on WebTV, TurboGrafx-16, </p><br/>
                     <p className="watchon">Microwaves, Zune, LaserDisc players, and</p><br/>
                     <p className="watchon">more.</p>
                     
+                </div>
+                <div className="splashbottom">
+
                 </div>
                  
                    

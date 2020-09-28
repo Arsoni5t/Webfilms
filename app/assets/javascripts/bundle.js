@@ -1038,7 +1038,7 @@ var Enjoy = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        classname: "subbar"
+        className: "subbar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "enjoyontv"
       }, "Enjoy on your TV."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1047,7 +1047,9 @@ var Enjoy = /*#__PURE__*/function (_React$Component) {
         className: "watchon"
       }, "Microwaves, Zune, LaserDisc players, and"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "watchon"
-      }, "more.")));
+      }, "more.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splashbottom"
+      }));
     }
   }]);
 
@@ -1138,7 +1140,7 @@ var Splash = /*#__PURE__*/function (_React$Component) {
         className: "ready"
       }, "Ready to watch? Click below to create or restart your membership."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "watch-anywhere"
-      }, "Watch anywhere. Cancel anytime.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_enjoy__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, "Watch anywhere. Cancel anytime.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_enjoy__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
     }
   }]);
 
