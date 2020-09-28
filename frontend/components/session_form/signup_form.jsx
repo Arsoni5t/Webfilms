@@ -74,7 +74,7 @@ class SignupForm extends React.Component {
                  <div className="container-signup"> 
                     <div>
                         <button className="itsfree" onClick={this.guestLogin()}> 
-                            Enough nonsense, nter as a demo user.<strong className="strong"> It's free.</strong>
+                            Enough nonsense, enter as a demo user.<strong className="strong"> It's free.</strong>
                         </button>
                         <div>
                         <span className="signupstep">STEP <strong className="strong">1</strong> OF <strong className="strong">1</strong></span><br />
