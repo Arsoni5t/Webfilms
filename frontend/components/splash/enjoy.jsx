@@ -16,10 +16,10 @@ class Enjoy extends React.Component {
                 </div>
                  
                    
-                        <div>
+                        {/* <div>
                             {/* <img className="gifstyle" src={window.videoGif} /> */}
-                            <img className="tvstyle" src={window.tv} />   
-                        </div>
+                            {/* <img className="tvstyle" src={window.tv} />    */}
+                        {/* </div> */} 
         </div>
     }
 }
