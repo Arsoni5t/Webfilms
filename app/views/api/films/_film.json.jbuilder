@@ -1,3 +1,3 @@
 json.extract! film, :id, :title, :year, :rating, :description
-json.photo url_for(film.photo)
-json.video url_for(film.video)
+json.poster url_for(film.poster)
+json.film url_for(film.film)
