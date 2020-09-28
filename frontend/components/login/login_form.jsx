@@ -70,7 +70,9 @@ class LoginForm extends React.Component {
                          <h1 className="white">{formType}</h1>
                         <input className="login-email" type="email" value={email} onChange={this.update("email")} placeholder="    Email"/>
                         <input className="login-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Password"></input>
-           
+                        <div className="errors">
+                            {this.renderErrors()}
+                        </div>
 
                         <button className="login-button" onClick={this.handleSubmit("login")}>
                             {formType}
@@ -83,11 +85,20 @@ class LoginForm extends React.Component {
                        
                     </form> 
                     <br/>
-                    <div className="errors">
-                            {this.renderErrors()}
-                        </div>
+                    <p className="newtowebfilms">New to Webfilms? Sign up now.</p>
                 </div>
+                <div className="loginfooter">
+                    <p className="loginfootertop">Hiring? Call 1-267-269-5454</p>
+                    <p className="loginfooteritems">FAQ</p>
+                    <p className="loginfooteritems3">Help Center</p>
+                    <p className="loginfooteritems3">Terms of Use</p>
+                    <p className="loginfooteritems3">Privacy</p>
+                    <div >
+                        <p className="loginfooteritems2">Cookie Preferences</p>
+                        <p className="loginfooteritems4">Corporate Information</p>
+                    </div>
 
+                </div>
             </div>
         )
     }

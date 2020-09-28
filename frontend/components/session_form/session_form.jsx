@@ -89,11 +89,11 @@ class SessionForm extends React.Component {
                     
                     {/* <SignupForm className="signupfooter"/> */}
                     <div className="signupfooter">
-                    <p className="footertop">Questions? Call 1-844-867-5309</p>
+                    <p className="footertop">Hiring? Call 1-267-269-5454</p>
                     <p className="footeritems">FAQ</p>
-                    <p className="footeritems">Help Center</p>
-                    <p className="footeritems">Terms of Use</p>
-                    <p className="footeritems">Privacy</p>
+                    <p className="footeritems3">Help Center</p>
+                    <p className="footeritems3">Terms of Use</p>
+                    <p className="footeritems3">Privacy</p>
                     <div >
                         <p className="footeritems2">Cookie Preferences</p>
                         <p className="footeritems2">Corporate Information</p>

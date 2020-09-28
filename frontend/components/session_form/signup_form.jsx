@@ -88,6 +88,9 @@ class SignupForm extends React.Component {
                                 <input className="signup-pw" value={email} onChange={this.update("email")} placeholder="    Email" />
                                 <input className="signup-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Add a password"></input>
 
+                                <div className="errorssignup">
+                                    {this.renderErrors()}
+                                </div>
 
                             <button className="completesignupbutton" onClick={this.handleSubmit("signup")}>
                             COMPLETE {formType}
@@ -95,11 +98,10 @@ class SignupForm extends React.Component {
                     
 
                     </form>  
+                 
                     </div>
                     <br />
-                    <div className="errorssignup">
-                        {this.renderErrors()}
-                    </div>
+                        
 
                         <div onClick={this.props.clearErrors}/>
                 </div>
@@ -107,11 +109,11 @@ class SignupForm extends React.Component {
             </div>
                 {/* <SignupForm className="signupfooter"/> */}
                 <div className="signupfooter">
-                    <p className="footertop">Questions? Call 1-844-867-5309</p>
+                    <p className="footertop">Hiring? Call 1-267-269-5454</p>
                     <p className="footeritems">FAQ</p>
-                    <p className="footeritems">Help Center</p>
-                    <p className="footeritems">Terms of Use</p>
-                    <p className="footeritems">Privacy</p>
+                    <p className="footeritems3">Help Center</p>
+                    <p className="footeritems3">Terms of Use</p>
+                    <p className="footeritems3">Privacy</p>
                     <div >
                         <p className="footeritems2">Cookie Preferences</p>
                         <p className="footeritems2">Corporate Information</p>
