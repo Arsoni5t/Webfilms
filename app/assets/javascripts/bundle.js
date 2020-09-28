@@ -302,9 +302,13 @@ var Index = /*#__PURE__*/function (_React$Component) {
       var logout = this.props.logout;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "indexbg"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "indexlogout",
         onClick: logout
-      }, "Buh Bye"));
+      }, "Sign out of Webfilms")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "symbol",
+        src: window.symbol
+      }));
     }
   }]);
 
@@ -1039,10 +1043,10 @@ var Enjoy = /*#__PURE__*/function (_React$Component) {
         className: "watchon"
       }, "Microwaves, Zune, LaserDisc players, and"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "watchon"
-      }, "more."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "more.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tvstyle",
         src: window.tv
-      }))));
+      })));
     }
   }]);
 

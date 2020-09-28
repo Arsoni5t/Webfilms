@@ -10,7 +10,12 @@ class Index extends React.Component {
         return <div className="indexbg">
 {/* //             <h2> Welcome {currentUser.email}!</h2> */}
 
-            <button onClick={logout}>Buh Bye</button>
+         <div>
+                <button className="indexlogout" onClick={logout}>Sign out of Webfilms</button>
+         </div>
+
+            <img className="symbol" src={window.symbol}/>   
+            
          </div>
             
                  
