@@ -31,7 +31,7 @@ class SignupForm extends React.Component {
     guestLogin() {
         return e => {
             e.preventDefault();
-            this.props.processForm({
+            this.props.demo({
                 email: "demo@webfilms.com",
                 password: "yomama"
             })
@@ -73,14 +73,14 @@ class SignupForm extends React.Component {
                 
                  <div className="container-signup"> 
                     <div>
-                        <button className="itsfree">
-                            Enjoy your first month. <strong className="strong">It's free.</strong>
+                        <button className="itsfree" onClick={this.guestLogin()}> 
+                            Enough nonsense, nter as a demo user.<strong className="strong"> It's free.</strong>
                         </button>
                         <div>
                         <span className="signupstep">STEP <strong className="strong">1</strong> OF <strong className="strong">1</strong></span><br />
-                        <p className="createpw">Create a password to start your free month.</p>
+                        <p className="createpw">Enter your email and create a password to start your free month.</p>
                         <br />
-                        <p className="ordont">Or don't, and click the login button in the upper right! </p><br />
+                        <p className="ordont">Already a user? Click Sign In in the upper right! </p><br />
                         <p className="ordont">We hate paperwork, too.</p><br />
                      
                     <form >
@@ -107,7 +107,7 @@ class SignupForm extends React.Component {
                 </div>
                    
             </div>
-                {/* <SignupForm className="signupfooter"/> */}
+               
                 <div className="signupfooter">
                     <p className="footertop">Hiring? Call 1-267-269-5454</p>
                     <p className="footeritems">FAQ</p>
@@ -120,6 +120,7 @@ class SignupForm extends React.Component {
                     </div>
 
                 </div>
+             
             </div>
         )
     }

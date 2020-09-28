@@ -25,7 +25,7 @@ class Splash extends React.Component {
                                             <button className="free">TRY 30 DAYS FREE     ></button>
                                         </Link>
                             </form>
-                    <p className="ready">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <p className="ready">Ready to watch? Click below to create or restart your membership.</p>
                     <h2 className="watch-anywhere">Watch anywhere. Cancel anytime.</h2>
                 </div>
                 <Enjoy />

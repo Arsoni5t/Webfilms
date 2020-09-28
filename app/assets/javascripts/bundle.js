@@ -834,7 +834,7 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
       return function (e) {
         e.preventDefault();
 
-        _this2.props.processForm({
+        _this2.props.demo({
           email: "demo@webfilms.com",
           password: "yomama"
         });
@@ -882,10 +882,11 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-signup"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        className: "itsfree"
-      }, "Enjoy your first month. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
+        className: "itsfree",
+        onClick: this.guestLogin()
+      }, "Enough nonsense, nter as a demo user.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
         className: "strong"
-      }, "It's free.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+      }, " It's free.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         className: "signupstep"
       }, "STEP ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
         className: "strong"
@@ -893,9 +894,9 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
         className: "strong"
       }, "1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "createpw"
-      }, "Create a password to start your free month."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+      }, "Enter your email and create a password to start your free month."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "ordont"
-      }, "Or don't, and click the login button in the upper right! "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+      }, "Already a user? Click Sign In in the upper right! "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "ordont"
       }, "We hate paperwork, too."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
         className: "signup-pw",
@@ -971,6 +972,9 @@ var mSTP = function mSTP(_ref) {
 
 var mDTP = function mDTP(dispatch) {
   return {
+    demo: function demo(user) {
+      return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["login"])(user));
+    },
     processForm: function processForm(user) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["signup"])(user));
     },
@@ -1132,7 +1136,7 @@ var Splash = /*#__PURE__*/function (_React$Component) {
         className: "free"
       }, "TRY 30 DAYS FREE     >"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "ready"
-      }, "Ready to watch? Enter your email to create or restart your membership."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      }, "Ready to watch? Click below to create or restart your membership."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "watch-anywhere"
       }, "Watch anywhere. Cancel anytime.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_enjoy__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
