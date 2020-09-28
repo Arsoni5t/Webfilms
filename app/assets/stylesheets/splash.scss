@@ -97,9 +97,9 @@ h1 {
     display: block;
     // background-color: black;
 
-    border: solid rgba(120, 120, 120, 0.8);
-    border-width: 0 0 8px 0;
-    border-style: solid;
+    outline: solid rgba(120, 120, 120, 0.35);
+    outline-width: 8px;
+    outline-style: solid;
 
     background-image: image-url(banner);
     background-size: cover;
@@ -148,9 +148,9 @@ input {
     background-color: black;
     width: 100%;
     display: flex;
-     height: 450px; //used to be 450, testing to see if it works better
+     height: 465px; //used to be 450, testing to see if it works better
      border: 20px solid white;
-    border: solid rgba(120, 120, 120, 0.8);
+    border: solid rgba(120, 120, 120, 0.3);
     border-width: 0 0 8px 0;
     border-style: solid;
       overflow: hidden;
@@ -193,12 +193,14 @@ input {
 // }
 
 .tvstyle{
-    display: inline-block;
-    margin-left: 55%;
-    width: 425px;
-    margin: center;
-    margin-top: -9.5%;
-    min-width: 600px;
+    // display: flex;
+    // margin-left: 55%;
+    width: 23%;
+    // margin: center;
+    float: right;
+    margin-top: -6.5%;
+    margin-right: 25%;
+    // min-width: 600px;
 //   overflow: hidden;
 //   display: inline-block;
 }

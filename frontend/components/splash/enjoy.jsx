@@ -10,19 +10,26 @@ class Enjoy extends React.Component {
                 <div >
                         
                     <p className="watchon">Watch on WebTV, TurboGrafx-16, </p><br/>
+
+
+                     <div>
+                            {/* <img className="gifstyle" src={window.videoGif} /> */}
+                           <img className="tvstyle" src={window.tv} /> 
+                         </div> 
                     <p className="watchon">Microwaves, Zune, LaserDisc players, and</p><br/>
                     <p className="watchon">more.</p>
+
                     
                 </div>
+
+
+                        
+
                 <div className="splashbottom">
 
                 </div>
                  
                    
-                        {/* <div>
-                            {/* <img className="gifstyle" src={window.videoGif} /> */}
-                            {/* <img className="tvstyle" src={window.tv} />    */}
-                        {/* </div> */} 
         </div>
     }
 }
