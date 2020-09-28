@@ -29,6 +29,7 @@ class Splash extends React.Component {
                     <h2 className="watch-anywhere">Watch anywhere. Cancel anytime.</h2>
                 </div>
                 <Enjoy />
+            
             </div>
         )
     }

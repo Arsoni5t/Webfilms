@@ -7,11 +7,11 @@ class Index extends React.Component {
     }
     render(){
         let {logout} = this.props
-        return <div className="banner">
+        return <div className="indexbg">
 {/* //             <h2> Welcome {currentUser.email}!</h2> */}
 
-//             <button onClick={logout}>Buh Bye</button>
-//         </div>
+            <button onClick={logout}>Buh Bye</button>
+         </div>
             
                  
               

@@ -85,7 +85,7 @@ class LoginForm extends React.Component {
                        
                     </form> 
                     <br/>
-                    <p className="newtowebfilms">New to Webfilms? Sign up now.</p>
+                    <p className="newtowebfilms">New to Webfilms? <Link className="newtowebfilmslink" to="/signup" >Sign up now.</Link></p>
                 </div>
                 <div className="loginfooter">
                     <p className="loginfootertop">Hiring? Call 1-267-269-5454</p>

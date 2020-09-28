@@ -98,7 +98,7 @@ class SignupForm extends React.Component {
                     
 
                     </form>  
-                 
+                            
                     </div>
                     <br />
                         
@@ -116,7 +116,7 @@ class SignupForm extends React.Component {
                     <p className="footeritems3">Privacy</p>
                     <div >
                         <p className="footeritems2">Cookie Preferences</p>
-                        <p className="footeritems2">Corporate Information</p>
+                        <p className="footeritems4">Corporate Information</p>
                     </div>
 
                 </div>

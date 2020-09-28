@@ -90,7 +90,7 @@
 
 .loginfooter{
     background-color: rgba($color: #000000, $alpha: .7);
-    height: 234px;;
+    height: 234px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -103,17 +103,18 @@
     padding: 0;
     margin-top: 30px;
     margin-right: 100px;
-    margin-left: 455px;
+    margin-left: 12.25%;
     margin-bottom: 20px;
 }
 
 .loginfooteritems{
+   
     color: #757575;
     font-size: 13px;
     font-family: Arial;
     display: inline;
     padding: 10px;
-    margin-left:446px;
+    margin-left:12%;
     list-style-type: none;
     line-height: 4em;
 }
@@ -124,7 +125,7 @@
     font-family: Arial;
     display: inline;
     padding: 10px;
-    margin-left:446px;
+    margin-left:12%;
     list-style-type: none;
     line-height: 4em;
 }
@@ -135,7 +136,7 @@
     font-family: Arial;
     display: inline;
     padding: 10px;
-    margin-left:200px;
+    margin-left:8%;
     list-style-type: none;
     line-height: 4em;
 }
@@ -146,7 +147,7 @@
     font-family: Arial;
     display: inline;
     padding: 10px;
-    margin-left:111px;
+    margin-left:4.5%;
     list-style-type: none;
     line-height: 4em;
 }
@@ -160,7 +161,86 @@
     margin-top: 30px;
 }
 
+.newtowebfilmslink{
+    color: white;
+    text-decoration: none;
+}
+
 // .newtowebfilmssignup{
+//     color: #757575;
+//     font-family: Arial;
+//     font-size: 16px;
+//     text-align: center;
+//     margin-left: -72px;
+//     margin-top: 30px;
+// }
+
+//BACKUPS INCASE I FUCK STUFF UP
+
+// .loginfooter{
+//     background-color: rgba($color: #000000, $alpha: .7);
+//     height: 234px;
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }
+
+// .loginfootertop{
+//     color: #757575;
+//     font-family: Arial;
+//     font-size: 16px;
+//     padding: 0;
+//     margin-top: 30px;
+//     margin-right: 100px;
+//     margin-left: 455px;
+//     margin-bottom: 20px;
+// }
+
+// .loginfooteritems{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:446px;
+//     list-style-type: none;
+//     line-height: 4em;
+// }
+
+// .loginfooteritems2{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:446px;
+//     list-style-type: none;
+//     line-height: 4em;
+// }
+
+// .loginfooteritems3{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:200px;
+//     list-style-type: none;
+//     line-height: 4em;
+// }
+
+// .loginfooteritems4{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:111px;
+//     list-style-type: none;
+//     line-height: 4em;
+// }
+
+// .newtowebfilms{
 //     color: #757575;
 //     font-family: Arial;
 //     font-size: 16px;

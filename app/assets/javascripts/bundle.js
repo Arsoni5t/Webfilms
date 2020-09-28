@@ -301,10 +301,10 @@ var Index = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var logout = this.props.logout;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "banner"
-      }, "//             ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "indexbg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: logout
-      }, "Buh Bye"), "//         ");
+      }, "Buh Bye"));
     }
   }]);
 
@@ -528,7 +528,10 @@ var LoginForm = /*#__PURE__*/function (_React$Component) {
         onClick: this.guestLogin()
       }, "Demo Login")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "newtowebfilms"
-      }, "New to Webfilms? Sign up now.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, "New to Webfilms? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+        className: "newtowebfilmslink",
+        to: "/signup"
+      }, "Sign up now."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "loginfooter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "loginfootertop"
@@ -737,7 +740,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       }, "Privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "footeritems2"
       }, "Cookie Preferences"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "footeritems2"
+        className: "footeritems4"
       }, "Corporate Information"))));
     }
   }]);
@@ -923,7 +926,7 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
       }, "Privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "footeritems2"
       }, "Cookie Preferences"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "footeritems2"
+        className: "footeritems4"
       }, "Corporate Information"))));
     }
   }]);
@@ -1026,8 +1029,20 @@ var Enjoy = /*#__PURE__*/function (_React$Component) {
   _createClass(Enjoy, [{
     key: "render",
     value: function render() {
-      return null // <h1 color="white">MONEY</h1>
-      ;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        classname: "subbar"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "enjoyontv"
+      }, "Enjoy on your TV."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "watchon"
+      }, "Watch on WebTV, TurboGrafx-16, "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "watchon"
+      }, "Microwaves, Zune, LaserDisc players, and"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "watchon"
+      }, "more."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tvstyle",
+        src: window.tv
+      }))));
     }
   }]);
 

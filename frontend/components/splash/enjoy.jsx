@@ -4,12 +4,25 @@ class Enjoy extends React.Component {
 
 
     render() {
-        return (
-         null
-            // <h1 color="white">MONEY</h1>
+        return <div classname="subbar">
+            <h2 className="enjoyontv">Enjoy on your TV.</h2>
            
-        )
+                <div>
+                        
+                    <p className="watchon">Watch on WebTV, TurboGrafx-16, </p><br/>
+                    <p className="watchon">Microwaves, Zune, LaserDisc players, and</p><br/>
+                    <p className="watchon">more.</p>
+                    <div>
+                            {/* <img className="gifstyle" src={window.videoGif} /> */}
+                            <img className="tvstyle" src={window.tv} />   
+                        </div>
+                </div>
+                 
+                   
+           
+        </div>
     }
 }
 
 export default Enjoy
+
