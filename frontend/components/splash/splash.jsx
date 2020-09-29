@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import LoginPage from '../login/login_form'
 import Enjoy from './enjoy'
+// import Footer from './../browse/browse_footer'
+
 
 class Splash extends React.Component {
 
@@ -30,10 +32,23 @@ class Splash extends React.Component {
                 </div>
                 <div>
                     <Enjoy />
+                    
                 </div>
              
-            
+                <div className="splashfooter">
+                    <p className="loginfootertop">Hiring? Call 1-267-269-5454</p>
+                    <p className="loginfooteritems">FAQ</p>
+                    <p className="loginfooteritems3">Help Center</p>
+                    <p className="loginfooteritems3">Terms of Use</p>
+                    <p className="loginfooteritems3">Privacy</p>
+                    <div >
+                        <p className="loginfooteritems2">Cookie Preferences</p>
+                        <p className="loginfooteritems4">Corporate Information</p>
+                    </div>
+
+                </div>
             </div>
+            
         )
     }
 }

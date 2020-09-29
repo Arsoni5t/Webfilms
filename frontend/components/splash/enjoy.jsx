@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Enjoy extends React.Component {
 
 
@@ -29,7 +30,7 @@ class Enjoy extends React.Component {
 
                 </div>
                  
-                   
+                  
         </div>
     }
 }
