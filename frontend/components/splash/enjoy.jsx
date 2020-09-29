@@ -15,7 +15,7 @@ class Enjoy extends React.Component {
 
                      <div>
                             {/* <img className="gifstyle" src={window.videoGif} /> */}
-                           <img className="tvstyle" src={window.tv} /> 
+                    <img className="tvstyle" src={window.videoGif} /> 
                          </div> 
                     <p className="watchon">Microwaves, Zune, LaserDisc players, and</p><br/>
                     <p className="watchon">more.</p>
