@@ -93,7 +93,7 @@ indie3.film.attach(io: indie3_film, filename: "indie3.mp4")
 
 indie4 = Film.create!(title: "Monty Python And The Holy Grail", year: 1975, rating: "PG", description: "King Arthur and his Knights quest wide and far for the Holy Grail.")
 indie4_poster = open("https://webfilms-films.s3.amazonaws.com/posters/independent/Grail.png")
-indie4_film = open("https://webfilms-films.s3.amazonaws.com/videos/Scary/Grail.mp4")
+indie4_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/Grail.mp4")
 indie4.poster.attach(io: indie4_poster, filename: "indie4_poster.png")
 indie4.film.attach(io: indie4_film, filename: "indie4.mp4")
 
@@ -133,6 +133,7 @@ comedy3.film.attach(io: comedy3_film, filename: "comedy3.mp4")
 
 comedy4 = Film.create!(title: "Safety Not Guaranteed", year: 2012, rating: "R", description: "A team of journalists are sent to find out who's behind a classified ad seeking a companion for time travel.")
 comedy4_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Safety.png")
+comedy4_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Safety.mp4")
 comedy4.poster.attach(io: comedy4_poster, filename: "comedy4_poster.png")
 comedy4.film.attach(io: comedy4_film, filename: "comedy4.mp4")
 
