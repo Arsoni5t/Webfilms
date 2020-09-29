@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'open-uri' #not sure if I need this
+# require 'open-uri' #not sure if I need this
 
 User.destroy_all
 Film.destroy_all
