@@ -625,6 +625,11 @@ var LoginForm = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(LoginForm, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.props.clearErrors();
+    }
+  }, {
     key: "renderErrors",
     value: function renderErrors() {
       var err = Array.from(this.props.errors);
@@ -727,7 +732,9 @@ var LoginForm = /*#__PURE__*/function (_React$Component) {
         className: "loginfooteritems2"
       }, "Cookie Preferences"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "loginfooteritems4"
-      }, "Corporate Information"))));
+      }, "Corporate Information")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        onClick: this.props.clearErrors
+      })));
     }
   }]);
 
@@ -770,6 +777,9 @@ var mDTP = function mDTP(dispatch) {
   return {
     processForm: function processForm(user) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["login"])(user));
+    },
+    clearErrors: function clearErrors() {
+      return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["clearErrors"])());
     }
   };
 };
@@ -993,6 +1003,11 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(SignupForm, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.props.clearErrors();
+    }
+  }, {
     key: "renderErrors",
     value: function renderErrors() {
       var err = Array.from(this.props.errors);

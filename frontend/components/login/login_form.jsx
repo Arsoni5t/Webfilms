@@ -13,6 +13,9 @@ class LoginForm extends React.Component {
         this.guestLogin = this.guestLogin.bind(this)
     }
     
+    componentDidMount() {
+        this.props.clearErrors();
+    }
 
     renderErrors() {
         let err = Array.from(this.props.errors);
@@ -97,7 +100,7 @@ class LoginForm extends React.Component {
                         <p className="loginfooteritems2">Cookie Preferences</p>
                         <p className="loginfooteritems4">Corporate Information</p>
                     </div>
-
+                    <div onClick={this.props.clearErrors} />
                 </div>
             </div>
         )

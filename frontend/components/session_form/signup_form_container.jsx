@@ -12,7 +12,7 @@ const mSTP = ({errors}) => ({
 const mDTP = dispatch => ({
     demo: user => dispatch(login(user)),
     processForm: user => dispatch(signup(user)),
-    clearErrors: () => dispatch(clearErrors()),
+    clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(mSTP, mDTP)(SignupForm)

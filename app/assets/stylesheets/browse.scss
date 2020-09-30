@@ -88,21 +88,30 @@
 
 .moviecontainer {
     display: flex;
-    margin-top: 50px;
+    // margin-top: 50px;
     width: 100%;
     overflow: hidden;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    
 }
 
 .movie {
-  
+    border-radius: 8px;
     height: 230px;
     width: 400px;
     box-sizing: border-box;
     display: inline-block;
     padding-right: 15px;
     margin-bottom: 50px;
+}
+
+.movie:hover {
+     transform: scale(1.5);
+     transition: transform .25s;
+    -webkit-transform: scale(1.35);
+    -webkit-transform-origin: bottom;
+
 }
 
 .carousel {

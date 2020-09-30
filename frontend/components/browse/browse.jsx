@@ -81,7 +81,7 @@ class Browse extends React.Component {
                                 <video 
                                     className="movie" 
                                     // src={film.film} 
-                                    poster={film.poster} 
+                                    poster={film.poster}
                                     // onMouseOver={this.playVid}
                                     // onMouseOut={this.reload}
                                     muted="muted" 
