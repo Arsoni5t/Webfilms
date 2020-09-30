@@ -2,23 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Footer from './browse_footer'
 import { FaSearch } from 'react-icons/fa'
+import { BsFillPlayFill } from 'react-icons/bs'
 import FilmItem from '../film/film_item'
 
 class Browse extends React.Component {
     constructor(props){
         super(props)
+     
     }
 
     componentDidMount(){
         this.props.fetchFilms();
     }
 
-    playVid(e) {
+    play(e) {
         e.currentTarget.muted = false; //plays audio
         e.currentTarget.play(); //plays video on hover
     }
 
-    stopVid(e) {
+    stop(e) {
         e.currentTarget.load();//refreshes video back to poster
     }
 
@@ -56,7 +58,7 @@ class Browse extends React.Component {
 
                     <nav className="browsenavright">
                         {/* <Link to="/browse">  */}
-                        <span className="searchicon"><FaSearch /></span> 
+                        <span className="searchicon"><FaSearch className="playicon"/></span> 
                         {/* </Link> */}
 
                         <button className="browselogout" onClick={logout}>Sign out</button>
@@ -65,10 +67,12 @@ class Browse extends React.Component {
                     </nav>
 
             </header>
-
+            <Link to={`/browse/38`}>
+                <button className="playbutton"><BsFillPlayFill className="playicon"/>Play</button> 
+                </Link>
             <div>
                  <img className="browsebanner" src={window.browsebanner}/> 
-                 {/* <button>PLAY</button>  */}
+                 
             </div>
 
             <div className="carousel">
@@ -78,14 +82,18 @@ class Browse extends React.Component {
                     {films.map(film => {
                         return (
                             <div>
+                                
+                                <Link to={`/browse/${film.id}`}> 
                                 <video 
                                     className="movie" 
-                                    // src={film.film} 
+                                    src={film.film} 
+                                    onMouseOver={this.play}
+                                    onMouseOut={this.stop}
                                     poster={film.poster}
-                                    // onMouseOver={this.playVid}
-                                    // onMouseOut={this.reload}
                                     muted="muted" 
+                                    // preload= 'metdata'
                                     alt=""/>
+                                    </Link>
                             </div>
                         )
                     })}

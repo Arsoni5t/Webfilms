@@ -1,4 +1,5 @@
 .browsebg{
+    position: absolute;
     background-color: black;
     width: 100%;
     height: 3500px;
@@ -7,8 +8,13 @@
 
 
 .browsebanner{
+    // position: relative;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    // height: auto;
+    padding-bottom: 20px;
+    margin-bottom: -35px;
+    
 }
 
 .browsenav{
@@ -24,6 +30,7 @@
     height: auto;
     margin-top: 10px;
     margin-right: 12px;
+    cursor: pointer;
 }
 
 .browsenavleft{
@@ -84,6 +91,7 @@
     margin-bottom: 8px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .moviecontainer {
@@ -93,7 +101,7 @@
     overflow: hidden;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
 .movie {
@@ -103,18 +111,52 @@
     box-sizing: border-box;
     display: inline-block;
     padding-right: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    
 }
 
 .movie:hover {
-     transform: scale(1.5);
+     transform: scale(1.0);
      transition: transform .25s;
-    -webkit-transform: scale(1.35);
+    -webkit-transform: scale(1.2);
     -webkit-transform-origin: bottom;
 
 }
 
 .carousel {
     margin-top: 20px;
-    padding-left: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playbutton{
+    color: black;
+    // justify-content: center;
+    vertical-align: middle;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 106px;
+    height: 39px;
+    background-color: #ffffff;
+    position: absolute;
+    justify-content: center;
+    margin-top: 31%;
+    margin-left: 6.15%;
+    border: none;
+    border-radius: 4px;
+    text-align: center; 
+}
+
+.playbutton:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+.playicon{
+    margin-top:4px;
+    margin-bottom: -3px;
+    padding-right: 2px;
 }
