@@ -31,6 +31,11 @@ class Browse extends React.Component {
     render(){
         let { logout } = this.props
         let { films } = this.props; 
+        // debugger
+        let boolala = Object.values(this.props.films)[0] || {id:null}
+    
+
+    
         return (
       
         <div className="browsebg">
@@ -67,7 +72,7 @@ class Browse extends React.Component {
                     </nav>
 
             </header>
-            <Link to={`/browse/38`}>
+            <Link to={`/browse/${boolala.id}`}>
                 <button className="playbutton"><BsFillPlayFill className="playicon"/>Play</button> 
                 </Link>
             <div>
@@ -87,12 +92,13 @@ class Browse extends React.Component {
                                 <video 
                                     className="movie" 
                                     src={film.film} 
-                                    onMouseOver={this.play}
-                                    onMouseOut={this.stop}
+                                    // onMouseOver={this.play}
+                                    // onMouseOut={this.stop}
                                     poster={film.poster}
                                     muted="muted" 
                                     // preload= 'metdata'
                                     alt=""/>
+                                    {/* {film.description} */}
                                     </Link>
                             </div>
                         )

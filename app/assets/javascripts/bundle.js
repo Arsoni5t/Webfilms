@@ -384,10 +384,12 @@ var Browse = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
-
       var logout = this.props.logout;
-      var films = this.props.films;
+      var films = this.props.films; // debugger
+
+      var boolala = Object.values(this.props.films)[0] || {
+        id: null
+      };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "browsebg"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
@@ -416,7 +418,7 @@ var Browse = /*#__PURE__*/function (_React$Component) {
         className: "browselogout",
         onClick: logout
       }, "Sign out"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/browse/38"
+        to: "/browse/".concat(boolala.id)
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "playbutton"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_4__["BsFillPlayFill"], {
@@ -433,9 +435,9 @@ var Browse = /*#__PURE__*/function (_React$Component) {
           to: "/browse/".concat(film.id)
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
           className: "movie",
-          src: film.film,
-          onMouseOver: _this.play,
-          onMouseOut: _this.stop,
+          src: film.film // onMouseOver={this.play}
+          // onMouseOut={this.stop}
+          ,
           poster: film.poster,
           muted: "muted" // preload= 'metdata'
           ,
