@@ -25,11 +25,10 @@ class FilmItem extends React.Component{
                     <video 
                         src={this.props.film.film}
                         poster={this.props.film.poster}
-                        width = "50%"
-                        // height = "75%"
+                        width = "100%"
+                        height = "100%"
                         controls
-                        
-                        // autoPlay
+                        autoPlay
                     />
                     
                 </div>
@@ -37,13 +36,13 @@ class FilmItem extends React.Component{
                     {this.props.film.title}
                 </div> */}
                 
-                <div className="description">
+                {/* <div className="description">
                     
                    {this.props.film.description} 
                 </div>
                 <div className="rating">
                     Rated: {this.props.film.rating}
-                </div>
+                </div> */}
             </div>
         )
     }

@@ -685,15 +685,11 @@ var FilmItem = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         src: this.props.film.film,
         poster: this.props.film.poster,
-        width: "50%" // height = "75%"
-        ,
-        controls: true // autoPlay
-
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "description"
-      }, this.props.film.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "rating"
-      }, "Rated: ", this.props.film.rating));
+        width: "100%",
+        height: "100%",
+        controls: true,
+        autoPlay: true
+      })));
     }
   }]);
 
