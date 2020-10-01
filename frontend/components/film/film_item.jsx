@@ -20,19 +20,30 @@ class FilmItem extends React.Component{
                 <Link to="/browse">
                 <IoMdArrowBack className="backbutton"/>
                 </Link>
-                <div>
+                <div className="playback" >
                     {/* {this.props.film.title} */}
                     <video 
                         src={this.props.film.film}
-                        poster={window.symbol}
-                        width = "92%"
-                        height="92%"
+                        poster={this.props.film.poster}
+                        // width = "75%"
+                        // height = "75%"
                         controls
-                        className="playback"
+                        
                         // autoPlay
                     />
+                    
                 </div>
-                {/* {this.props.film.description} */}
+                {/* <div className="filmtitleshow">
+                    {this.props.film.title}
+                </div> */}
+                
+                <div className="description">
+                    
+                   {this.props.film.description} 
+                </div>
+                <div className="rating">
+                    Rated: {this.props.film.rating}
+                </div>
             </div>
         )
     }

@@ -90,6 +90,7 @@ h1 {
 }
 
 .blackbg{
+    position: relative;
     background-color: black;
     height: 100vh;
 }
@@ -150,7 +151,7 @@ input {
     width: 100%;
     display: flex;
      height: 465px; //used to be 450, testing to see if it works better
-     border: 20px solid white;
+    //  border: 20px solid white;
     border: solid rgba(120, 120, 120, 0.3);
     border-width: 0 0 8px 0;
     border-style: solid;
@@ -211,21 +212,117 @@ input {
 //   margin-top: 13px;
 float: bottom;
   opacity: 0.8;
+//   padding-bottom: 80px;
 //   color:  #b6b3b3;
 //     color: rgba($color: #000000, $alpha: 1.0)
 }
+
 
 .splashenjoy{
     // display: block;
     // position: relative;
 }
 
-.splashfooter{
-    // display: block;
-    // position: absolute;
-    // bottom: 0; 
-    // margin-top: 50px;
-    // margin-bottom: -40px;
+.wrapper{
+    padding-bottom: 2.5rem;
     background-color: black;
-    padding-top: 10px;;
 }
+
+.splashfooter{
+    // display: flex;
+    background-color: black;
+    color: #757575;
+    width: 100%;
+    // text-align: left;
+    position: absolute;
+    height: 8rem;
+    bottom: 0; 
+    background-color: black;
+    // display: flex;
+    // overflow: hidden;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    border: solid rgba(120, 120, 120, 0.3);
+    border-width: 8px 0 0 0;
+    border-style: solid;
+    // padding: 280px;
+   
+    margin-bottom: 15px;
+    // justify-content: center;
+    // justify-content: space-between;
+}
+
+
+
+// .loginfooter{
+//     background-color: rgba($color: #000000, $alpha: .7);
+//     height: 234px;
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }
+
+.splashfootertop{
+    color: #757575;
+    font-family: Arial;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // padding-left: 280px;
+    margin-top: 27px;
+    // margin-top: 18px;
+    margin-right: 100px;
+    margin-left: 25.35%;
+    
+    background-color: black;
+}
+
+.splashfooteritems{
+   
+    color: #757575;
+    font-size: 13px;
+    font-family: Arial;
+    display: inline;
+    padding: 10px;
+    // padding-left: 200px;
+    // margin-left:12.18%;
+    margin-left: 25%;
+    margin-right: -18%;
+    // list-style-type: none;
+    // line-height: 4em;
+    background-color: black;
+   
+}
+
+// .loginfooteritems2{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:12%;
+//     list-style-type: none;
+//     line-height: 4em;
+// }
+
+// .loginfooteritems3{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:8%;
+//     list-style-type: none;
+//     line-height: 4em;
+// }
+
+// .loginfooteritems4{
+//     color: #757575;
+//     font-size: 13px;
+//     font-family: Arial;
+//     display: inline;
+//     padding: 10px;
+//     margin-left:4.5%;
+//     list-style-type: none;
+//     line-height: 4em;
+// }

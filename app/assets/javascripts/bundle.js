@@ -385,8 +385,7 @@ var Browse = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var logout = this.props.logout;
-      var films = this.props.films; // debugger
-
+      var films = this.props.films;
       var boolala = Object.values(this.props.films)[0] || {
         id: null
       };
@@ -425,7 +424,7 @@ var Browse = /*#__PURE__*/function (_React$Component) {
         className: "playicon"
       }), "Play")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "browsebanner",
-        src: window.browsebanner
+        src: window.browsebanner2
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -433,15 +432,9 @@ var Browse = /*#__PURE__*/function (_React$Component) {
       }, films.map(function (film) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
           to: "/browse/".concat(film.id)
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-          className: "movie",
-          src: film.film // onMouseOver={this.play}
-          // onMouseOut={this.stop}
-          ,
-          poster: film.poster,
-          muted: "muted" // preload= 'metdata'
-          ,
-          alt: ""
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: film.poster,
+          className: "movie"
         })));
       }))));
     }
@@ -675,15 +668,20 @@ var FilmItem = /*#__PURE__*/function (_React$Component) {
         to: "/browse"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_io__WEBPACK_IMPORTED_MODULE_2__["IoMdArrowBack"], {
         className: "backbutton"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "playback"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         src: this.props.film.film,
-        poster: window.symbol,
-        width: "92%",
-        height: "92%",
-        controls: true,
-        className: "playback" // autoPlay
+        poster: this.props.film.poster // width = "75%"
+        // height = "75%"
+        ,
+        controls: true // autoPlay
 
-      })));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "description"
+      }, this.props.film.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "rating"
+      }, "Rated: ", this.props.film.rating));
     }
   }]);
 
@@ -1442,6 +1440,8 @@ var Splash = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "blackbg"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "banner"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logo",
@@ -1464,23 +1464,7 @@ var Splash = /*#__PURE__*/function (_React$Component) {
         className: "ready"
       }, "Ready to watch? Click below to create or restart your membership."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "watch-anywhere"
-      }, "Watch anywhere. Cancel anytime.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_enjoy__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "splashfooter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfootertop"
-      }, "Hiring? Call 1-267-269-5454"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfooteritems"
-      }, "FAQ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfooteritems3"
-      }, "Help Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfooteritems3"
-      }, "Terms of Use"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfooteritems3"
-      }, "Privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfooteritems2"
-      }, "Cookie Preferences"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "loginfooteritems4"
-      }, "Corporate Information"))));
+      }, "Watch anywhere. Cancel anytime.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_enjoy__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
     }
   }]);
 

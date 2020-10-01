@@ -11,6 +11,9 @@ class Splash extends React.Component {
     render(){
         return(
             <div className="blackbg">
+                <div className="wrapper">
+
+               
                 <div className="banner">
                     <img className="logo" src={window.logoUrl}/>
                     
@@ -34,19 +37,23 @@ class Splash extends React.Component {
                     <Enjoy />
                     
                 </div>
-             
-                <div className="splashfooter">
-                    <p className="loginfootertop">Hiring? Call 1-267-269-5454</p>
-                    <p className="loginfooteritems">FAQ</p>
-                    <p className="loginfooteritems3">Help Center</p>
-                    <p className="loginfooteritems3">Terms of Use</p>
-                    <p className="loginfooteritems3">Privacy</p>
-                    <div >
-                        <p className="loginfooteritems2">Cookie Preferences</p>
-                        <p className="loginfooteritems4">Corporate Information</p>
-                    </div>
+                    
+                
+                   
 
-                </div>
+             </div>
+             {/* <footer>
+                 <div className="splashfooter">
+                        <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
+                        <p className="splashfooteritems">FAQ</p>
+                        <p className="splashfooteritems">Help Center</p>
+                        <p className="splashfooteritems">Terms of Use</p>
+                        <p className="splashfooteritems">Privacy</p>
+                       
+
+                    </div>
+             </footer> */}
+                    
             </div>
             
         )

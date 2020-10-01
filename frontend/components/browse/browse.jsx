@@ -31,7 +31,7 @@ class Browse extends React.Component {
     render(){
         let { logout } = this.props
         let { films } = this.props; 
-        // debugger
+    
         let boolala = Object.values(this.props.films)[0] || {id:null}
     
 
@@ -76,7 +76,7 @@ class Browse extends React.Component {
                 <button className="playbutton"><BsFillPlayFill className="playicon"/>Play</button> 
                 </Link>
             <div>
-                 <img className="browsebanner" src={window.browsebanner}/> 
+                 <img className="browsebanner" src={window.browsebanner2}/> 
                  
             </div>
 
@@ -87,19 +87,10 @@ class Browse extends React.Component {
                     {films.map(film => {
                         return (
                             <div>
-                                
-                                <Link to={`/browse/${film.id}`}> 
-                                <video 
-                                    className="movie" 
-                                    src={film.film} 
-                                    // onMouseOver={this.play}
-                                    // onMouseOut={this.stop}
-                                    poster={film.poster}
-                                    muted="muted" 
-                                    // preload= 'metdata'
-                                    alt=""/>
-                                    {/* {film.description} */}
-                                    </Link>
+                                <Link to = {`/browse/${film.id}`}> 
+                                    <img src = {film.poster} className="movie" />
+                                    {/* <p>{film.description}</p> */}
+                                </Link>
                             </div>
                         )
                     })}
@@ -108,7 +99,17 @@ class Browse extends React.Component {
             </div>
              
                    
-                {/* <Footer /> */}
+                {/* <footer>
+                 <div className="splashfooter">
+                        <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
+                        <p className="splashfooteritems">FAQ</p>
+                        <p className="splashfooteritems">Help Center</p>
+                        <p className="splashfooteritems">Terms of Use</p>
+                        <p className="splashfooteritems">Privacy</p>
+                       
+
+                    </div>
+             </footer> */}
                 
         </div>
 
