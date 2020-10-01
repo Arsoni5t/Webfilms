@@ -77,7 +77,7 @@
     color: white;
     font-size: 18px;
     margin-top: 20px;
-    margin-right: 100px;
+    margin-right: 30px;
 }
 
 .browselogout{
@@ -96,6 +96,15 @@
     cursor: pointer;
 }
 
+.carousel {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-bottom: 200px;
+}
+
 .moviecontainer {
     display: flex;
     background-color: black;
@@ -109,10 +118,12 @@
     margin-bottom: 20px;
 }
 
+
+
 .movie {
     border-radius: 10px;
-    height: 230px;
-    width: 400px;
+    height: 190px;
+    width: 350px;
     box-sizing: border-box;
     display: inline-block;
     // padding-right: 15px;
@@ -122,9 +133,18 @@
     cursor: pointer;
     text-decoration: none;
     color: transparent;
-    background-color: black;
+    background-color:  #333333;
+    p {
+        visibility: hidden;
+    }
 
 }
+
+.hide{
+    display: none;
+}
+
+
 
 .movie:hover {
      transform: scale(1.0);
@@ -138,16 +158,22 @@
     // margin-bottom: 20px;
     // background-color: #353535;
     // color: black;
-  
+    // height: 300px;
+    // padding-bottom: 75px; FOR SHADOW UNDER IMAGE 
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+
+    
 }
 
-.carousel {
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-}
+.movie:hover + .hide { 
+    overflow-wrap: break-word;
+  padding: 10px;
+        display: flex;
+        color: white;
+        overflow-wrap: break-word;
+        padding: 10px;
+    }
+
 
 .playbutton{
     color: black;

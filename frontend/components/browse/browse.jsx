@@ -11,8 +11,11 @@ class Browse extends React.Component {
      
     }
 
+   
+
     componentDidMount(){
         this.props.fetchFilms();
+ 
     }
 
     play(e) {
@@ -29,6 +32,10 @@ class Browse extends React.Component {
     };
 
     render(){
+
+
+     
+
         let { logout } = this.props
         let { films } = this.props; 
     
@@ -89,17 +96,15 @@ class Browse extends React.Component {
                             <div>
                                 <Link to = {`/browse/${film.id}`}> 
                                     <img src = {film.poster} className="movie" />
-                                    {/* <p>{film.description}</p> */}
+                                    {/* <p className="hide">{film.description}</p> */}
                                 </Link>
                             </div>
                         )
                     })}
                 </div>
-               
-            </div>
              
-                   
-                {/* <footer>
+            </div>
+               <footer>
                  <div className="splashfooter">
                         <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
                         <p className="splashfooteritems">FAQ</p>
@@ -109,7 +114,9 @@ class Browse extends React.Component {
                        
 
                     </div>
-             </footer> */}
+             </footer>
+                   
+                
                 
         </div>
 

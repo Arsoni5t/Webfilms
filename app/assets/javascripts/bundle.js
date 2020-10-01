@@ -436,7 +436,19 @@ var Browse = /*#__PURE__*/function (_React$Component) {
           src: film.poster,
           className: "movie"
         })));
-      }))));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splashfooter"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "splashfootertop"
+      }, "Hiring? Call 1-267-269-5454"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "splashfooteritems"
+      }, "FAQ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "splashfooteritems"
+      }, "Help Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "splashfooteritems"
+      }, "Terms of Use"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "splashfooteritems"
+      }, "Privacy"))));
     }
   }]);
 
@@ -672,8 +684,8 @@ var FilmItem = /*#__PURE__*/function (_React$Component) {
         className: "playback"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         src: this.props.film.film,
-        poster: this.props.film.poster // width = "75%"
-        // height = "75%"
+        poster: this.props.film.poster,
+        width: "50%" // height = "75%"
         ,
         controls: true // autoPlay
 

@@ -25,7 +25,7 @@ class FilmItem extends React.Component{
                     <video 
                         src={this.props.film.film}
                         poster={this.props.film.poster}
-                        // width = "75%"
+                        width = "50%"
                         // height = "75%"
                         controls
                         
