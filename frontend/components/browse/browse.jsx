@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Footer from './browse_footer'
 import { FaSearch } from 'react-icons/fa'
@@ -10,6 +10,9 @@ class Browse extends React.Component {
         super(props)
      
     }
+
+ 
+
 
    
 
@@ -34,6 +37,8 @@ class Browse extends React.Component {
     render(){
 
 
+        
+
      
 
         let { logout } = this.props
@@ -47,7 +52,7 @@ class Browse extends React.Component {
       
         <div className="browsebg">
 
-            <header className="browsenav">
+            <header className= 'browsenav' >
                     <nav className="browsenavleft">
                         <Link to="/">
                             <img className="browselogo" src={window.logoUrl} />
@@ -93,10 +98,15 @@ class Browse extends React.Component {
                     
                     {films.map(film => {
                         return (
-                            <div>
+                            <div >
                                 <Link to = {`/browse/${film.id}`}> 
-                                    <img src = {film.poster} className="movie" />
-                                    {/* <p className="hide">{film.description}</p> */}
+                                <div>
+                                    
+                                </div>
+                                    <img className="movie" src = {film.poster} />
+                                    {/* <div className="hide">{film.description}</div> */}
+                                
+                                  
                                 </Link>
                             </div>
                         )
@@ -107,15 +117,16 @@ class Browse extends React.Component {
                <footer>
                  <div className="splashfooter">
                         <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
-                        <p className="splashfooteritems">FAQ</p>
-                        <p className="splashfooteritems">Help Center</p>
-                        <p className="splashfooteritems">Terms of Use</p>
-                        <p className="splashfooteritems">Privacy</p>
+                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">LinkedIn</p></a>
+                        
+                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Help Center</p></a>
+                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Terms of Use</p></a>
+                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Privacy</p></a>
                        
 
                     </div>
              </footer>
-                   
+   
                 
                 
         </div>
