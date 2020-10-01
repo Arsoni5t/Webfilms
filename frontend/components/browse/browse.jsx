@@ -4,6 +4,7 @@ import Footer from './browse_footer'
 import { FaSearch } from 'react-icons/fa'
 import { BsFillPlayFill } from 'react-icons/bs'
 import FilmItem from '../film/film_item'
+import { RiArrowDownSFill } from 'react-icons/ri'
 
 class Browse extends React.Component {
     constructor(props){
@@ -62,25 +63,39 @@ class Browse extends React.Component {
                             <span>Home</span>
                         </Link>
 
-                        {/* <Link to="/browse">  */}
+                        <Link to="/browse"> 
                             <span className="browsenavlinks">Latest</span>
-                        {/* </Link> */}
+                        </Link>
 
-                        {/* <Link to="/browse">  */}
+                        <Link to="/browse"> 
                         <span className="browsenavlinks">My List</span>
-                        {/* </Link> */}
+                        </Link>
 
                         
                     </nav>
 
                     <nav className="browsenavright">
-                        {/* <Link to="/browse">  */}
-                        <span className="searchicon"><FaSearch className="playicon"/></span> 
-                        {/* </Link> */}
-
-                        <button className="browselogout" onClick={logout}>Sign out</button>
-                     
                          
+                             <Link to="/browse"> 
+                        <span className="searchicon"><FaSearch className="playicon"/></span> 
+                        </Link>
+                           <div>
+                               <ul>
+                                <li className="browselogout">Account
+                                        <ul>
+                                            <li>
+                                                <button  className="signout" onClick={logout}>Sign out</button>
+                                            </li>
+                                        </ul>
+                                   </li>
+                               </ul>
+                           </div>
+                        <RiArrowDownSFill className="downarrow"/>
+                      
+                                     
+                                            
+                                     
+                      
                     </nav>
 
             </header>
@@ -117,7 +132,7 @@ class Browse extends React.Component {
                <footer>
                  <div className="splashfooter">
                         <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
-                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">LinkedIn</p></a>
+                        <a href="https:www.linkedin.com/in/bradlarsoncode" className="splashfooteritems">LinkedIn</a>
                         
                         <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Help Center</p></a>
                         <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Terms of Use</p></a>
