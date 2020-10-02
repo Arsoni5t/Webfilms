@@ -26,8 +26,8 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
   * Respecting the familiarity of the cloned site 
   * Honor the design of the cloned site to illustrate understanding of design elements and user interaction. 
   
-![alt text](https://webfilms-films.s3.amazonaws.com/github/tv.png "symbol")
-
+ ![alt text](https://webfilms-films.s3.amazonaws.com/github/scroll.gif "scroll")
+  
 ## UPCOMING FEATURES
 
 In the coming weeks, new features will include:
@@ -36,3 +36,5 @@ In the coming weeks, new features will include:
 * Popout/modal when user clicks on film poster that dispays details about the film.
 * Ability for the user to search films by title or genre.
 * User will have the ability to make a queue of films to watch later. 
+
+![alt text](https://webfilms-films.s3.amazonaws.com/github/tv.png "symbol")
