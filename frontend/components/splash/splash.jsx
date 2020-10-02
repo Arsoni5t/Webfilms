@@ -42,7 +42,7 @@ class Splash extends React.Component {
                    
 
              </div>
-                <footer>
+                <footer className="footfoot">
                     <div className="splashfooter">
                         <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
                         <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">LinkedIn</p></a>
