@@ -32,3 +32,10 @@ Things you may want to cover:
 ## INTRODUCTION
 
 WEBFILMS is a full-stack film streaming clone. Built with React/Redux, JS, styled with basic CSS and supported by a Rails backend. 
+
+## FUNCTIONALITY
+
+Users can sign up, log in as a new or demo user and once logged in select a film to watch. 
+Over two-dozen of your favorite film trailers are available at the click of a button!
+
+
