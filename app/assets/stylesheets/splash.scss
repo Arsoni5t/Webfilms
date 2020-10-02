@@ -78,6 +78,10 @@ h1 {
     border: none;
 }
 
+.sign-in-button:hover{
+    cursor: pointer;
+}
+
 .sign-up{ //sign up form 
     // position: relative;
     text-align: center;
@@ -137,6 +141,10 @@ input {
     // vertical-align: middle;
     // bottom: 10;
     // position: relative;
+}
+
+.free:hover{
+    cursor: pointer;
 }
 
 // .body{

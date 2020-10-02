@@ -90,6 +90,10 @@
     text-decoration-color: #e50914
 }
 
+.continue:hover{
+    cursor: pointer;
+}
+
 
 .logosignup{
     width: 200px;
@@ -132,6 +136,10 @@ border-top: 1px solid b6b3b3;
     font-family: Arial;
 }
 
+.itsfree:hover{
+    cursor: pointer;
+}
+
 .strong{
     font-weight: bold;
 }
@@ -149,6 +157,10 @@ border-top: 1px solid b6b3b3;
     margin-left: auto;
     margin-right: auto;
     font-family: Arial;
+}
+
+.completesignupbutton:hover{
+    cursor: pointer;
 }
 
 .signup-pw{
@@ -214,7 +226,7 @@ border-top: 1px solid b6b3b3;
 
 .signupfooter{
     background-color:#f3f3f3;
-    height: 210px;
+    height: 115px;
     border-top: 1px solid #dbd6cd;
     position: absolute;
     bottom: 0;
@@ -228,7 +240,7 @@ border-top: 1px solid b6b3b3;
     padding: 0;
     margin-top: 30px;
     margin-left: 3.24%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .footeritems{

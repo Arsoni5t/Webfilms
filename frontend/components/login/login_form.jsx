@@ -92,16 +92,13 @@ class LoginForm extends React.Component {
                 </div>
                 <div className="loginfooter">
                     <p className="loginfootertop">Hiring? Call 1-267-269-5454</p>
-                    <p className="loginfooteritems">FAQ</p>
-                    <p className="loginfooteritems3">Help Center</p>
-                    <p className="loginfooteritems3">Terms of Use</p>
-                    <p className="loginfooteritems3">Privacy</p>
-                    <div >
-                        <p className="loginfooteritems2">Cookie Preferences</p>
-                        <p className="loginfooteritems4">Corporate Information</p>
-                    </div>
-                    <div onClick={this.props.clearErrors} />
+                    <a href="https://linkedin.com/in/bradlarsoncode"  className="loginfooteritems">LinkedIn</a>
+                    <a href="https://github.com/Arsoni5t/Webfilms"  className="loginfooteritems3">GitHub</a>
+                    <a href="https://letterboxd.com/Bradlarson/"  className="loginfooteritems3">LetterBoxd</a>
+                    <a href="https://bit.ly/3l7T3uJ"  className="loginfooteritems3">Corporate Policy</a>
+                
                 </div>
+                <div onClick={this.props.clearErrors} />
             </div>
         )
     }
@@ -109,3 +106,16 @@ class LoginForm extends React.Component {
 }
 
 export default LoginForm
+
+    // < footer className = "footfoot" >
+    //     <div className="splashfooter">
+    //         <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
+    //     <a href="https://linkedin.com/in/bradlarsoncode" className="splashfooteritems">LinkedIn</a>
+
+    //         <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Help Center</p></a>
+    //         <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Terms of Use</p></a>
+    //         <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Privacy</p></a>
+
+
+    //     </div>
+    //             </footer >

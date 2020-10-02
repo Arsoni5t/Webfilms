@@ -76,7 +76,7 @@ class SignupForm extends React.Component {
                  <div className="container-signup"> 
                     <div>
                         <button className="itsfree" onClick={this.guestLogin()}> 
-                            Enough nonsense, enter as a demo user.<strong className="strong"> It's free.</strong>
+                            I'll just click here to use my parent's account for<strong className="strong"> free.</strong>
                         </button>
                         <div>
                         <span className="signupstep">STEP <strong className="strong">1</strong> OF <strong className="strong">1</strong></span><br />
@@ -112,14 +112,14 @@ class SignupForm extends React.Component {
                
                 <div className="signupfooter">
                     <p className="footertop">Hiring? Call 1-267-269-5454</p>
-                    <p className="footeritems">FAQ</p>
-                    <p className="footeritems3">Help Center</p>
-                    <p className="footeritems3">Terms of Use</p>
-                    <p className="footeritems3">Privacy</p>
-                    <div >
+                    <a href="https://linkedin.com/in/bradlarsoncode"  className="footeritems">LinkedIn</a>
+                    <a href="https://github.com/Arsoni5t/Webfilms"  className="footeritems3">GitHub</a>
+                    <a href="https://letterboxd.com/Bradlarson/"  className="footeritems3">LetterBoxd</a>
+                    <a href="https://bit.ly/3l7T3uJ"  className="footeritems3">Corporate Policy</a>
+                    {/* <div >
                         <p className="footeritems2">Cookie Preferences</p>
                         <p className="footeritems4">Corporate Information</p>
-                    </div>
+                    </div> */}
 
                 </div>
              

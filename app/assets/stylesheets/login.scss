@@ -79,6 +79,10 @@
     font-weight: bold;
 }
 
+.login-button:hover{
+    cursor: pointer;
+}
+
 .errors{
     color: #e87c03;
     font-size: 13px;
@@ -90,7 +94,7 @@
 
 .loginfooter{
     background-color: rgba($color: #000000, $alpha: .7);
-    height: 234px;
+    height: 125px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -104,7 +108,7 @@
     margin-top: 30px;
     margin-right: 100px;
     margin-left: 12.25%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .loginfooteritems{

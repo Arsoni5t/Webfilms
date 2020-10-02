@@ -133,10 +133,9 @@ class Browse extends React.Component {
                  <div className="splashfooter">
                         <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
                         <a href="https:www.linkedin.com/in/bradlarsoncode" className="splashfooteritems">LinkedIn</a>
-                        
-                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Help Center</p></a>
-                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Terms of Use</p></a>
-                        <a href="www.linkedin.com/in/bradlarsoncode"><p className="splashfooteritems">Privacy</p></a>
+                        <a href="https://github.com/Arsoni5t/Webfilms" className="splashfooteritems">GitHub</a>
+                        <a href="https://letterboxd.com/Bradlarson/" className="splashfooteritems">LetterBoxd</a>
+                        <a href="https://bit.ly/3l7T3uJ" className="splashfooteritems">Corporate Policy</a>
                        
 
                     </div>
