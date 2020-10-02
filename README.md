@@ -38,6 +38,4 @@ WEBFILMS is a full-stack film streaming clone. Built with React/Redux, JS, style
 Users can sign up, log in as a new or demo user, and once logged in, select a film to watch. 
 Over two-dozen of your favorite film trailers are available at the click of a button!
 
-![alt text][browse]
-
-[browse]: https://webfilms-films.s3.amazonaws.com/github/Browse+screengrab.png
+![alt text](https://webfilms-films.s3.amazonaws.com/github/Browse+screen.png "browse")
