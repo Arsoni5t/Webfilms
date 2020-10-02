@@ -113,17 +113,15 @@ class Browse extends React.Component {
                     
                     {films.map(film => {
                         return (
-                            <div >
+                          
                                 <Link to = {`/browse/${film.id}`}> 
-                                <div>
-                                    
-                                </div>
+                               
                                     <img className="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 
                                   
                                 </Link>
-                            </div>
+                          
                         )
                     })}
                 </div>

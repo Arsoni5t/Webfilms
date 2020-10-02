@@ -143,6 +143,7 @@ a {
     padding: 7px 17px;
     font-weight: 400;
     font-size: 1rem;
+    font-family: Arial;
     margin-right: 4px;
     margin-top: 20px;
     margin-bottom: 8px;
@@ -162,6 +163,7 @@ a {
 
 .moviecontainer {
     display: flex;
+    
     background-color: black;
     // margin-top: 50px;
     width: 100%;
@@ -174,9 +176,9 @@ a {
 }
 
 
-
 .movie {
     border-radius: 10px;
+    position: relative;
     height: 190px;
     width: 350px;
     box-sizing: border-box;
@@ -218,19 +220,20 @@ a {
     
 }
 
-.hide{
-        display: none;
-        // z-index: 1;
-    }
+// .hide{
+//         display: none;
+//         // z-index: 1;
+//     }
 
-.movie:hover + .hide { 
-        overflow-wrap: break-word;
-        padding: 10px;
-        display: flex;
-        color: white;
-        overflow-wrap: break-word;
-        padding: 10px;
-    }
+// .hide:hover { 
+//         overflow-wrap: break-word;
+//         padding: 10px;
+//         display: flex;
+//         color: white;
+//         overflow-wrap: break-word;
+//         padding: 10px;
+//         z-index: 1;
+//     }
 
 
 .playbutton{
