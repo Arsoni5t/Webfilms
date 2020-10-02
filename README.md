@@ -31,9 +31,7 @@ Things you may want to cover:
 
 ## INTRODUCTION
 
-WEBFILMS is a full-stack film streaming clone. Built with React/Redux, JS, styled with basic CSS and supported by a Rails backend. 
-
-(https://www.webfilms.heroku.com "Webfilms")
+[WEBFILMS](https://www.webfilms.heroku.com "Webfilms") is a full-stack film streaming clone. Built with React/Redux, JS, styled with basic CSS and supported by a Rails backend. 
 
 ## FUNCTIONALITY
 
