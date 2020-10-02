@@ -33,6 +33,8 @@ Things you may want to cover:
 
 WEBFILMS is a full-stack film streaming clone. Built with React/Redux, JS, styled with basic CSS and supported by a Rails backend. 
 
+(https://www.webfilms.heroku.com "Webfilms")
+
 ## FUNCTIONALITY
 
 Users can sign up, log in as a new or demo user, and once logged in, select a film to watch. 
