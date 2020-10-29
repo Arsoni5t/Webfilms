@@ -81,9 +81,12 @@ class SessionForm extends React.Component {
                     <p></p>
                     <input classname="content" type="submit" value={this.props.formType}/> */}
                     <div>
-                    <Link to="/signup/regform">
-                        <button className="continue"> CONTINUE </button>
+                    <Link className="continue" to="/signup/regform">CONTINUE
+                        {/* <button type="button" className="continue">CONTINUE</button> */}
                     </Link>
+                    {/* <form action="/signup/regform">
+                        <input className ="continue" type="submit" value ="CONTINUE"/>
+                    </form> */}
                     </div>
                 </form> 
                     

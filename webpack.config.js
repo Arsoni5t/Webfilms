@@ -7,6 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
         filename: "bundle.js"
     },
+    
     module: {
         rules: [
             {
@@ -25,4 +26,7 @@ module.exports = {
     resolve: {
         extensions: [".js", ".jsx", "*"]
     }
+    
+    
 };
+
