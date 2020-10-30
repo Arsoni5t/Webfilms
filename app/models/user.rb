@@ -1,9 +1,9 @@
 # require 'bcrypt'
 class User < ApplicationRecord
     # validates :email, presence: true, uniqueness: true
-    validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }, presence: true, uniqueness: true
-    validates :password_digest, presence: true
-    validates :password, length:{minimum: 6, allow_nil: true}
+    validates :email, presence: {message: " is required!"}, uniqueness: {message: " already taken!"}, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create, message: "must be formatted name@domain.com!" }
+    validates :password_digest, presence: {message: 'Password is required!'}
+    validates :password, length:{message: " must be between 6 and 40 characters!", minimum: 6, allow_nil: true}
     attr_reader :password
     after_initialize :ensure_session_token
 
