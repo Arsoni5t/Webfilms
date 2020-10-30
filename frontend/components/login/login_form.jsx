@@ -11,6 +11,7 @@ class LoginForm extends React.Component {
         this.renderErrors = this.renderErrors.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.guestLogin = this.guestLogin.bind(this)
+        // this.handleGeneralError = this.handleGeneralError.bind(this)
     }
     
     componentDidMount() {
@@ -53,13 +54,13 @@ class LoginForm extends React.Component {
             }
     }
 
-    handleGeneralError() {
-        if (this.props.errors.indexOf('Invalid email/password combination') > -1) {
-        let input = document.getElementById('general-errors-login')
-        input.className = 'general-errors-login'
-        return 'Invalid email/password combination'
-    }
-}
+//     handleGeneralError() {
+//         if (this.props.errors.indexOf("Sorry") > -1) {
+//         let input = document.getElementById('login-generic-error')
+//         input.className = 'general-errors-login'
+//         return "Sorry, we can't find an account with this email address."
+//     }
+// }
 
     render(){
 
@@ -79,7 +80,7 @@ class LoginForm extends React.Component {
                     
                     <form >
                          <h1 className="white">{formType}</h1>
-                          <span id='general-errors-login' className='default'>{this.handleGeneralError()}</span>
+                          {/* <span id='login-generic-error' className='default'>{this.handleGeneralError()}</span> */}
                         <input className="login-email" type="email" value={email} onChange={this.update("email")} placeholder="    Email"/>
                         <input className="login-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Password"></input>
                         <div className="errors">

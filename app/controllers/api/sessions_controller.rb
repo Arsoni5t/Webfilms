@@ -16,7 +16,7 @@ class Api::SessionsController < ApplicationController
         elsif email == ""
             render json: ["Please enter an email."], status: 401
         else
-            render json: ["Invalid email/password combination"], status: 401
+            render json: ["Sorry, we can't find an account with this email address."], status: 401
         end
     end
 
