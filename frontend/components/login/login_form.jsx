@@ -53,6 +53,14 @@ class LoginForm extends React.Component {
             }
     }
 
+    handleGeneralError() {
+        if (this.props.errors.indexOf('Invalid email/password combination') > -1) {
+        let input = document.getElementById('general-errors-login')
+        input.className = 'general-errors-login'
+        return 'Invalid email/password combination'
+    }
+}
+
     render(){
 
         let { email, password } = this.state;
@@ -71,6 +79,7 @@ class LoginForm extends React.Component {
                     
                     <form >
                          <h1 className="white">{formType}</h1>
+                          <span id='general-errors-login' className='default'>{this.handleGeneralError()}</span>
                         <input className="login-email" type="email" value={email} onChange={this.update("email")} placeholder="    Email"/>
                         <input className="login-pw" type="password" value={password} onChange={this.update("password")} placeholder="    Password"></input>
                         <div className="errors">

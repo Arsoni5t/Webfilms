@@ -3,14 +3,20 @@ class Api::SessionsController < ApplicationController
     def create
        
         @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
-   
+            email = params[:user][:email]
+    password = params[:user][:password]
         if @user
            
             login(@user)
             render "api/users/show"
+        elsif email == "" && password == ""
+            render json: ["Please enter an email.", "Your password must contain between 4 and 60 characters."], status: 401
+        elsif password == ""
+            render json: ["Your password must contain between 4 and 60 characters."], status: 401
+        elsif email == ""
+            render json: ["Please enter an email."], status: 401
         else
-        
-            render json: ["Invalid email or password"], status: 401
+            render json: ["Invalid email/password combination"], status: 401
         end
     end
 
