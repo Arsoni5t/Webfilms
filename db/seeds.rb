@@ -27,7 +27,7 @@ scary1_film = open("https://webfilms-films.s3.amazonaws.com/videos/Scary/Boolala
 scary1.poster.attach(io: scary1_poster, filename: "scary1_poster.png")
 scary1.film.attach(io: scary1_film, filename: "scary1.mp4")
 
-scary2 = Film.create!(title: "The Girl With All The Gifst", year: 2016, rating: "R", description: "As fungus turns humanity into zombies, a band of survivors flees with a curiously evolved zombie girl who may hold the key to a cure.")
+scary2 = Film.create!(title: "The Girl With All The Gifts", year: 2016, rating: "R", description: "As fungus turns humanity into zombies, a band of survivors flees with a curiously evolved zombie girl who may hold the key to a cure.")
 scary2_poster = open("https://webfilms-films.s3.amazonaws.com/posters/scary/Gifts.png")
 scary2_film = open("https://webfilms-films.s3.amazonaws.com/videos/Scary/Gifts.mp4")
 scary2.poster.attach(io: scary2_poster, filename: "scary2_poster.png")
@@ -51,9 +51,9 @@ scary5_film = open("https://webfilms-films.s3.amazonaws.com/videos/Scary/Invitat
 scary5.poster.attach(io: scary5_poster, filename: "scary5_poster.png")
 scary5.film.attach(io: scary5_film, filename: "scary5.mp4")
 
-scary6 = Film.create!(title: "Killer Klowns From Outer Space", year: 1988, rating: "PG-13", description: "An alien band of killer clowns descends from the cosmos to harvest victims, cocooning their prey in cotton candy to eat later.")
-scary6_poster = open("https://webfilms-films.s3.amazonaws.com/posters/scary/Klowns.png")
-scary6_film = open("https://webfilms-films.s3.amazonaws.com/videos/Scary/Klowns.mp4")
+scary6 = Film.create!(title: "Scary Stories To Tell In The Dark", year: 2019, rating: "PG-13", description: "On the run from bullies, a group of trick-or-treating teenagers hide in a local haunted house and discover a trove of chilling tales unfolding within.")
+scary6_poster = open("https://webfilms-films.s3.amazonaws.com/posters/scary/Scary.png")
+scary6_film = open("https://webfilms-films.s3.amazonaws.com/videos/Scary/Scary.mp4")
 scary6.poster.attach(io: scary6_poster, filename: "scary6_poster.png")
 scary6.film.attach(io: scary6_film, filename: "scary6.mp4")
 
@@ -93,9 +93,9 @@ indie3_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/E
 indie3.poster.attach(io: indie3_poster, filename: "indie3_poster.png")
 indie3.film.attach(io: indie3_film, filename: "indie3.mp4")
 
-indie4 = Film.create!(title: "Monty Python And The Holy Grail", year: 1975, rating: "PG", description: "King Arthur and his Knights quest wide and far for the Holy Grail.")
-indie4_poster = open("https://webfilms-films.s3.amazonaws.com/posters/independent/Grail.png")
-indie4_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/Grail.mp4")
+indie4 = Film.create!(title: "Eighth Grade", year: 2018, rating: "R", description: "Despite her social isolation and fears about high school, a shy eighth grader musters up optimism to make it through the last week of middle school.")
+indie4_poster = open("https://webfilms-films.s3.amazonaws.com/posters/independent/Eighth.png")
+indie4_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/Eighth.mp4")
 indie4.poster.attach(io: indie4_poster, filename: "indie4_poster.png")
 indie4.film.attach(io: indie4_film, filename: "indie4.mp4")
 
@@ -111,7 +111,23 @@ indie6_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/M
 indie6.poster.attach(io: indie6_poster, filename: "indie6_poster.png")
 indie6.film.attach(io: indie6_film, filename: "indie6.mp4")
 
+indie7 = Film.create!(title: "Birdman or (Thre Unexpected Virtue of Ignorance)", year: 2014, rating: "R", description: "A forgotten actor known for his superhero character struggles to make a comeback on the Broadway stage while his personal life and psyche implode.")
+indie7_poster = open("https://webfilms-films.s3.amazonaws.com/posters/independent/Birdman.png")
+indie7_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/Birdman.mp4")
+indie7.poster.attach(io: indie7_poster, filename: "indie7_poster.png")
+indie7.film.attach(io: indie7_film, filename: "indie7.mp4")
 
+indie8 = Film.create!(title: "Silver Linings Playbook", year: 2012, rating: "R", description: "After a stint in a mental hospital, Pat moves in with his parents and tries to win back his wife, until he meets a woman who's as unstable as he is.")
+indie8_poster = open("https://webfilms-films.s3.amazonaws.com/posters/independent/Silver.png")
+indie8_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/Silver.mp4")
+indie8.poster.attach(io: indie8_poster, filename: "indie8_poster.png")
+indie8.film.attach(io: indie8_film, filename: "indie8.mp4")
+
+indie9 = Film.create!(title: "Nightcrawler", year: 2014, rating: "R", description: "A young hustler finds success trolling the streets of Los Angeles to film disasters and death. But the darkness he captures starts to take hold of him.")
+indie9_poster = open("https://webfilms-films.s3.amazonaws.com/posters/independent/Nightcrawler.png")
+indie9_film = open("https://webfilms-films.s3.amazonaws.com/videos/Independent/Nightcrawler.mp4")
+indie9.poster.attach(io: indie9_poster, filename: "indie9_poster.png")
+indie9.film.attach(io: indie9_film, filename: "indie9.mp4")
 
 ###COMEDY
 
@@ -121,9 +137,9 @@ comedy1_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Disas
 comedy1.poster.attach(io: comedy1_poster, filename: "comedy1_poster.png")
 comedy1.film.attach(io: comedy1_film, filename: "comedy1.mp4")
 
-comedy2 = Film.create!(title: "The Money Pit", year: 1986, rating: "PG", description: "A young couple is beset by expensive repair costs and a crooked contractor when they buy a dream estate for a suspiciously low price.")
-comedy2_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Money.png")
-comedy2_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Money.mp4")
+comedy2 = Film.create!(title: "The Great Dictator", year: 1940, rating: "PG", description: "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.")
+comedy2_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Dictator.png")
+comedy2_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Dictator.mp4")
 comedy2.poster.attach(io: comedy2_poster, filename: "comedy2_poster.png")
 comedy2.film.attach(io: comedy2_film, filename: "comedy2.mp4")
 
@@ -139,12 +155,29 @@ comedy4_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Safet
 comedy4.poster.attach(io: comedy4_poster, filename: "comedy4_poster.png")
 comedy4.film.attach(io: comedy4_film, filename: "comedy4.mp4")
 
-comedy5 = Film.create!(title: "Walk Hard", year: 2007, rating: "R", description: "Dewey Cox crosses paths with music icons in this parody of rags-to-riches music biopics.")
-comedy5_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Walk.png")
-comedy5_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Walk.mp4")
+comedy5 = Film.create!(title: "Ghostbusters", year: 1984, rating: "PG", description: "Parapsychologists create a business exterminating ghouls and hobgoblins -- and end up facing one killer demon in a cellist's apartment.")
+comedy5_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Ghostbusters.png")
+comedy5_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Ghostbusters.mp4")
 comedy5.poster.attach(io: comedy5_poster, filename: "comedy5_poster.png")
 comedy5.film.attach(io: comedy5_film, filename: "comedy5.mp4")
 
+comedy6 = Film.create!(title: "Hot Fuzz", year: 2007, rating: "R", description: "A top London cop is assigned to investigate a seemingly sleepy town, which suddenly starts to stir with a series of grisly accidents.")
+comedy6_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Hot.png")
+comedy6_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Hot.mp4")
+comedy6.poster.attach(io: comedy6_poster, filename: "comedy6_poster.png")
+comedy6.film.attach(io: comedy6_film, filename: "comedy6.mp4")
+
+comedy7 = Film.create!(title: "Step Brothers", year: 2008, rating: "R", description: "Brennan and Dale might be grown men, but that doesn't stop a childish sibling rivalry from erupting after Brennan's mom marries Dale's dad.")
+comedy7_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Step.png")
+comedy7_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Step.mp4")
+comedy7.poster.attach(io: comedy7_poster, filename: "comedy7_poster.png")
+comedy7.film.attach(io: comedy7_film, filename: "comedy7.mp4")
+
+comedy8 = Film.create!(title: "The Hangover", year: 2009, rating: "R", description: "When three friends finally wake up after a wild bachelor party, they can't locate their best friend, who's supposed to be tying the knot.")
+comedy8_poster = open("https://webfilms-films.s3.amazonaws.com/posters/comedy/Hangover.png")
+comedy8_film = open("https://webfilms-films.s3.amazonaws.com/videos/Comedy/Hangover.mp4")
+comedy8.poster.attach(io: comedy8_poster, filename: "comedy8_poster.png")
+comedy8.film.attach(io: comedy8_film, filename: "comedy8.mp4")
 
 ###ADVENTURES
 
@@ -160,9 +193,9 @@ adventure2_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure
 adventure2.poster.attach(io: adventure2_poster, filename: "adventure2_poster.png")
 adventure2.film.attach(io: adventure2_film, filename: "adventure2.mp4")
 
-adventure3 = Film.create!(title: "The Neverending Story", year: 1984, rating: "PG", description: "A boy holes up in his school's attic with a book about a land of dragons, racing snails and other magical creatures.")
-adventure3_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Neverending.png")
-adventure3_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Neverending.mp4")
+adventure3 = Film.create!(title: "Mission Impossible 4: Ghost Protocol", year: 2011, rating: "PG-13", description: "Super-agent Ethan Hunt and his team take on another deadly mission... to prove their innocence when they are framed for bombing the Kremlin.")
+adventure3_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Mission.png")
+adventure3_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Mission.mp4")
 adventure3.poster.attach(io: adventure3_poster, filename: "adventure3_poster.png")
 adventure3.film.attach(io: adventure3_film, filename: "adventure3.mp4")
 
@@ -177,3 +210,33 @@ adventure5_poster = open("https://webfilms-films.s3.amazonaws.com/posters/advent
 adventure5_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Spider.mp4")
 adventure5.poster.attach(io: adventure5_poster, filename: "adventure5_poster.png")
 adventure5.film.attach(io: adventure5_film, filename: "adventure5.mp4")
+
+adventure6 = Film.create!(title: "Revenant", year: 2015, rating: "R", description: "In the 1820s, a fur trapper struggles for survival to exact retribution agaist a ruthless mercenary who left him to die along the Missouri River.")
+adventure6_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Revenant.png")
+adventure6_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Revenant.mp4")
+adventure6.poster.attach(io: adventure6_poster, filename: "adventure6_poster.png")
+adventure6.film.attach(io: adventure6_film, filename: "adventure6.mp4")
+
+adventure7 = Film.create!(title: "Charlie And The Chocolate Factory", year: 2005, rating: "PG", description: "The eccentric Willy Wonka opens the doors of his candy factory to five lucky kids who learn the secrets behind his amazing confections.")
+adventure7_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Charlie.png")
+adventure7_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Charlie.mp4")
+adventure7.poster.attach(io: adventure7_poster, filename: "adventure7_poster.png")
+adventure7.film.attach(io: adventure7_film, filename: "adventure7.mp4")
+
+adventure8 = Film.create!(title: "Kubo And The Two Strings", year: 2016, rating: "PG", description: "In feudal Japan, a one-eyed boy with musical magic powers searches for his father's enchanted armor, pursued by his evil grandfather, the Moon King.")
+adventure8_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Kubo.png")
+adventure8_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Kubo.mp4")
+adventure8.poster.attach(io: adventure8_poster, filename: "adventure8_poster.png")
+adventure8.film.attach(io: adventure8_film, filename: "adventure8.mp4")
+
+adventure9 = Film.create!(title: "Hugo", year: 2011, rating: "PG", description: "On the Paris streets, a fearless orphan keeps the city's time as a scavanger hunt begins. The prize? His biggest wish.")
+adventure9_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Hugo.png")
+adventure9_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Hugo.mp4")
+adventure9.poster.attach(io: adventure9_poster, filename: "adventure9_poster.png")
+adventure9.film.attach(io: adventure9_film, filename: "adventure9.mp4")
+
+adventure10 = Film.create!(title: "Tomb Raider", year: 2018, rating: "PG-13", description: "Seven years after her wealthy dad's mysterious disappearance, Lara Croft embarks on a quest to discover his fate using the clues he left behind.")
+adventure10_poster = open("https://webfilms-films.s3.amazonaws.com/posters/adventure/Tomb.png")
+adventure10_film = open("https://webfilms-films.s3.amazonaws.com/videos/Adventure/Tomb.mp4")
+adventure10.poster.attach(io: adventure10_poster, filename: "adventure10_poster.png")
+adventure10.film.attach(io: adventure10_film, filename: "adventure10.mp4")
