@@ -101,7 +101,7 @@ class Browse extends React.Component {
                                             </li>
                                              <li className="logouttxt">
                                                 {/* <button  className="signout" onClick={logout}>Sign out</button> */}
-                                                <a href="/" onClick={logout}>Sign Out</a>
+                                                <a onClick={logout}>Sign Out</a>
                                             </li>
                                         </ul>
                                    </li>
