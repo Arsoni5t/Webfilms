@@ -80,11 +80,28 @@ class Browse extends React.Component {
                         <span className="searchicon"><FaSearch className="playicon"/></span> 
                         </Link>
                            <div>
-                               <ul>
+                               <ul >
                                 <li className="browselogout">Account
-                                        <ul>
-                                            <li>
-                                                <button  className="signout" onClick={logout}>Sign out</button>
+                                        <ul className="logoutbg">
+                                            <li className="logouttxt">
+                                                <a href="http://www.bradlarson.me" target="_blank">Portfolio</a>
+                                            </li>
+                                            <li className="logouttxt">
+                                                <a href="https://github.com/Arsoni5t/Webfilms" target="_blank">Github</a>
+                                            </li>
+                                            <li className="logouttxt">
+                                                <a href="https://www.linkedin.com/in/bradlarsoncode/" target="_blank">LinkedIn</a>
+                                            </li>
+                                            <li className="logouttxt">
+                                                <a href="https://angel.co/u/brad-larson-4" target="_blank">AngelList</a>
+                                            </li>
+                                              <li className="logouttxt">
+                                                {/* <button  className="signout" onClick={logout}>Sign out</button> */}
+                                                <p>_________</p><br></br>
+                                            </li>
+                                             <li className="logouttxt">
+                                                {/* <button  className="signout" onClick={logout}>Sign out</button> */}
+                                                <a href="/" onClick={logout}>Sign Out</a>
                                             </li>
                                         </ul>
                                    </li>

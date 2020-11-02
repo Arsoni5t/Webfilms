@@ -264,3 +264,23 @@ a {
     margin-bottom: -3px;
     padding-right: 2px;
 }
+
+.logoutbg{
+    background-color:rgba(0,0,0,0.5);
+    width: 90px;
+    height: 125px;
+    align-self: right;
+    padding: 10px;
+}
+
+.logouttxt{
+    a{
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    }
+    a:hover{
+        background-color: gray;
+    }
+   
+}
