@@ -47,7 +47,13 @@ class Browse extends React.Component {
     
         let boolala = Object.values(this.props.films)[0] || {id:null}
     
-
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 10) {
+        $(".browsenav").addClass("scrolling");
+    } else {
+       $(".browsenav").removeClass("scrolling");
+    }
+});
     
         return (
       
