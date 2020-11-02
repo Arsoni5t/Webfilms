@@ -88,25 +88,24 @@ $(window).on("scroll", function() {
                            <div>
                                <ul >
                                 <li className="browselogout">Account
+                               
                                         <ul className="logoutbg">
-                                            <li className="logouttxt">
-                                                <a href="http://www.bradlarson.me" target="_blank">Portfolio</a>
-                                            </li>
-                                            <li className="logouttxt">
-                                                <a href="https://github.com/Arsoni5t/Webfilms" target="_blank">Github</a>
-                                            </li>
+                                           
                                             <li className="logouttxt">
                                                 <a href="https://www.linkedin.com/in/bradlarsoncode/" target="_blank">LinkedIn</a>
                                             </li>
+                                             <li className="logouttxt">
+                                                <a href="https://github.com/Arsoni5t/Webfilms" target="_blank">Github</a>
+                                            </li>
+
                                             <li className="logouttxt">
                                                 <a href="https://angel.co/u/brad-larson-4" target="_blank">AngelList</a>
                                             </li>
-                                              <li className="logouttxt">
-                                                {/* <button  className="signout" onClick={logout}>Sign out</button> */}
-                                                <p>_________</p><br></br>
+                                            <li className="logouttxt">
+                                                <a href="http://www.bradlarson.me" target="_blank">Portfolio</a>
                                             </li>
+                                            <hr class="solid" />
                                              <li className="logouttxt">
-                                                {/* <button  className="signout" onClick={logout}>Sign out</button> */}
                                                 <a onClick={logout}>Sign Out</a>
                                             </li>
                                         </ul>
@@ -151,14 +150,12 @@ $(window).on("scroll", function() {
              
             </div>
                <footer>
-                 <div className="splashfooter">
-                        <p className="splashfootertop">Hiring? Call 1-267-269-5454</p>
-                        <a href="https:www.linkedin.com/in/bradlarsoncode" className="splashfooteritems">LinkedIn</a>
-                        <a href="https://github.com/Arsoni5t/Webfilms" className="splashfooteritems">GitHub</a>
-                        <a href="https://letterboxd.com/Bradlarson/" className="splashfooteritems">LetterBoxd</a>
-                        <a href="https://bit.ly/3l7T3uJ" className="splashfooteritems">Corporate Policy</a>
-                       
-
+                 <div className="browsefooter">
+                        <p className="browsefootertop">Contact Us</p>
+                        <a href="https:www.linkedin.com/in/bradlarsoncode" target="_blank" className="browsefooteritems1"><img className="browseicons" src={window.linked} /></a>
+                        <a href="https://github.com/Arsoni5t/Webfilms" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.github} /></a>
+                        <a href="https://angel.co/u/brad-larson-4" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.angel} /></a>
+                        <a href="http://www.bradlarson.me" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.portfolio} /></a>
                     </div>
              </footer>
    

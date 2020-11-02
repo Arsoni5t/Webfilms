@@ -96,11 +96,11 @@ class LoginForm extends React.Component {
                     <p className="newtowebfilms">New to Webfilms? <Link className="newtowebfilmslink" to="/signup" >Sign up now.</Link></p>
                 </div>
                 <div className="loginfooter">
-                    <p className="loginfootertop">Hiring? Call 1-267-269-5454</p>
-                    <a href="https://linkedin.com/in/bradlarsoncode"  className="loginfooteritems">LinkedIn</a>
-                    <a href="https://github.com/Arsoni5t/Webfilms"  className="loginfooteritems3">GitHub</a>
-                    <a href="https://letterboxd.com/Bradlarson/"  className="loginfooteritems3">LetterBoxd</a>
-                    <a href="https://bit.ly/3l7T3uJ"  className="loginfooteritems3">Corporate Policy</a>
+                    <p className="loginfootertop">Hiring?</p>
+                    <a href="https://linkedin.com/in/bradlarsoncode" target="_blank" className="loginfooteritems">LinkedIn</a>
+                    <a href="https://github.com/Arsoni5t/Webfilms" target="_blank" className="loginfooteritems3">GitHub</a>
+                    <a href="https://angel.co/u/brad-larson-4" target="_blank" className="loginfooteritems3">AngelList</a>
+                    <a href="http://www.bradlarson.me" target="_blank" className="loginfooteritems3">Portfolio</a>
                 
                 </div>
                 <div onClick={this.props.clearErrors} />

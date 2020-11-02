@@ -90,17 +90,13 @@ class SessionForm extends React.Component {
                     </div>
                 </form> 
                     
-                    {/* <SignupForm className="signupfooter"/> */}
                     <div className="signupfooter">
-                    <p className="footertop">Hiring? Call 1-267-269-5454</p>
-                    <a href="https://linkedin.com/in/bradlarsoncode" className="footeritems">LinkedIn</a>
-                    <a href="https://github.com/Arsoni5t/Webfilms" className="footeritems3">GitHub</a>
-                    <a href="https://letterboxd.com/Bradlarson/" className="footeritems3">LetterBoxd</a>
-                    <a href="https://bit.ly/3l7T3uJ" className="footeritems3">Corporate Policy</a>
-                    {/* <div >
-                        <p className="footeritems2">Cookie Preferences</p>
-                        <p className="footeritems4">Corporate Information</p>
-                    </div> */}
+                   <p className="footertop">Hiring?</p>
+                    <a href="https://www.linkedin.com/in/bradlarsoncode" target="_blank"  className="footeritems">LinkedIn</a>
+                    <a href="https://github.com/Arsoni5t/Webfilms" target="_blank" className="footeritems3">GitHub</a>
+                    <a href="https://angel.co/u/brad-larson-4"  target="_blank" className="footeritems3">AngelList</a>
+                    <a href="http://www.bradlarson.me" target="_blank" className="footeritems3">Portfolio</a>
+            
                    
                     </div>
                         
