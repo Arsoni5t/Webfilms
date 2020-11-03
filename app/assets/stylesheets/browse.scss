@@ -169,14 +169,28 @@ a {
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px; 
-
-    // display: flex;
-    // justify-content: space-between;
     background-color: black;
-    // padding-bottom: 200px;
-    //   width: 600px;
+}
 
-    // overflow: scroll;
+.carousel2 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    background-color: black;
+}
+
+.carousel3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    background-color: black;
+}
+
+.carousel4 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    background-color: black;
 }
 
 #scary{
@@ -282,6 +296,7 @@ a {
     -webkit-transform: scale(1.2);
     -webkit-transform-origin: center;
     overflow: hidden;
+    
     // z-index: 2;
     // height: 300px;
     // display: flex;
@@ -421,8 +436,10 @@ hr{
   position: relative;
 //   top: 0;
 //   width: 300px;
-// visibility: hidden;
+visibility: hidden;
 }
+
+
 
 #prev {
 display: inline-block;
@@ -438,6 +455,43 @@ display: inline-block;
     background-color: transparent;
     border: hidden;
     outline: none;
+    visibility: hidden;
+}
+
+.carousel:hover{
+    #prev{
+        visibility: visible;
+    }
+    #next{
+        visibility: visible;
+    }
+}
+
+.carousel2:hover{
+    #prev2{
+        visibility: visible;
+    }
+    #next2{
+        visibility: visible;
+    }
+}
+
+.carousel3:hover{
+    #prev3{
+        visibility: visible;
+    }
+    #next3{
+        visibility: visible;
+    }
+}
+
+.carousel4:hover{
+    #prev4{
+        visibility: visible;
+    }
+    #next4{
+        visibility: visible;
+    }
 }
 
 #prev:hover{

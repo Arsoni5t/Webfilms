@@ -199,7 +199,7 @@ $(window).on("scroll", function() {
                 
             </div>
 
-            <div className="carousel">
+            <div className="carousel2">
                 
                <h1 className="genretitle">Indie</h1>
                
@@ -223,7 +223,7 @@ $(window).on("scroll", function() {
                 
             </div>
 
-                <div className="carousel">
+                <div className="carousel3">
                <h1 className="genretitle">Comedy</h1>
                <div id="scroller">
                    <button id="next3">&gt;</button>
@@ -245,7 +245,7 @@ $(window).on("scroll", function() {
              
             </div>
 
-                <div className="carousel">
+                <div className="carousel4">
                <h1 className="genretitle">Adventure</h1>
                      <div id="scroller">
                    <button id="next4">&gt;</button>
