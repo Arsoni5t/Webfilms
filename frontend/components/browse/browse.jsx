@@ -38,8 +38,54 @@ class Browse extends React.Component {
     render(){
 
 
-        
+  
+$('#prev').on('click', function() {
+  $('#scary').animate({
+    scrollLeft: '-=450'
+  }, 300, 'swing');
+});
 
+$('#next').on('click', function() {
+  $('#scary').animate({
+    scrollLeft: '+=450'
+  }, 300, 'swing');
+});
+
+$('#prev2').on('click', function() {
+  $('#indie').animate({
+    scrollLeft: '-=450'
+  }, 300, 'swing');
+});
+
+$('#next2').on('click', function() {
+  $('#indie').animate({
+    scrollLeft: '+=450'
+  }, 300, 'swing');
+});
+
+$('#prev3').on('click', function() {
+  $('#comedy').animate({
+    scrollLeft: '-=450'
+  }, 300, 'swing');
+});
+
+$('#next3').on('click', function() {
+  $('#comedy').animate({
+    scrollLeft: '+=450'
+  }, 300, 'swing');
+});
+
+$('#prev4').on('click', function() {
+  $('#adventure').animate({
+    scrollLeft: '-=450'
+  }, 300, 'swing');
+});
+
+$('#next4').on('click', function() {
+  $('#adventure').animate({
+    scrollLeft: '+=450'
+  }, 300, 'swing');
+});
      
 
         let { logout } = this.props
@@ -130,70 +176,93 @@ $(window).on("scroll", function() {
             </div>
             
             <div className="carousel">
+                
                <h1 className="genretitle">Scary</h1>
-                <div className="moviecontainer">
+               
+                <div id="scroller">
+                   <button id="next">&gt;</button>
+               <button id="prev">&#60;</button>
+               </div>
+                <div id="scary">
                     {films.map(film => {
                         if(film.genre === 'scary'){
                         return (
                            
                                 <Link to = {`/browse/${film.id}`}> 
-                                    <img className="movie" src = {film.poster} />
+                                    <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
                     }})}
+                         
                 </div>
-             
+                
             </div>
 
             <div className="carousel">
+                
                <h1 className="genretitle">Indie</h1>
-                <div className="moviecontainer">
+               
+                <div id="scroller">
+                   <button id="next2">&gt;</button>
+                <button id="prev2">&#60;</button>
+               </div>
+                <div id="indie">
                     {films.map(film => {
                         if(film.genre === 'indie'){
                         return (
                            
                                 <Link to = {`/browse/${film.id}`}> 
-                                    <img className="movie" src = {film.poster} />
+                                    <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
                     }})}
+                         
                 </div>
-             
+                
             </div>
 
                 <div className="carousel">
                <h1 className="genretitle">Comedy</h1>
-                <div className="moviecontainer">
+               <div id="scroller">
+                   <button id="next3">&gt;</button>
+                <button id="prev3">&#60;</button>
+               </div>
+                <div id="comedy">
                     {films.map(film => {
                         if(film.genre === 'comedy'){
                         return (
                            
                                 <Link to = {`/browse/${film.id}`}> 
-                                    <img className="movie" src = {film.poster} />
+                                    <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
                     }})}
+                     
                 </div>
              
             </div>
 
                 <div className="carousel">
                <h1 className="genretitle">Adventure</h1>
-            
-                <div className="moviecontainer">
+                     <div id="scroller">
+                   <button id="next4">&gt;</button>
+                <button id="prev4">&#60;</button>
+               </div>
+                <div id="adventure">
                     {films.map(film => {
                         if(film.genre === 'adventure'){
                         return (
                            
                                 <Link to = {`/browse/${film.id}`}> 
-                                    <img className="movie" src = {film.poster} />
+                                    <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
                     }})}
+                      
                 </div>
              
             </div>

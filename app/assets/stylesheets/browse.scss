@@ -168,29 +168,79 @@ a {
 .carousel {
     margin-top: 50px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px; 
+
     // display: flex;
     // justify-content: space-between;
     background-color: black;
     // padding-bottom: 200px;
+    //   width: 600px;
+
+    // overflow: scroll;
 }
 
-.moviecontainer {
+#scary{
     display: flex;
-    
+    position: relative;
+    overflow-x: hidden;
     background-color: black;
     // margin-top: 50px;
     width: 100%;
-    overflow: hidden;
+    // overflow: scroll;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+
+#indie {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    background-color: black;
+    // margin-top: 50px;
+    width: 100%;
+    // overflow: scroll;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+
+#comedy {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    background-color: black;
+    // margin-top: 50px;
+    width: 100%;
+    // overflow: scroll;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+
+#adventure {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    background-color: black;
+    // margin-top: 50px;
+    width: 100%;
+    // overflow: scroll;
+    flex-direction: row;
+    // flex-wrap: wrap;
     // justify-content: space-between;
     margin-right: 22px;
     margin-bottom: 20px;
 }
 
 
-.movie {
+#movie {
     border-radius: 10px;
     // position: relative;
     height: 190px;
@@ -353,3 +403,194 @@ hr{
     font-size: 24px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+#scroller {
+  position: relative;
+//   top: 0;
+//   width: 300px;
+}
+
+#prev {
+    display: inline-block;
+  position: absolute;
+  left: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+    border: hidden  
+}
+
+#prev:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next {
+    display: inline-block;
+  position: absolute;
+  right: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  height: 100px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+  border: hidden;
+
+}
+
+#next:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+
+#prev2 {
+    display: inline-block;
+  position: absolute;
+  left: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+    border: hidden  
+}
+
+#prev2:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next2 {
+     display: inline-block;
+  position: absolute;
+  right: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  height: 100px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+  border: hidden;
+
+}
+
+#next2:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#prev3 {
+    display: inline-block;
+  position: absolute;
+  left: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+    border: hidden  
+}
+
+#prev3:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next3 {
+    display: inline-block;
+  position: absolute;
+  right: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  height: 100px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+  border: hidden;
+
+}
+
+#next3:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#prev4 {
+    display: inline-block;
+  position: absolute;
+  left: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+    border: hidden  
+}
+
+#prev4:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next4{
+    display: inline-block;
+  position: absolute;
+  right: 32px;
+  font-size: 30px;
+    height: 20px;
+  cursor: pointer;
+  top: 90px;
+  height: 100px;
+  font-weight: bold;
+  color: #E5E5E5;
+  z-index: 1;
+  height: 60px;
+  background-color: transparent;
+    border: hidden;
+}
+
+#next4:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
