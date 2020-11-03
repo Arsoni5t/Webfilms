@@ -128,28 +128,76 @@ $(window).on("scroll", function() {
                  <img className="browsebanner" src={window.browsebanner2}/> 
                  
             </div>
-
+            
             <div className="carousel">
-                
+               <h1 className="genretitle">Scary</h1>
                 <div className="moviecontainer">
-                    
                     {films.map(film => {
+                        if(film.genre === 'scary'){
                         return (
-                          
+                           
                                 <Link to = {`/browse/${film.id}`}> 
-                               
                                     <img className="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
-                                
-                                  
                                 </Link>
-                          
                         )
-                    })}
+                    }})}
                 </div>
              
             </div>
-               <footer>
+
+            <div className="carousel">
+               <h1 className="genretitle">Indie</h1>
+                <div className="moviecontainer">
+                    {films.map(film => {
+                        if(film.genre === 'indie'){
+                        return (
+                           
+                                <Link to = {`/browse/${film.id}`}> 
+                                    <img className="movie" src = {film.poster} />
+                                    {/* <div className="hide">{film.description}</div> */}
+                                </Link>
+                        )
+                    }})}
+                </div>
+             
+            </div>
+
+                <div className="carousel">
+               <h1 className="genretitle">Comedy</h1>
+                <div className="moviecontainer">
+                    {films.map(film => {
+                        if(film.genre === 'comedy'){
+                        return (
+                           
+                                <Link to = {`/browse/${film.id}`}> 
+                                    <img className="movie" src = {film.poster} />
+                                    {/* <div className="hide">{film.description}</div> */}
+                                </Link>
+                        )
+                    }})}
+                </div>
+             
+            </div>
+
+                <div className="carousel">
+               <h1 className="genretitle">Adventure</h1>
+            
+                <div className="moviecontainer">
+                    {films.map(film => {
+                        if(film.genre === 'adventure'){
+                        return (
+                           
+                                <Link to = {`/browse/${film.id}`}> 
+                                    <img className="movie" src = {film.poster} />
+                                    {/* <div className="hide">{film.description}</div> */}
+                                </Link>
+                        )
+                    }})}
+                </div>
+             
+            </div>
+               <footer background-color="black">
                  <div className="browsefooter">
                         <p className="browsefootertop">Contact Us</p>
                         <a href="https:www.linkedin.com/in/bradlarsoncode" target="_blank" className="browsefooteritems1"><img className="browseicons" src={window.linked} /></a>
