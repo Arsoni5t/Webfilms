@@ -55,7 +55,7 @@ a {
     // background-color: rgba($color: #3D3940, $alpha: .3);
     background-color: transparent;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 10;
 }
 
 .scrolling {
@@ -166,7 +166,7 @@ a {
 }
 
 .carousel {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px; 
 
@@ -183,6 +183,8 @@ a {
     display: flex;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
     background-color: black;
     // margin-top: 50px;
     width: 100%;
@@ -194,10 +196,14 @@ a {
     margin-bottom: 20px;
 }
 
+
+
 #indie {
     display: flex;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
     background-color: black;
     // margin-top: 50px;
     width: 100%;
@@ -207,12 +213,15 @@ a {
     // justify-content: space-between;
     margin-right: 22px;
     margin-bottom: 20px;
+
 }
 
 #comedy {
     display: flex;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
     background-color: black;
     // margin-top: 50px;
     width: 100%;
@@ -228,9 +237,12 @@ a {
     display: flex;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
     background-color: black;
     // margin-top: 50px;
     width: 100%;
+    height: auto;
     // overflow: scroll;
     flex-direction: row;
     // flex-wrap: wrap;
@@ -264,11 +276,12 @@ a {
 
 
 
-.movie:hover {
+#movie:hover {
      transform: scale(1.0);
      transition: transform .25s;
     -webkit-transform: scale(1.2);
     -webkit-transform-origin: center;
+    overflow: hidden;
     // z-index: 2;
     // height: 300px;
     // display: flex;
@@ -408,22 +421,23 @@ hr{
   position: relative;
 //   top: 0;
 //   width: 300px;
+// visibility: hidden;
 }
 
 #prev {
-    display: inline-block;
-  position: absolute;
-  left: 32px;
-  font-size: 30px;
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
     height: 20px;
-  cursor: pointer;
-  top: 90px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-    border: hidden  
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 2;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 }
 
 #prev:hover{
@@ -433,20 +447,20 @@ hr{
 }
 
 #next {
-    display: inline-block;
-  position: absolute;
-  right: 32px;
-  font-size: 30px;
-    height: 20px;
-  cursor: pointer;
-  top: 90px;
-  height: 100px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-  border: hidden;
+     display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 
 }
 
@@ -458,19 +472,19 @@ hr{
 
 
 #prev2 {
-    display: inline-block;
-  position: absolute;
-  left: 32px;
-  font-size: 30px;
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
     height: 20px;
-  cursor: pointer;
-  top: 90px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-    border: hidden  
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 }
 
 #prev2:hover{
@@ -480,21 +494,20 @@ hr{
 }
 
 #next2 {
-     display: inline-block;
-  position: absolute;
-  right: 32px;
-  font-size: 30px;
-    height: 20px;
-  cursor: pointer;
-  top: 90px;
-  height: 100px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-  border: hidden;
-
+      display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 }
 
 #next2:hover{
@@ -504,19 +517,19 @@ hr{
 }
 
 #prev3 {
-    display: inline-block;
-  position: absolute;
-  left: 32px;
-  font-size: 30px;
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
     height: 20px;
-  cursor: pointer;
-  top: 90px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-    border: hidden  
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 }
 
 #prev3:hover{
@@ -526,21 +539,20 @@ hr{
 }
 
 #next3 {
-    display: inline-block;
-  position: absolute;
-  right: 32px;
-  font-size: 30px;
-    height: 20px;
-  cursor: pointer;
-  top: 90px;
-  height: 100px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-  border: hidden;
-
+     display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 }
 
 #next3:hover{
@@ -550,19 +562,19 @@ hr{
 }
 
 #prev4 {
-    display: inline-block;
-  position: absolute;
-  left: 32px;
-  font-size: 30px;
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
     height: 20px;
-  cursor: pointer;
-  top: 90px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
-    border: hidden  
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
 }
 
 #prev4:hover{
@@ -573,19 +585,20 @@ hr{
 
 #next4{
     display: inline-block;
-  position: absolute;
-  right: 32px;
-  font-size: 30px;
-    height: 20px;
-  cursor: pointer;
-  top: 90px;
-  height: 100px;
-  font-weight: bold;
-  color: #E5E5E5;
-  z-index: 1;
-  height: 60px;
-  background-color: transparent;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
     border: hidden;
+    outline: none;
+   
 }
 
 #next4:hover{

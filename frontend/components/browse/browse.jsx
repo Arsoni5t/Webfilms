@@ -41,49 +41,49 @@ class Browse extends React.Component {
   
 $('#prev').on('click', function() {
   $('#scary').animate({
-    scrollLeft: '-=450'
+    scrollLeft: '-=750'
   }, 300, 'swing');
 });
 
 $('#next').on('click', function() {
   $('#scary').animate({
-    scrollLeft: '+=450'
+    scrollLeft: '+=750'
   }, 300, 'swing');
 });
 
 $('#prev2').on('click', function() {
   $('#indie').animate({
-    scrollLeft: '-=450'
+    scrollLeft: '-=750'
   }, 300, 'swing');
 });
 
 $('#next2').on('click', function() {
   $('#indie').animate({
-    scrollLeft: '+=450'
+    scrollLeft: '+=750'
   }, 300, 'swing');
 });
 
 $('#prev3').on('click', function() {
   $('#comedy').animate({
-    scrollLeft: '-=450'
+    scrollLeft: '-=750'
   }, 300, 'swing');
 });
 
 $('#next3').on('click', function() {
   $('#comedy').animate({
-    scrollLeft: '+=450'
+    scrollLeft: '+=750'
   }, 300, 'swing');
 });
 
 $('#prev4').on('click', function() {
   $('#adventure').animate({
-    scrollLeft: '-=450'
+    scrollLeft: '-=750'
   }, 300, 'swing');
 });
 
 $('#next4').on('click', function() {
   $('#adventure').animate({
-    scrollLeft: '+=450'
+    scrollLeft: '+=750'
   }, 300, 'swing');
 });
      
