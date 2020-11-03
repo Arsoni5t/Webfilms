@@ -55,7 +55,7 @@ a {
     // background-color: rgba($color: #3D3940, $alpha: .3);
     background-color: transparent;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 10;
 }
 
 .scrolling {
@@ -166,31 +166,107 @@ a {
 }
 
 .carousel {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
-    margin-right: 10px;
-    // display: flex;
-    // justify-content: space-between;
+    margin-right: 10px; 
     background-color: black;
-    // padding-bottom: 200px;
 }
 
-.moviecontainer {
+.carousel2 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    background-color: black;
+}
+
+.carousel3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    background-color: black;
+}
+
+.carousel4 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    background-color: black;
+}
+
+#scary{
     display: flex;
-    
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
     background-color: black;
     // margin-top: 50px;
     width: 100%;
-    overflow: hidden;
+    // overflow: scroll;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // justify-content: space-between;
     margin-right: 22px;
     margin-bottom: 20px;
 }
 
 
-.movie {
+
+#indie {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
+    background-color: black;
+    // margin-top: 50px;
+    width: 100%;
+    // overflow: scroll;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-right: 22px;
+    margin-bottom: 20px;
+
+}
+
+#comedy {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
+    background-color: black;
+    // margin-top: 50px;
+    width: 100%;
+    // overflow: scroll;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+
+#adventure {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
+    background-color: black;
+    // margin-top: 50px;
+    width: 100%;
+    height: auto;
+    // overflow: scroll;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+
+
+#movie {
     border-radius: 10px;
     // position: relative;
     height: 190px;
@@ -214,11 +290,13 @@ a {
 
 
 
-.movie:hover {
+#movie:hover {
      transform: scale(1.0);
      transition: transform .25s;
     -webkit-transform: scale(1.2);
     -webkit-transform-origin: center;
+    overflow: hidden;
+    
     // z-index: 2;
     // height: 300px;
     // display: flex;
@@ -353,3 +431,233 @@ hr{
     font-size: 24px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+#scroller {
+  position: relative;
+//   top: 0;
+//   width: 300px;
+visibility: hidden;
+}
+
+
+
+#prev {
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
+    height: 20px;
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 2;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+    visibility: hidden;
+}
+
+.carousel:hover{
+    #prev{
+        visibility: visible;
+    }
+    #next{
+        visibility: visible;
+    }
+}
+
+.carousel2:hover{
+    #prev2{
+        visibility: visible;
+    }
+    #next2{
+        visibility: visible;
+    }
+}
+
+.carousel3:hover{
+    #prev3{
+        visibility: visible;
+    }
+    #next3{
+        visibility: visible;
+    }
+}
+
+.carousel4:hover{
+    #prev4{
+        visibility: visible;
+    }
+    #next4{
+        visibility: visible;
+    }
+}
+
+#prev:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next {
+     display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+
+}
+
+#next:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+
+#prev2 {
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
+    height: 20px;
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+}
+
+#prev2:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next2 {
+      display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+}
+
+#next2:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#prev3 {
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
+    height: 20px;
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+}
+
+#prev3:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next3 {
+     display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+}
+
+#next3:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#prev4 {
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
+    height: 20px;
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+}
+
+#prev4:hover{
+     background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
+#next4{
+    display: inline-block;
+    position: absolute;
+    right: -7px;
+    font-size: 72px;
+    /* height: 20px; */
+    cursor: pointer;
+    top: 10px;
+    /* height: 100px; */
+    color: #E5E5E5;
+    z-index: 1;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+   
+}
+
+#next4:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: .3;
+}
+
