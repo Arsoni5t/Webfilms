@@ -4,7 +4,7 @@
         background-color: white;
         
     }
-    height: 90vh;
+    height: 40vh;
 }
 
 .hr1 {
@@ -118,6 +118,7 @@ border-top: 1px solid b6b3b3;
 }
 
 .container-signup {
+    display:flexbox;
     height: 40vh; //600px
     width: 400px;
     margin: auto;
