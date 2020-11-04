@@ -27,12 +27,14 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
   * Honor the design of the cloned site to illustrate understanding of design elements and user interaction. 
   
  ![alt text](https://webfilms-films.s3.amazonaws.com/github/scroll.gif "scroll")
+ 
+ ###Added Genres and Carousel feature to the browse page:
+  ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
+
   
 ## UPCOMING FEATURES
 
 In the coming weeks, new features will include:
-* Carousel effect that cycles through films for each row on the browse page.
-* Films sorted by genre.
 * Popout/modal when user clicks on film poster that dispays details about the film.
 * Ability for the user to search films by title or genre.
 * User will have the ability to make a queue of films to watch later. 
