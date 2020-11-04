@@ -26,9 +26,8 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
   * Respecting the familiarity of the cloned site 
   * Honor the design of the cloned site to illustrate understanding of design elements and user interaction. 
   
- ![alt text](https://webfilms-films.s3.amazonaws.com/github/scroll.gif "scroll")
- 
- ###Added Genres and Carousel feature to the browse page:
+## Added Genres and Carousel feature to the browse page:
+
   ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
 
   
