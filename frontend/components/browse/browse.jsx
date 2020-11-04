@@ -12,11 +12,6 @@ class Browse extends React.Component {
      
     }
 
- 
-
-
-   
-
     componentDidMount(){
         this.props.fetchFilms();
  
@@ -42,49 +37,49 @@ class Browse extends React.Component {
 $('#prev').on('click', function() {
   $('#scary').animate({
     scrollLeft: '-=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#next').on('click', function() {
   $('#scary').animate({
     scrollLeft: '+=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#prev2').on('click', function() {
   $('#indie').animate({
     scrollLeft: '-=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#next2').on('click', function() {
   $('#indie').animate({
     scrollLeft: '+=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#prev3').on('click', function() {
   $('#comedy').animate({
     scrollLeft: '-=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#next3').on('click', function() {
   $('#comedy').animate({
     scrollLeft: '+=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#prev4').on('click', function() {
   $('#adventure').animate({
     scrollLeft: '-=750'
-  }, 300, 'swing');
+  }, 300);
 });
 
 $('#next4').on('click', function() {
   $('#adventure').animate({
     scrollLeft: '+=750'
-  }, 300, 'swing');
+  }, 300);
 });
      
 
