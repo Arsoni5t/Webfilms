@@ -30,7 +30,8 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
 
   ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
   
-  ```CSS
+  ```
+CSS
 #prev {
 display: inline-block;
     position: absolute;
@@ -70,6 +71,30 @@ $('#next').on('click', function() {
     scrollLeft: '+=750'
   }, 300);
 });
+
+HTML
+      <div className="carousel">
+                
+               <h1 className="genretitle">Scary</h1>
+               
+                <div id="scroller">
+                   <button id="next">&gt;</button>
+               <button id="prev">&#60;</button>
+               </div>
+                <div id="scary">
+                    {films.map(film => {
+                        if(film.genre === 'scary'){
+                        return (
+                           
+                                <Link to = {`/browse/${film.id}`}> 
+                                    <img id="movie" src = {film.poster} />
+                                </Link>
+                        )
+                    }})}
+                         
+                </div>
+                
+            </div>
 ```
 
   
