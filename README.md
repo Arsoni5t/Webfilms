@@ -30,6 +30,8 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
 
   ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
   
+For the carousel, I tried to implement a simple solution that leveraged the strength of JavaScript to scroll left and right through the rows of genres using two buttons to jump ahead and back through the content of each row. 
+  
   ```
 CSS
 #prev {
@@ -56,6 +58,19 @@ display: inline-block;
     #next{
         visibility: visible;
     }
+}
+
+#scary{
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: none;
+    background-color: black;
+    width: 100%;
+    flex-direction: row;
+    margin-right: 22px;
+    margin-bottom: 20px;
 }
 
 
@@ -85,16 +100,14 @@ HTML
                     {films.map(film => {
                         if(film.genre === 'scary'){
                         return (
-                           
-                                <Link to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
-                                </Link>
+                           <Link to = {`/browse/${film.id}`}> 
+                             <img id="movie" src = {film.poster} />
+                           </Link>
                         )
                     }})}
                          
                 </div>
-                
-            </div>
+               </div>
 ```
 
   
