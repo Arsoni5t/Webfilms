@@ -29,6 +29,48 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
 ## Added Genres and Carousel feature to the browse page:
 
   ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
+  
+  ```CSS
+#prev {
+display: inline-block;
+    position: absolute;
+    left: -3px;
+    font-size: 72px;
+    height: 20px;
+    cursor: pointer;
+    top: 10px;
+    color: #E5E5E5;
+    z-index: 2;
+    height: 200px;
+    background-color: transparent;
+    border: hidden;
+    outline: none;
+    visibility: hidden;
+}
+
+.carousel:hover{
+    #prev{
+        visibility: visible;
+    }
+    #next{
+        visibility: visible;
+    }
+}
+
+
+JS
+$('#prev').on('click', function() {
+  $('#scary').animate({
+    scrollLeft: '-=750'
+  }, 300);
+});
+
+$('#next').on('click', function() {
+  $('#scary').animate({
+    scrollLeft: '+=750'
+  }, 300);
+});
+```
 
   
 ## UPCOMING FEATURES
