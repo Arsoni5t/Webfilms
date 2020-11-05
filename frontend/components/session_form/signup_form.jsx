@@ -72,8 +72,8 @@ class SignupForm extends React.Component {
                 <Link to="/login" className="demologin">Sign In</Link>
                 <div><hr className="hr1" />
                 </div>
-                
-                 <div className="container-signup"> 
+                <div>
+                    <div className="container-signup"> 
                     <div>
                         <button className="itsfree" onClick={this.guestLogin()}> 
                             I'll just click here to use my parent's account for<strong className="strong"> free.</strong>
@@ -109,6 +109,9 @@ class SignupForm extends React.Component {
                 </div>
                    
             </div>
+
+                </div>
+                 
                
                 <div className="signupfooter">
                     <p className="footertop">Hiring?</p>

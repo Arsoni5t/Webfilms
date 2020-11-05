@@ -59,37 +59,18 @@ class SessionForm extends React.Component {
                 <p className="signupwords">Webfilms is personalized for you. Create </p><br/>
                     <p className="signupwords">a password to watch Webfilms on any</p><br/>
                 <p className="signupwords">device at any time. </p>
-                {/* <span className="content">Welcome Back!</span><br/>
-                <span className="content">Joining Webfilms is easy.</span><br/>
-                <span className="content">Enter your password and you'll be watching in no time</span> */}
+
                 <form onSubmit={this.handleSubmit} >
                     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
-                    {/* Please {this.props.formType} */}
-                    {/* {this.renderErrors()}
-                    <p>
-                    
-                    </p>
-                    <label className="content">
-                        Email:
-                        <input type="text" value={this.state.email} onChange={this.update('email')}/>
-                    </label>  
-                    <p></p>
-                    <label className="content">
-                        Password:
-                        <input type="password" value={this.state.password} onChange={this.update('password')}/>
-                    </label>
-                    <p></p>
-                    <input classname="content" type="submit" value={this.props.formType}/> */}
+
+       
                     <div>
                     <Link className="continue" to="/signup/regform">CONTINUE
-                        {/* <button type="button" className="continue">CONTINUE</button> */}
                     </Link>
-                    {/* <form action="/signup/regform">
-                        <input className ="continue" type="submit" value ="CONTINUE"/>
-                    </form> */}
+ 
                     </div>
                 </form> 
-                    
+                    <span></span>
                     <div className="signupfooter">
                    <p className="footertop">Hiring?</p>
                     <a href="https://www.linkedin.com/in/bradlarsoncode" target="_blank"  className="footeritems">LinkedIn</a>
