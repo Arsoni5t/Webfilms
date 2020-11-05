@@ -99,7 +99,7 @@ $(window).on("scroll", function() {
         return (
       
         <div className="browsebg">
-
+           
             <header className= 'browsenav' >
                     <nav className="browsenavleft">
                         <Link to="/">
@@ -145,7 +145,7 @@ $(window).on("scroll", function() {
                                             <li className="logouttxt">
                                                 <a href="http://www.bradlarson.me" target="_blank">Portfolio</a>
                                             </li>
-                                            <hr class="solid" />
+                                            <hr className="solid" />
                                              <li className="logouttxt">
                                                 <a onClick={logout}>Sign Out</a>
                                             </li>
@@ -183,7 +183,7 @@ $(window).on("scroll", function() {
                         if(film.genre === 'scary'){
                         return (
                            
-                                <Link to = {`/browse/${film.id}`}> 
+                                <Link key={film.id} to = {`/browse/${film.id}`}> 
                                     <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
@@ -207,7 +207,7 @@ $(window).on("scroll", function() {
                         if(film.genre === 'indie'){
                         return (
                            
-                                <Link to = {`/browse/${film.id}`}> 
+                                <Link key={film.id} to = {`/browse/${film.id}`}> 
                                     <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
@@ -229,7 +229,7 @@ $(window).on("scroll", function() {
                         if(film.genre === 'comedy'){
                         return (
                            
-                                <Link to = {`/browse/${film.id}`}> 
+                                <Link key={film.id} to = {`/browse/${film.id}`}> 
                                     <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
@@ -251,7 +251,7 @@ $(window).on("scroll", function() {
                         if(film.genre === 'adventure'){
                         return (
                            
-                                <Link to = {`/browse/${film.id}`}> 
+                                <Link key={film.id} to = {`/browse/${film.id}`}> 
                                     <img id="movie" src = {film.poster} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
