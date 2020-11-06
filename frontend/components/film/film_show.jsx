@@ -1,20 +1,22 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// const FilmShow = props => (
-//     <div>
+import React from "react";
+import { Link } from "react-router-dom";
+const FilmShow = props => { 
 
-//         <div>
-//             <img src={props.film.poster} alt="" />
-//         </div>
-//         <Link to={`/browse/${props.film.id}`}>
-//             <div>
-//                 <div>
-//                     <h2>{props.film.title} </h2>
-//                     {props.film.description}
-//                 </div>
-//             </div>
-//         </Link>
-//     </div>
-// );
+    return(
+    <div>
 
-// export default FilmShow;
+        <div>
+            <img src={props.props.poster} alt="" />
+        </div>
+        <Link to={`/browse/${props.props.id}`} onClick={props.closeModal}>
+          <h2>HELLLLLLLLLOOOOOOO</h2>
+                <div>
+                    <h2>{props.props.title} </h2>
+                    {props.props.description}
+                </div>
+           
+        </Link>
+    </div>
+)};
+
+export default FilmShow;

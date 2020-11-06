@@ -8,13 +8,14 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import BrowseFormContainer from './browse/browse_container'
 import SessionForm from "./session_form/session_form";
 import FilmContainer from './film/film_container'
+import Modal from './modal/modal'
 
 const App = () => (
     <div >
         <header >
             {/* {<GreetingContainer />} */}
         </header>
-
+       <Modal />
         <AuthRoute exact path="/" component={Splash} />
         
         <Switch>
