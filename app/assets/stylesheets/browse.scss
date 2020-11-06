@@ -344,6 +344,7 @@ a {
     border: none;
     border-radius: 4px;
     text-align: center; 
+    z-index: 400;
 }
 
 .playbutton:hover{
@@ -666,6 +667,8 @@ display: inline-block;
     width:100%;
     top: 3px;
     display: block;
+        display: flex;
+    align-items: center;
     // background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -677,18 +680,24 @@ display: inline-block;
    top: 50%; 
    margin-left: -150px;
    margin-top: -150px;
+       display: flex;
+    align-items: center;
 }
 
 .modal{
-// background-color: rgba(0, 0, 0, 0.75);
-    height: 50vw;
-    position:relative;
-    padding-left: 0vw;
-    padding-right: 5vw;
-    width: 74vh;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    height: 32vw;
+    background: black;
+    transform: translateX(-36px);
+    width: 99vw;
+    position: relative;
     
     img{
-        width: 48vw;
+        width: 800px;
+        position:relative;
         height:44vh;
         border-radius: 5px;
     }
