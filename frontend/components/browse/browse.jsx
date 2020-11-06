@@ -209,8 +209,9 @@ $(window).on("scroll", function() {
                         if(film.genre === 'indie'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
@@ -231,8 +232,9 @@ $(window).on("scroll", function() {
                         if(film.genre === 'comedy'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                 <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
@@ -253,8 +255,9 @@ $(window).on("scroll", function() {
                         if(film.genre === 'adventure'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
