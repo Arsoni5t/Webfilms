@@ -13,6 +13,8 @@ const FilmShow = props => {
         <div>
             <img src={props.props.poster} alt="" />
              {/* <h2 color="white">{props.props.title} </h2> */}
+             <span>{props.props.year}</span><br></br>
+             <span>{props.props.rating}</span><br></br>
             {props.props.description}
         </div>
     </div>
