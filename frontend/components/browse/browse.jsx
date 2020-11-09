@@ -5,6 +5,7 @@ import { FaSearch } from 'react-icons/fa'
 import { BsFillPlayFill } from 'react-icons/bs'
 import FilmItem from '../film/film_item'
 import { RiArrowDownSFill } from 'react-icons/ri'
+import FilmInfo from '../modal/modal'
 
 class Browse extends React.Component {
     constructor(props){
@@ -95,6 +96,12 @@ $(window).on("scroll", function() {
        $(".browsenav").removeClass("scrolling");
     }
 });
+
+$(window).click(function(e) {
+  $(".modal").css({left: e.pageX});
+  $(".modal").css({top: e.pageY});
+  $(".modal").show();
+});
     
         return (
       
@@ -183,8 +190,9 @@ $(window).on("scroll", function() {
                         if(film.genre === 'scary'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
@@ -207,8 +215,9 @@ $(window).on("scroll", function() {
                         if(film.genre === 'indie'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
@@ -229,8 +238,9 @@ $(window).on("scroll", function() {
                         if(film.genre === 'comedy'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                 <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
@@ -251,15 +261,16 @@ $(window).on("scroll", function() {
                         if(film.genre === 'adventure'){
                         return (
                            
-                                <Link key={film.id} to = {`/browse/${film.id}`}> 
-                                    <img id="movie" src = {film.poster} />
+                                <Link key={film.id} to = {`/`}> 
+                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
                     }})}
                       
                 </div>
-             
+             <FilmInfo/>
             </div>
                <footer background-color="black">
                  <div className="browsefooter">
