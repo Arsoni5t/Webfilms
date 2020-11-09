@@ -688,10 +688,10 @@ display: inline-block;
 
     margin: auto;
     // display: flex;
-  
+    border-radius: 5px;
     background: #191919;
     transform: translateX(-100px);
-    width: 43.2vw;
+    width: 800px;
     color: white;
     background-image: linear-gradient(to bottom, gray 0%, transparent 100%);
     img{
@@ -752,6 +752,6 @@ display: inline-block;
 
 .description{
     display: inline-block;
-    width: 40vw;
+    width: 700px;
     font-size: 18px;
 }
