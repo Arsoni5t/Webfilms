@@ -8,13 +8,20 @@ const FilmShow = props => {
         <Link to={`/browse/${props.props.id}`} onClick={props.closeModal}>
           <button className = "playbuttonmodal">Play</button>
         </Link>
-        <img src={props.props.poster} alt="" />
-        <div>
+        <img className="poster" src={props.props.poster} alt="" />
+        <div className="detailscont">
             
              {/* <h2 color="white">{props.props.title} </h2> */}
-             <span>{props.props.year}</span><br></br>
-             <span>{props.props.rating}</span><br></br>
-            {props.props.description}
+            <div>   
+                <div className="ratingdetails">
+                    <span className='details'>{props.props.year}</span><br></br>
+                    <span className='rating-modal'>{props.props.rating}</span><br></br>
+                </div>
+                    
+                    <span className="description">{props.props.description}</span>
+            </div>
+            
+            
         </div>
     </div>
 )};

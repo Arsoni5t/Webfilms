@@ -96,6 +96,12 @@ $(window).on("scroll", function() {
        $(".browsenav").removeClass("scrolling");
     }
 });
+
+$(window).click(function(e) {
+  $(".modal").css({left: e.pageX});
+  $(".modal").css({top: e.pageY});
+  $(".modal").show();
+});
     
         return (
       

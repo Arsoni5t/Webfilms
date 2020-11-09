@@ -256,7 +256,7 @@ a {
     width: 350px;
     box-sizing: border-box;
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-left: 5px;
     margin-top: 15px;
     cursor: pointer;
@@ -339,8 +339,8 @@ a {
     background-color: #ffffff;
     position: absolute;
     justify-content: center;
-    margin-top: 30vh;
-    margin-left: 5.85%;
+    margin-top: 31vh;
+    margin-left: 3.85%;
     border: none;
     border-radius: 4px;
     text-align: center; 
@@ -661,7 +661,7 @@ display: inline-block;
 }
 
 .modal-background{
-    position: absolute;
+    position: fixed;
     vertical-align: baseline;
     height: 100%;
     width:100%;
@@ -669,7 +669,7 @@ display: inline-block;
     display: block;
         display: flex;
     align-items: center;
-    // background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .modal-child{
@@ -685,21 +685,73 @@ display: inline-block;
 }
 
 .modal{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    flex: 1 1;
-    height: 32vw;
-    background: black;
-    transform: translateX(-36px);
-    width: 99vw;
-    position: relative;
-    
+
+    margin: auto;
+    // display: flex;
+  
+    background: #191919;
+    transform: translateX(-100px);
+    width: 43.2vw;
+    color: white;
+    background-image: linear-gradient(to bottom, gray 0%, transparent 100%);
     img{
         width: 800px;
         position:relative;
-        height:44vh;
+        height:36vh;
         border-radius: 5px;
+        background: linear-gradient(to bottom, black, transparent);
+        // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
     }
     color:white;
+}
+
+.detailscont{
+        height: 100%;
+    width: 30%;
+    padding: 26px 0 20px 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.details{
+    display: flex; 
+    margin-right: 1vw;
+    margin-top: 0.3vw;
+    font-size: 18px;
+
+}
+
+.rating-modal{
+//   display: flex; 
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    border: 1px solid white;
+    margin-right: 3vw;
+    margin-top: 0.3vw;
+}
+
+.ratingdetails {
+    display: flex;
+    margin-right: 3px;
+    padding-bottom: 12px;
+    margin-top: -21px;
+}
+
+.poster{
+
+    overflow: hidden;
+     
+    //     z-index: -1;
+    // display: block;
+
+}
+
+.description{
+    display: inline-block;
+    width: 40vw;
+    font-size: 18px;
 }
