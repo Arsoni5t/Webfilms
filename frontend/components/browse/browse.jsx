@@ -117,22 +117,22 @@ $(window).click(function(e) {
                             <span>Home</span>
                         </Link>
 
-                        <Link to="/browse"> 
+                        {/* <Link to="/browse"> 
                             <span className="browsenavlinks">Latest</span>
                         </Link>
 
                         <Link to="/browse"> 
                         <span className="browsenavlinks">My List</span>
-                        </Link>
+                        </Link> */}
 
                         
                     </nav>
 
                     <nav className="browsenavright">
                          
-                             <Link to="/browse"> 
+                             {/* <Link to="/browse"> 
                         <span className="searchicon"><FaSearch className="playicon"/></span> 
-                        </Link>
+                        </Link> */}
                            <div>
                                <ul >
                                 <li className="browselogout">Account
