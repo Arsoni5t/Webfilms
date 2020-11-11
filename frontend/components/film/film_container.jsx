@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import FilmItem from './film_item'
+
 import { fetchFilm } from '../../actions/film_actions'
 import { withRouter } from 'react-router-dom';
 import { openModal, closeModal } from '../../actions/modal_actions'

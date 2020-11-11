@@ -7,15 +7,17 @@ import Splash from './splash/splash'
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import BrowseFormContainer from './browse/browse_container'
 import SessionForm from "./session_form/session_form";
+import NavContainer from './nav/nav_container'
 import FilmContainer from './film/film_container'
 import Modal from './modal/modal'
 
 const App = () => (
     <div >
         <header >
-            {/* {<GreetingContainer />} */}
+        
         </header>
        <Modal />
+       
         <AuthRoute exact path="/" component={Splash} />
         
         <Switch>
@@ -24,7 +26,7 @@ const App = () => (
             <AuthRoute exact path="/signup" component={SessionForm} />
             <AuthRoute exact path="/signup/regform" component={SignupFormContainer} />
             <ProtectedRoute exact path="/browse" component={BrowseFormContainer}/>
-
+            <ProtectedRoute exact path="/browse" component={NavContainer}/>
         </Switch>
     </div>
 );
