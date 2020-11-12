@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Footer from './browse_footer'
-import { FaSearch } from 'react-icons/fa'
+
 import { BsFillPlayFill } from 'react-icons/bs'
 import FilmItem from '../film/film_item'
 import FilmInfo from '../modal/modal'
