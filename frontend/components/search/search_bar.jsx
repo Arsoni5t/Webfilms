@@ -2,6 +2,8 @@ import React from 'react';
 import { Redirect } from "react-router-dom";
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import debounce from 'lodash.debounce';
+import {DebounceInput} from 'react-debounce-input';
 
 class SearchBar extends React.Component {
 
@@ -9,50 +11,41 @@ class SearchBar extends React.Component {
     super(props);
     this.state = {
       queryString: "",
-      count: 0,
- 
     }
-   
+   this.timer = null;
   }
-
-  componentDidMount() {
-  }
-
-  componentDidUpdate(ownProps) {
-    if(ownProps.history.location.pathname === '/browse' && this.state.count > 0){
-      this.setState({
-        queryString: '',
-        count: 0,
-      })
-    }
-  }
-
-  
 
   update(field) {
-    const self = this
     return e => this.setState({
       [field]: e.target.value,
-      typing: false,
-    },
-        () => {
-        
+      
+    },() => {
             this.props.history.push(`/search?movie=${this.state.queryString}`);
             this.setState({
-              count: 3
+              queryString: e.target.value
                  })});
   }
+
+
+
 
 
   render() {
 
     return (
-      <div>
+      <div className="search-icon">
        
                
               
-        <form className="search-icon">
-          <input className="search-input" type="search" placeholder="Title, Genre" value={this.state.queryString} onChange={this.update("queryString")}/>
+        <form >
+          <DebounceInput 
+            className="searchthing"
+            placeholder="Title, Genre"
+            minLength={3}
+            type="search"
+            debounceTimeout={300}
+            value={this.state.queryString}
+            onChange={this.update("queryString")} />
         </form>  
        
       </div>

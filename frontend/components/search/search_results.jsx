@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../nav/nav'
-// import MovieItem from "../movie_genre_list/movie_item";
+import FilmSearch from '../film/film_search'
 
 class Search extends React.Component {
 
@@ -12,37 +12,30 @@ class Search extends React.Component {
     this.props.fetchFilms();
   }
 
-  getQueryString() {
+  fetchQuery() {
     return this.props.history.location.search.split("=")[1];
   }
 
-  getFilms() {
+  findFilms() {
     const films = this.props.films.map((film) => {
       let lowerCaseTitle= (film.title).toLowerCase();
-    //   let lowerCaseGenre= (film.genre).toLowerCase();
-      if (lowerCaseTitle.includes(this.getQueryString().toLowerCase()) 
+      let lowerCaseGenre= (film.genre).toLowerCase();
+      if (lowerCaseTitle.includes(this.fetchQuery().toLowerCase()) 
       
-        // || lowerCaseGenre.includes(this.getQueryString().toLowerCase())
+        || lowerCaseGenre.includes(this.fetchQuery().toLowerCase())
         ) {
-        return (<ul>
-            <li>
-                { film.title}
-            </li>
-        </ul>
-            
-        // <filmItem
-        //   key={film.title}
-        //   film={film}
-        // />
+         return (
+         <FilmSearch 
+            key = {film.title}
+            film = {film}
+         />
+          
+
         )
       }
     })
     return films;
   }
-
-
-
-
 
   render() {
     let { logout } = this.props
@@ -54,11 +47,19 @@ class Search extends React.Component {
                 logout = {logout}
                 />
         <div className='movie-search-results'>
-            <div className="row__inner_search ">
-
-            </div>
-        {this.getFilms()}
+           
+        {this.findFilms()}
         </div>
+        <footer background-color="black">
+                 <div className="searchfooter">
+                        <p className="searchfootertop">Contact Us</p>
+                        <a href="https:www.linkedin.com/in/bradlarsoncode" target="_blank" className="browsefooteritems1"><img className="browseicons" src={window.linked} /></a>
+                        <a href="https://github.com/Arsoni5t/Webfilms" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.github} /></a>
+                        <a href="https://angel.co/u/brad-larson-4" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.angel} /></a>
+                        <a href="http://www.bradlarson.me" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.portfolio} /></a>
+                      
+                    </div>
+             </footer>
       </div>
     );
   }

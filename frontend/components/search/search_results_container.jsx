@@ -3,6 +3,7 @@ import SearchResults from './search_results';
 import {fetchFilms} from '../../actions/film_actions';
 import { logout } from '../../actions/session_actions';
 
+
 const mapStateToProps = (state) => {
   let films = Object.values(state.entities.films);
   return {

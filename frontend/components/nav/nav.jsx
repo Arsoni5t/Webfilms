@@ -53,7 +53,8 @@ class Nav extends React.Component{
                     </nav>
 
                     <nav className="browsenavright">
-                         <SearchBarContainer/>
+                        
+                         <SearchBarContainer />
                              {/* <Link to="/browse"> 
                         <span className="searchicon"><FaSearch className="playicon"/></span> 
                         </Link>  */}

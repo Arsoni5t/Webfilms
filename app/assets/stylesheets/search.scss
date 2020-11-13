@@ -1,49 +1,48 @@
-input[type="search"] {
+.searchthing[type="search"] {
   -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
   font-family: inherit;
   font-size: 100%;
+  -webkit-box-sizing: content-box;
+  
 }
 
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
+.searchthing::-webkit-search-decoration,
+.searchthing::-webkit-search-cancel-button {
   display: none;
 }
 
-input[type="search"] {
+.searchthing[type="search"] {
   background: #ededed00 url(https://webfilms-films.s3.amazonaws.com/search-icon.png) no-repeat 7px center;
-  border: none;
-  padding: 0px 3px 0px 45px;
-  width: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   margin-right: 20px;
+  border: none;
+  padding: 0px 3px 0px 45px;
+  width: 0;
   transition: all 0.5s;
 }
 
-input[type="search"]:focus {
+.searchthing[type="search"]:focus {
   width: 200px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.308);
-//   -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.521);
-//   -moz-box-shadow: 0 0 5px rgba(255, 255, 255, 0.438);
-//   box-shadow: 0 0 5px rgba(255, 255, 255, 0.479);
-    border: 1px solid;
   border-color: white;
   outline: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.308);
+  border: 1px solid;
 }
 
-input:-moz-placeholder {
+.searchthing:-moz-placeholder {
   color: rgb(119, 119, 119);
 }
 
-input::-webkit-input-placeholder {
+.searchthing::-webkit-input-placeholder {
   color: rgb(119, 119, 119);
 }
 
 .movie-search-results {
   padding:100px;
   color: white;
+  background-color: black;
 }
 
 .search-input {
@@ -63,20 +62,6 @@ input::-webkit-input-placeholder {
   margin-bottom: 25px;
 }
 
-.row__inner_search:hover {
-  -webkit-transform: translate3d(-62.5px, 0, 0);
-  transform: translate3d(-62.5px, 0, 0);
-}
-
-.row__inner_search:hover .tile {
-  opacity: 0.3;
-}
-
-.row__inner_search:hover .tile:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  opacity: 1;
-}
 
 .searchbg{
  
@@ -90,3 +75,51 @@ input::-webkit-input-placeholder {
 .search-icon{
     margin-top: 15px;
 }
+
+.contain {
+  width: 100%;
+}
+
+.row {
+  overflow: scroll;
+  width: 100%;
+}
+
+.row__inner {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform,
+    450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin-top: 39px;
+    margin-left: 48px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.tile {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+
+
+#searchmovie {
+    border-radius: 10px;
+    height: 190px;
+    width: 350px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: transparent;
+    background-color:  #333333;
+    
+}
+
+
