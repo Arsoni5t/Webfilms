@@ -1,6 +1,6 @@
 .searchthing[type="search"] {
   -webkit-appearance: textfield;
-  font-family: inherit;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
   -webkit-box-sizing: content-box;
   
@@ -9,6 +9,7 @@
 .searchthing::-webkit-search-decoration,
 .searchthing::-webkit-search-cancel-button {
   display: none;
+  font-family: Arial;
 }
 
 .searchthing[type="search"] {
@@ -20,23 +21,29 @@
   padding: 0px 3px 0px 45px;
   width: 0;
   transition: all 0.5s;
+  font-family: Arial;
+      margin-top: 4px;
 }
 
 .searchthing[type="search"]:focus {
-  width: 200px;
   border-color: white;
   outline: none;
   color: white;
   background-color: rgba(0, 0, 0, 0.308);
   border: 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+    height: 32px;
 }
 
 .searchthing:-moz-placeholder {
   color: rgb(119, 119, 119);
+  font-family: Arial;
 }
 
 .searchthing::-webkit-input-placeholder {
   color: rgb(119, 119, 119);
+  font-family: Arial;
 }
 
 .movie-search-results {
