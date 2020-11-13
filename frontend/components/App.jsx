@@ -8,6 +8,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import BrowseFormContainer from './browse/browse_container'
 import SessionForm from "./session_form/session_form";
 import NavContainer from './nav/nav_container'
+import SearchResultsContainer from './search/search_results_container'
 import FilmContainer from './film/film_container'
 import Modal from './modal/modal'
 
@@ -27,6 +28,7 @@ const App = () => (
             <AuthRoute exact path="/signup/regform" component={SignupFormContainer} />
             <ProtectedRoute exact path="/browse" component={BrowseFormContainer}/>
             <ProtectedRoute exact path="/browse" component={NavContainer}/>
+            <ProtectedRoute exact path="/search" component={SearchResultsContainer} />
         </Switch>
     </div>
 );

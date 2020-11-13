@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { RiArrowDownSFill } from 'react-icons/ri'
 import shortid from 'shortid';
+import SearchBarContainer from '../search/search_bar_container'
+import { FaSearch } from 'react-icons/fa'
 
 class Nav extends React.Component{
      constructor(props){
@@ -51,10 +53,11 @@ class Nav extends React.Component{
                     </nav>
 
                     <nav className="browsenavright">
-                    
+                        
+                         <SearchBarContainer />
                              {/* <Link to="/browse"> 
                         <span className="searchicon"><FaSearch className="playicon"/></span> 
-                        </Link> */}
+                        </Link>  */}
                            <div>
                                <ul>
                                 <li key={shortid.generate()} className="browselogout">Account

@@ -1,0 +1,125 @@
+.searchthing[type="search"] {
+  -webkit-appearance: textfield;
+  font-family: inherit;
+  font-size: 100%;
+  -webkit-box-sizing: content-box;
+  
+}
+
+.searchthing::-webkit-search-decoration,
+.searchthing::-webkit-search-cancel-button {
+  display: none;
+}
+
+.searchthing[type="search"] {
+  background: #ededed00 url(https://webfilms-films.s3.amazonaws.com/search-icon.png) no-repeat 7px center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  margin-right: 20px;
+  border: none;
+  padding: 0px 3px 0px 45px;
+  width: 0;
+  transition: all 0.5s;
+}
+
+.searchthing[type="search"]:focus {
+  width: 200px;
+  border-color: white;
+  outline: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.308);
+  border: 1px solid;
+}
+
+.searchthing:-moz-placeholder {
+  color: rgb(119, 119, 119);
+}
+
+.searchthing::-webkit-input-placeholder {
+  color: rgb(119, 119, 119);
+}
+
+.movie-search-results {
+  padding:100px;
+  color: white;
+  background-color: black;
+}
+
+.search-input {
+  padding-left: 10px;
+}
+
+.row__inner_search {
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform,
+    450ms -webkit-transform;
+  font-size: 0;
+  
+  margin-top: 39px;
+  margin-left: 48px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+
+.searchbg{
+ 
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%
+
+}
+
+.search-icon{
+    margin-top: 15px;
+}
+
+.contain {
+  width: 100%;
+}
+
+.row {
+  overflow: scroll;
+  width: 100%;
+}
+
+.row__inner {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform,
+    450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin-top: 39px;
+    margin-left: 48px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.tile {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+
+
+#searchmovie {
+    border-radius: 10px;
+    height: 190px;
+    width: 350px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: transparent;
+    background-color:  #333333;
+    
+}
+
+

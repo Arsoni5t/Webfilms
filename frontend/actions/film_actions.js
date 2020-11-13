@@ -25,3 +25,8 @@ export const fetchFilm = id => dispatch => (
     FilmAPIUtil.fetchFilm(id)
         .then(film => dispatch(receiveFilm(film)))
 );
+
+// export const searchFilms = (query, id) => dispatch (
+//    FilmAPIUtil.searchFilms(query, id)
+//    .then((films) => dispatch(receiveFilms(films)))
+//    );

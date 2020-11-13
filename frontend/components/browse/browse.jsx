@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import Footer from './browse_footer'
-import { FaSearch } from 'react-icons/fa'
+
 import { BsFillPlayFill } from 'react-icons/bs'
 import FilmItem from '../film/film_item'
 import FilmInfo from '../modal/modal'
@@ -130,7 +129,7 @@ $(window).click(function(e) {
                                 <Link key={film.id} to = {`/`}> 
                                   {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
                                     <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                    <p id="arrow">V</p>
+                                 
                                     {/* <div className="hide">{film.description}</div> */}
                                 </Link>
                         )
@@ -154,9 +153,9 @@ $(window).click(function(e) {
                         return (
                            
                                 <Link key={film.id} to = {`/`}> 
-                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                 
                                     <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                    {/* <div className="hide">{film.description}</div> */}
+                                    
                                 </Link>
                         )
                     }})}
@@ -177,9 +176,9 @@ $(window).click(function(e) {
                         return (
                            
                                  <Link key={film.id} to = {`/`}> 
-                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                                 
                                     <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                    {/* <div className="hide">{film.description}</div> */}
+                                 
                                 </Link>
                         )
                     }})}
@@ -200,9 +199,9 @@ $(window).click(function(e) {
                         return (
                            
                                 <Link key={film.id} to = {`/`}> 
-                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
+                           
                                     <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                    {/* <div className="hide">{film.description}</div> */}
+                                  
                                 </Link>
                         )
                     }})}
