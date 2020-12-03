@@ -2,7 +2,14 @@
 <html>
   <head>
     <title>Webfilms</title>
-   
+        <meta property="og:title" content="Webfilms" />
+      <meta property='og:image' content="<%= image_url('screengrab.png') %>"/>
+     <meta property="og:description"
+       content="A Netflix inspired video streaming platform built with React on the frontend and Rails on the backend"
+     />
+     <meta property="og:url"
+       content="webfilms.herokuapp.com"
+     />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
