@@ -1,5 +1,4 @@
 .filmshowbg{
-    // background-image: image-url(banner);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -18,7 +17,6 @@
     display: flex;
     justify-content: space-around;
     background-color: black;
-   
 }
 
 
@@ -27,10 +25,16 @@
     color: white;
     font-size: 100px;
     padding-top: 30px;
-    
     float: left;
-    // margin-left: 
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
 }
+
+.hidden {
+    opacity: 0;
+}
+
+
 
 // .description{
 //     // display: ;
