@@ -12,13 +12,34 @@ class FilmItem extends React.Component{
         this.props.fetchFilm(this.props.match.params.filmId)
     }
 
+    
+
     render(){
         if (!this.props.film) return null;
+        
+        let justHidden = false;
+        
+       let hide = function hide() {
+        $('.backbutton').addClass('hidden');
+    }
+        $(document).ready(function() {
+            let j;
+        $(document).mousemove(function() {
+            if (!justHidden) {
+                justHidden = false;
+                clearTimeout(j);
+                $('.backbutton').removeClass('hidden');
+                j = setTimeout(hide, 500);
+             }
+         });
+        });
+
+   
 
         return (
             <div className="filmshowbg">
                 <Link to="/browse">
-                <IoMdArrowBack className="backbutton"/>
+                <IoMdArrowBack className="backbutton hidden"/>
                 </Link>
                 <div className="playback" >
                     {/* {this.props.film.title} */}
