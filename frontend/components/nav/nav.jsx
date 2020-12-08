@@ -68,7 +68,7 @@ class Nav extends React.Component{
                                                 <a href="https://www.linkedin.com/in/bradlarsoncode/" target="_blank">LinkedIn</a>
                                             </li>
                                              <li key={shortid.generate()}  className="logouttxt">
-                                                <a href="https://github.com/Arsoni5t/Webfilms" target="_blank">Github</a>
+                                                <a href="https://github.com/bradlarsoncode/Webfilms" target="_blank">Github</a>
                                             </li>
 
                                             <li key={shortid.generate()}  className="logouttxt">

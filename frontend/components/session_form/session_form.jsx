@@ -74,7 +74,7 @@ class SessionForm extends React.Component {
                     <div className="signupfooter">
                    <p className="footertop">Hiring?</p>
                     <a href="https://www.linkedin.com/in/bradlarsoncode" target="_blank"  className="footeritems">LinkedIn</a>
-                    <a href="https://github.com/Arsoni5t/Webfilms" target="_blank" className="footeritems3">GitHub</a>
+                    <a href="https://github.com/bradlarsoncode/Webfilms" target="_blank" className="footeritems3">GitHub</a>
                     <a href="https://angel.co/u/brad-larson-4"  target="_blank" className="footeritems3">AngelList</a>
                     <a href="http://www.bradlarson.me" target="_blank" className="footeritems3">Portfolio</a>
             

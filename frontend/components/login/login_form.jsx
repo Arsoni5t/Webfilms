@@ -98,7 +98,7 @@ class LoginForm extends React.Component {
                 <div className="loginfooter">
                     <p className="loginfootertop">Hiring?</p>
                     <a href="https://linkedin.com/in/bradlarsoncode" target="_blank" className="loginfooteritems">LinkedIn</a>
-                    <a href="https://github.com/Arsoni5t/Webfilms" target="_blank" className="loginfooteritems3">GitHub</a>
+                    <a href="https://github.com/bradlarsoncode/Webfilms" target="_blank" className="loginfooteritems3">GitHub</a>
                     <a href="https://angel.co/u/brad-larson-4" target="_blank" className="loginfooteritems3">AngelList</a>
                     <a href="http://www.bradlarson.me" target="_blank" className="loginfooteritems3">Portfolio</a>
                 
