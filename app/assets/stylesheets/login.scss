@@ -1,7 +1,6 @@
 .container {
     height: 50vh;
     width: 400px;
-    // background-color: black;
     margin: auto;
     margin-top: 30px;
     padding: 10px;
@@ -9,27 +8,11 @@
 }
 
 .backgroundlogin{
-    // display: block;
-    // background-color: black;
-
-    // border: solid rgba(120, 120, 120, 0.9);
-    // border-width: 0 0 8px 0;
-    // border-style: solid;
-
     background-image: image-url(bannerlogin);
-    
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     background-color: black;
-
-    // // width: auto;
-    // background-color: rgba(0, 0, 0, 0.65);
-    // opacity: .45;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-position: center;
-    
 }
 
 .white {
@@ -190,87 +173,3 @@
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
-
-// .newtowebfilmssignup{
-//     color: #757575;
-//     font-family: Arial;
-//     font-size: 16px;
-//     text-align: center;
-//     margin-left: -72px;
-//     margin-top: 30px;
-// }
-
-//BACKUPS INCASE I FUCK STUFF UP
-
-// .loginfooter{
-//     background-color: rgba($color: #000000, $alpha: .7);
-//     height: 234px;
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-// }
-
-// .loginfootertop{
-//     color: #757575;
-//     font-family: Arial;
-//     font-size: 16px;
-//     padding: 0;
-//     margin-top: 30px;
-//     margin-right: 100px;
-//     margin-left: 455px;
-//     margin-bottom: 20px;
-// }
-
-// .loginfooteritems{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:446px;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
-
-// .loginfooteritems2{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:446px;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
-
-// .loginfooteritems3{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:200px;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
-
-// .loginfooteritems4{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:111px;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
-
-// .newtowebfilms{
-//     color: #757575;
-//     font-family: Arial;
-//     font-size: 16px;
-//     text-align: center;
-//     margin-left: -72px;
-//     margin-top: 30px;
-// }

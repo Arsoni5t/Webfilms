@@ -3,8 +3,6 @@ h1 {
     color: white
 }
 
-
-
 .unlimited{
     text-align: center;
     font-size: 65px;
@@ -20,9 +18,7 @@ h1 {
     font-size: 28px;
     font-family: arial;
     margin: auto;
-     margin-top: -140px;
-    // margin-left: ;
-    // margin: -165px 100px 100px 880px;
+    margin-top: -140px;
     opacity: 0.98;
     width: 800px
 }
@@ -44,19 +40,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
-// Link{
-//      background-color:red;
-//     color: white;
-//     line-height: normal;
-//     padding: 7px 17px;
-//     font-weight: 400;
-//     font-size: 1rem;
-//     position: absolute; right: 80px; top: 40px; 
-//     border-radius: 5px;
-//     border: none;
-// }
-
 
 .logo{
     width: 200px;
@@ -82,8 +65,7 @@ h1 {
     cursor: pointer;
 }
 
-.sign-up{ //sign up form 
-    // position: relative;
+.sign-up{
     text-align: center;
     input {
         height: 65px;
@@ -101,36 +83,30 @@ h1 {
 
 .banner{
     display: block;
-    // background-color: black;
-
     outline: solid rgba(120, 120, 120, 0.35);
     outline-width: 8px;
     outline-style: solid;
-
     background-image: image-url(banner);
     background-size: cover;
     background-repeat: no-repeat;
     height: 747px;
     width: 100%;
     opacity: 0.9;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    
 }
 
 input {
     height: 40px;
 }
 
-.free { //30 days free button
+.free {
     height: 55x;
     text-justify: auto ;
     width: 330px;
     color: white;
     background-color: red ;
-    // margin-right: 40px;
     border: none;
     margin-top: -50;
     display: inline-block;
@@ -138,33 +114,22 @@ input {
     padding-bottom: 22px;
     padding-top: 18px;
     font: Arial ;
-    // vertical-align: middle;
-    // bottom: 10;
-    // position: relative;
 }
 
 .free:hover{
     cursor: pointer;
 }
 
-// .body{
-//     display: block;
-//     height: 707px;
-//     width: auto;
-//     background-color: black
-// }
-
 .subbar{
     background-color: black;
     width: 100%;
     display: flex;
-     height: 465px; //used to be 450, testing to see if it works better
-    //  border: 20px solid white;
+    height: 465px;
     border: solid rgba(120, 120, 120, 0.3);
     border-width: 0 0 8px 0;
     border-style: solid;
-      overflow: hidden;
-  display: inline-block;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .enjoyontv{
@@ -172,15 +137,10 @@ input {
     font-family: Arial;
     font-weight: bold;
     font-size: 50px;
-    // text-align: center;
     margin-left: 26%;
     margin-top: 6%;
     margin-bottom: 1%;
     display: inline-block;
-    // justify-content: center;
-    // align-items: center;
-//      overflow: hidden;
-//   display: inline-block;
 }
 
 .watchon{
@@ -189,46 +149,23 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 26%;
     margin-top: -.25%;
-    
-//      overflow: hidden;
-//   display: inline-block;
 }
 
-// .gifstyle{
-//     display: inline-block;
-//     margin-left: 59%;
-//     width: 392px;
-//     margin-top: -23%;
-//       min-width: 400px; 
-// }
-
 .tvstyle{
-    // display: flex;
-    // margin-left: 55%;
     width: 30%;
-    // margin: center;
     float: right;
     margin-top: -11.5%;
     margin-right: 18%;
-    // min-width: 600px;
-//   overflow: hidden;
-//   display: inline-block;
 }
 
 .splashbottom {
-//   border-top: 8px solid #b6b3b3;
-//   margin-top: 13px;
-float: bottom;
-  opacity: 0.8;
-//   padding-bottom: 80px;
-//   color:  #b6b3b3;
-//     color: rgba($color: #000000, $alpha: 1.0)
+    float: bottom;
+    opacity: 0.8;
 }
 
 
 .splashenjoy{
-    // display: block;
-    // position: relative;
+
 }
 
 .wrapper{
@@ -237,38 +174,18 @@ float: bottom;
 }
 
 .splashfooter{
-    // display: flex;
     background-color: black;
     color: #757575;
     width: 100%;
-    // text-align: left;
     position: absolute;
     height: 8rem;
     bottom: 0; 
     background-color: black;
-    // display: flex;
-    // overflow: hidden;
-    // flex-direction: row;
-    // flex-wrap: wrap;
     border: solid rgba(120, 120, 120, 0.3);
     border-width: 8px 0 0 0;
     border-style: solid;
-    // padding: 280px;
-   
     margin-bottom: 15px;
-    // justify-content: center;
-    // justify-content: space-between;
 }
-
-
-
-// .loginfooter{
-//     background-color: rgba($color: #000000, $alpha: .7);
-//     height: 234px;
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-// }
 
 .splashfootertop{
     color: #757575;
@@ -276,66 +193,25 @@ float: bottom;
     font-size: 16px;
     padding-top: 20px;
     padding-bottom: 20px;
-    // padding-left: 280px;
     margin-top: 27px;
-    // margin-top: 18px;
     margin-right: 100px;
     margin-left: 25.35%;
-    
     background-color: black;
 }
 
 .splashfooteritems{
-   
     color: #757575;
     font-size: 13px;
     font-family: Arial;
     display: inline;
     padding: 10px;
-    // padding-left: 200px;
-    // margin-left:12.18%;
     margin-left: 25%;
     margin-right: -18%;
-    // list-style-type: none;
-    // line-height: 4em;
     background-color: black;
     text-decoration: none;
     text-decoration-color: black ;
    
 }
-
-// .loginfooteritems2{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:12%;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
-
-// .loginfooteritems3{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:8%;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
-
-// .loginfooteritems4{
-//     color: #757575;
-//     font-size: 13px;
-//     font-family: Arial;
-//     display: inline;
-//     padding: 10px;
-//     margin-left:4.5%;
-//     list-style-type: none;
-//     line-height: 4em;
-// }
 
 .footfoot{
     position: relative;
