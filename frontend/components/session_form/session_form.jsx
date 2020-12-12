@@ -9,20 +9,19 @@ class SessionForm extends React.Component {
             email: "",
             password: ""
         };
-        // this.renderErrors = this.renderErrors.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-      renderErrors() {
-         let err = Array.from(this.props.errors);
+    renderErrors() {
+        let err = Array.from(this.props.errors);
         return (
-            <ul>
-                {err.map((error, id) => (
-                    <li key={id}>
-                        {error}
-                    </li>
-                ))}
-            </ul>
+        <ul>
+            {err.map((error, id) => (
+                <li key={id}>
+                    {error}
+                </li>
+            ))}
+        </ul>
         );
     }
 
@@ -41,7 +40,6 @@ class SessionForm extends React.Component {
     render(){
         return(
             <div id="signup-bg">
-                
                 <div>
                     <Link to="/" >
                         <img className="logosignup" src={window.logoUrl} />
@@ -62,27 +60,20 @@ class SessionForm extends React.Component {
 
                 <form onSubmit={this.handleSubmit} >
                     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
-
-       
                     <div>
-                    <Link className="continue" to="/signup/regform">CONTINUE
-                    </Link>
- 
+                        <Link className="continue" to="/signup/regform">CONTINUE</Link>
                     </div>
                 </form> 
+                
                     <span></span>
                     <div className="signupfooter">
-                   <p className="footertop">Hiring?</p>
-                    <a href="https://www.linkedin.com/in/bradlarsoncode" target="_blank"  className="footeritems">LinkedIn</a>
-                    <a href="https://github.com/bradlarsoncode/Webfilms" target="_blank" className="footeritems3">GitHub</a>
-                    <a href="https://angel.co/u/brad-larson-4"  target="_blank" className="footeritems3">AngelList</a>
-                    <a href="http://www.bradlarson.me" target="_blank" className="footeritems3">Portfolio</a>
-            
-                   
-                    </div>
-                        
+                        <p className="footertop">Hiring?</p>
+                        <a href="https://www.linkedin.com/in/bradlarsoncode" target="_blank"  className="footeritems">LinkedIn</a>
+                        <a href="https://github.com/bradlarsoncode/Webfilms" target="_blank" className="footeritems3">GitHub</a>
+                        <a href="https://angel.co/u/brad-larson-4"  target="_blank" className="footeritems3">AngelList</a>
+                        <a href="http://www.bradlarson.me" target="_blank" className="footeritems3">Portfolio</a>
+                    </div>     
             </div>
-           
         )
     }
 }

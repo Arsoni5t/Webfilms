@@ -26,17 +26,9 @@ class SearchBar extends React.Component {
                  })});
   }
 
-
-
-
-
   render() {
-
     return (
-      <div className="search-icon">
-       
-               
-              
+      <div className="search-icon">    
         <form >
           <DebounceInput 
             className="searchthing"
@@ -47,7 +39,6 @@ class SearchBar extends React.Component {
             value={this.state.queryString}
             onChange={this.update("queryString")} />
         </form>  
-       
       </div>
     );
   }

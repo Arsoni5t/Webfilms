@@ -6,10 +6,8 @@ import { withRouter } from 'react-router-dom';
 import { openModal, closeModal } from '../../actions/modal_actions'
 
 const mapStateToProps = (state, ownProps) => {
-
     let filmId = ownProps.match.params.filmId;
     let film = state.entities.films[filmId];
-
     return ({
         film: film
     });

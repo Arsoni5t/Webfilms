@@ -15,7 +15,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
   return {
     fetchFilms: () => dispatch(fetchFilms()),
-    // searchFilms: (query) => dispatch(searchFilms(query))
   };
 };
 

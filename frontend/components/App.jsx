@@ -14,13 +14,8 @@ import Modal from './modal/modal'
 
 const App = () => (
     <div >
-        <header >
-        
-        </header>
-       <Modal />
-       
+        <Modal />
         <AuthRoute exact path="/" component={Splash} />
-        
         <Switch>
             <ProtectedRoute exact path="/browse/:filmId" component={FilmContainer}/>
             <AuthRoute exact path="/login" component={LoginFormContainer} />

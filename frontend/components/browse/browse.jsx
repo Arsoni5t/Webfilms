@@ -9,12 +9,10 @@ import Nav from '../nav/nav'
 class Browse extends React.Component {
     constructor(props){
         super(props)
-    
     }
 
     componentDidMount(){
         this.props.fetchFilms();
- 
     }
 
     play(e) {
@@ -32,115 +30,95 @@ class Browse extends React.Component {
 
     render(){
 
+  $('#prev').on('click', function() {
+    $('#scary').animate({
+      scrollLeft: '-=750'
+    }, 300);
+  });
 
-  
-$('#prev').on('click', function() {
-  $('#scary').animate({
-    scrollLeft: '-=750'
-  }, 300);
-});
+  $('#next').on('click', function() {
+    $('#scary').animate({
+      scrollLeft: '+=750'
+    }, 300);
+  });
 
-$('#next').on('click', function() {
-  $('#scary').animate({
-    scrollLeft: '+=750'
-  }, 300);
-});
+  $('#prev2').on('click', function() {
+    $('#indie').animate({
+      scrollLeft: '-=750'
+    }, 300);
+  });
 
-$('#prev2').on('click', function() {
-  $('#indie').animate({
-    scrollLeft: '-=750'
-  }, 300);
-});
+  $('#next2').on('click', function() {
+    $('#indie').animate({
+      scrollLeft: '+=750'
+    }, 300);
+  });
 
-$('#next2').on('click', function() {
-  $('#indie').animate({
-    scrollLeft: '+=750'
-  }, 300);
-});
+  $('#prev3').on('click', function() {
+    $('#comedy').animate({
+      scrollLeft: '-=750'
+    }, 300);
+  });
 
-$('#prev3').on('click', function() {
-  $('#comedy').animate({
-    scrollLeft: '-=750'
-  }, 300);
-});
+  $('#next3').on('click', function() {
+    $('#comedy').animate({
+      scrollLeft: '+=750'
+    }, 300);
+  });
 
-$('#next3').on('click', function() {
-  $('#comedy').animate({
-    scrollLeft: '+=750'
-  }, 300);
-});
+  $('#prev4').on('click', function() {
+    $('#adventure').animate({
+      scrollLeft: '-=750'
+    }, 300);
+  });
 
-$('#prev4').on('click', function() {
-  $('#adventure').animate({
-    scrollLeft: '-=750'
-  }, 300);
-});
+  $('#next4').on('click', function() {
+    $('#adventure').animate({
+      scrollLeft: '+=750'
+    }, 300);
+  });
 
-$('#next4').on('click', function() {
-  $('#adventure').animate({
-    scrollLeft: '+=750'
-  }, 300);
-});
-     
+  let { logout } = this.props
+  let { films } = this.props; 
+  let boolala = Object.values(this.props.films)[0] || {id:null}
 
-        let { logout } = this.props
-        let { films } = this.props; 
-    
-        let boolala = Object.values(this.props.films)[0] || {id:null}
-    
-
-$(window).click(function(e) {
-  $(".modal").css({left: e.pageX});
-  $(".modal").css({top: e.pageY});
-  $(".modal").show();
-});
-    
+  $(window).click(function(e) {
+    $(".modal").css({left: e.pageX});
+    $(".modal").css({top: e.pageY});
+    $(".modal").show();
+  });
         return (
       
         <div className="browsebg">
-                <Nav 
+            <Nav 
                 logout = {logout}
-                />
-               
-        
-          
-     
+            />
             <Link to={`/browse/${boolala.id}`}>
                 <button className="playbutton"><BsFillPlayFill className="playicon"/>Play</button> 
-                </Link>
+            </Link>
             <div>
-                 <img className="browsebanner" src={window.browsebanner2}/> 
-                 
-            </div>
-            
+                 <img className="browsebanner" src={window.browsebanner2}/>           
+            </div>   
             <div className="carousel">
-                
                <h1 className="genretitle">Scary</h1>
-               
-                <div id="scroller">
-                   <button id="next">&gt;</button>
-               <button id="prev">&#60;</button>
-               </div>
+              <div id="scroller">
+                <button id="next">&gt;</button>
+                <button id="prev">&#60;</button>
+              </div>
                 <div id="scary">
                     {films.map(film => {
                         if(film.genre === 'scary'){
-                        return (
-                           
-                                <Link key={film.id} to = {`/`}> 
-                                  {/* <Link key={film.id} to = {`/browse/${film.id}`}>  */}
-                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                 
-                                    {/* <div className="hide">{film.description}</div> */}
-                                </Link>
+                          return (
+                            <Link key={film.id} to = {`/`}> 
+                                <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
+                            </Link>
                         )
-                    }})}
-                         
-                </div>
-                
+                    }})} 
+                </div> 
             </div>
 
             <div className="carousel2">
-                
+
                <h1 className="genretitle">Indie</h1>
                
                 <div id="scroller">
@@ -151,17 +129,12 @@ $(window).click(function(e) {
                     {films.map(film => {
                         if(film.genre === 'indie'){
                         return (
-                           
-                                <Link key={film.id} to = {`/`}> 
-                                 
-                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                    
-                                </Link>
+                          <Link key={film.id} to = {`/`}> 
+                              <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
+                          </Link>
                         )
-                    }})}
-                         
-                </div>
-                
+                    }})}     
+                </div> 
             </div>
 
                 <div className="carousel3">
@@ -174,17 +147,12 @@ $(window).click(function(e) {
                     {films.map(film => {
                         if(film.genre === 'comedy'){
                         return (
-                           
-                                 <Link key={film.id} to = {`/`}> 
-                                 
-                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                 
-                                </Link>
+                          <Link key={film.id} to = {`/`}> 
+                            <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
+                          </Link>
                         )
                     }})}
-                     
                 </div>
-             
             </div>
 
                 <div className="carousel4">
@@ -197,15 +165,11 @@ $(window).click(function(e) {
                     {films.map(film => {
                         if(film.genre === 'adventure'){
                         return (
-                           
-                                <Link key={film.id} to = {`/`}> 
-                           
-                                    <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
-                                  
-                                </Link>
+                          <Link key={film.id} to = {`/`}> 
+                            <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
+                          </Link>
                         )
                     }})}
-                      
                 </div>
              <FilmInfo/>
             </div>
@@ -216,17 +180,11 @@ $(window).click(function(e) {
                         <a href="https://github.com/bradlarsoncode/Webfilms" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.github} /></a>
                         <a href="https://angel.co/u/brad-larson-4" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.angel} /></a>
                         <a href="http://www.bradlarson.me" target="_blank" className="browsefooteritems"><img className="browseicons" src={window.portfolio} /></a>
-                      
-                    </div>
+                  </div>
              </footer>
-   
-                
-                
         </div>
-
-
         )
-      }
+    }
 }
 
 export default Browse

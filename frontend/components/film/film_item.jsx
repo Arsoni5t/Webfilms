@@ -12,29 +12,26 @@ class FilmItem extends React.Component{
         this.props.fetchFilm(this.props.match.params.filmId)
     }
 
-    
-
     render(){
         if (!this.props.film) return null;
         
         let justHidden = false;
         
-       let hide = function hide() {
-        $('.backbutton').addClass('hidden');
-    }
+        let hide = function hide() {
+            $('.backbutton').addClass('hidden');
+        }
+
         $(document).ready(function() {
             let j;
-        $(document).mousemove(function() {
-            if (!justHidden) {
-                justHidden = false;
-                clearTimeout(j);
-                $('.backbutton').removeClass('hidden');
-                j = setTimeout(hide, 500);
-             }
-         });
+            $(document).mousemove(function() {
+                if (!justHidden) {
+                    justHidden = false;
+                    clearTimeout(j);
+                    $('.backbutton').removeClass('hidden');
+                    j = setTimeout(hide, 500);
+                }
+            });
         });
-
-   
 
         return (
             <div className="filmshowbg">
@@ -42,7 +39,6 @@ class FilmItem extends React.Component{
                 <IoMdArrowBack className="backbutton hidden"/>
                 </Link>
                 <div className="playback" >
-                    {/* {this.props.film.title} */}
                     <video 
                         src={this.props.film.film}
                         poster={this.props.film.poster}
@@ -51,19 +47,7 @@ class FilmItem extends React.Component{
                         controls
                         autoPlay
                     />
-                    
                 </div>
-                {/* <div className="filmtitleshow">
-                    {this.props.film.title}
-                </div> */}
-                
-                {/* <div className="description">
-                    
-                   {this.props.film.description} 
-                </div>
-                <div className="rating">
-                    Rated: {this.props.film.rating}
-                </div> */}
             </div>
         )
     }
