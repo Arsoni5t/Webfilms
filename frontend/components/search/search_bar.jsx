@@ -17,14 +17,16 @@ class SearchBar extends React.Component {
 
   update(field) {
     return e => this.setState({
-      [field]: e.target.value,
+      [field]: e.target.value, 
       
     },() => {
             this.props.history.push(`/search?movie=${this.state.queryString}`);
             this.setState({
               queryString: e.target.value
                  })});
-  }
+  };
+
+  
 
   render() {
     return (
@@ -38,6 +40,7 @@ class SearchBar extends React.Component {
             debounceTimeout={300}
             value={this.state.queryString}
             onChange={this.update("queryString")} />
+            
         </form>  
       </div>
     );

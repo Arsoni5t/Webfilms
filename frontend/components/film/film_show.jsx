@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const FilmShow = props => { 
-
+    // let title1 = props.props.title[0].toString()
     return(
     <div  className="modal">
 
