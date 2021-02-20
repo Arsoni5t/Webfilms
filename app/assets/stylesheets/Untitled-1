@@ -1,0 +1,86 @@
+
+var success_callback = 
+    function(data) { console.log(data);
+        $('#results').html(data);
+    }
+    $('button').click(function(){
+    $.ajax('ajax.php', {
+        type: 'POST',
+        data: {
+            submission: JSON.stringify({
+                prop: $('text_area').val()
+                })
+                },
+        success: success_callback
+        }
+    );
+});
+
+
+
+var success_callback = 
+    function(data) { console.log(data);
+        $('#results').html(data);
+    }
+    $('button').click(function(){
+    $.ajax('ajax.php', {
+        type: 'POST',
+        data: {
+            submission: JSON.stringify({
+                prop: $('sql_submission').val()
+                })
+                },
+        success: success_callback
+        }
+    );
+});
+
+
+############################
+
+
+SELECT Name, MAX(Donation_Date) AS Last_Donation_Date, 
+CASE
+WHEN SUM(Party) >= '1'
+  THEN 'R'
+  WHEN SUM(Party) = '0'
+  THEN 'U'
+  ELSE 'D'
+END AS Party, Address
+FROM People JOIN Donations ON (People.ID=Donations.People_ID)
+GROUP BY Name, Address
+
+
+
+CREATE TABLE People (
+	ID INT,
+	Name VARCHAR(25),
+	Address VARCHAR(25)
+);
+
+CREATE TABLE Donations (
+	ID INT,
+	People_ID INT,
+	Donation_Date DATE,
+	Party DECIMAL
+);
+
+
+INSERT INTO People (ID, Name, Address) VALUES ('1', 'Carson D', '11 Main'); 
+INSERT INTO People (ID, Name, Address) VALUES ('2', 'Alex P', '22 Main');
+INSERT INTO People (ID, Name, Address) VALUES ('3', 'Boris W', '33 Main');
+INSERT INTO People (ID, Name, Address) VALUES ('4', 'Dick T', '111 Johnson'); 
+INSERT INTO People (ID, Name, Address) VALUES ('5', 'Queen B', '2222 Lexington');
+INSERT INTO People (ID, Name, Address) VALUES ('6', 'Zak A', '35553 Downs St');
+INSERT INTO People (ID, Name, Address) VALUES ('7', 'Elle M', '16561 Electric Ave'); 
+INSERT INTO People (ID, Name, Address) VALUES ('8', 'Nigel G', '25452 12th Ave NW');
+INSERT INTO People (ID, Name, Address) VALUES ('9', 'Willy O', '455445A Penn. Ave');
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('31', '1', '2009-10-30', '1'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('62', '1', '2019-08-03', '0'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('33', '1', '2020-03-08', '-1');
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('311', '7', '2009-10-30', '0'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('612', '5', '2019-08-02', '0'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('333', '7', '2020-04-08', '1'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('351', '7', '2009-10-30', '1'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('662', '8', '2014-08-03', '0'); 
+INSERT INTO Donations (ID, People_ID, Donation_Date, Party) VALUES ('3773', '9', '2012-03-08', '-1'); 
