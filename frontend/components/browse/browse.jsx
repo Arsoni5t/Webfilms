@@ -103,37 +103,24 @@ class Browse extends React.Component {
             <div className="carousel">
               {genres.map(category => 
               <div>
-                <h1 className="genretitle">{category}</h1> 
+                <h1 className="genretitle">{category[0].toUpperCase()}{category.slice(1)}</h1> 
                   <div id="scroller">
                     <button id="next">&gt;</button>
                     <button id="prev">&#60;</button>
                   </div>
                   <div id="scary">
-                  
-                    
                     {films.map(film => {
                         if(film.genre === category){
                           return (
-                        
                             <Link key={film.id} to = {`/`}> 
                                 <img id="movie" src = {film.poster} onClick={() => this.props.openModal('show', film.id)} />
                             </Link>
                         )
                     }})}
-                    
-                    
-                    
-                 
-                     
+
                 </div> 
               </div>
-                
-
               )}
-               
-             
-                
-                
             </div>
             {/* <div className="carousel">
                <h1 className="genretitle">Scary</h1>
