@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import configureStore from './store/store'
+import configureStore from './store/store';
 import Root from "./components/Root";
-import {logout} from './actions/session_actions'
+import {logout} from './actions/session_actions';
+import SimpleReactLightbox from 'simple-react-lightbox-pro';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -25,5 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // window.getState = store.getState;
     // window.dispatch = store.dispatch;
     const root = document.getElementById('root')
-     ReactDOM.render(<Root store = {store}/>, root)
+     ReactDOM.render(
+        <SimpleReactLightbox> 
+            <Root store = {store}/>
+        </SimpleReactLightbox>  
+     , root)
 })
