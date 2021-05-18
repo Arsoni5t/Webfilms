@@ -8,13 +8,13 @@ export default function Carousel({films, openModal}) {
     
     return (
       <>
-        {genres.map((category) => (
-          <div id="carousel" key={category}> 
+        {genres.map((genre) => (
+          <div id="carousel" key={genre}> 
             <h1 className="genretitle">
-              {category[0].toUpperCase()}
-              {category.slice(1)}
+              {genre[0].toUpperCase()}
+              {genre.slice(1)}
             </h1>
-            <Genres films={films} openModal={openModal} category={category} />
+            <Genres films={films} openModal={openModal} genre={genre} />
           </div>
         ))}
       </>
