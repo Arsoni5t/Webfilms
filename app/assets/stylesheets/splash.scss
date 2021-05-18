@@ -4,12 +4,18 @@ h1 {
 }
 
 .unlimited{
+    // text-align: center;
+    // font-size: 65px;
+    // font-family: arial;
+    // font-weight: bold;
+    // margin: 180px;
+    // opacity: 0.98
     text-align: center;
-    font-size: 65px;
+    font-size: 2.82vw;
     font-family: arial;
     font-weight: bold;
-    margin: 180px;
-    opacity: 0.98
+    margin: 8vw;
+    opacity: 0.98;
 }
 
 .watch-anywhere{
@@ -42,10 +48,15 @@ h1 {
 }
 
 .logo{
-    width: 200px;
+    // width: 200px;
+    // height: auto;
+    // margin-left: 70px;
+    // margin-top: 30px;
+    // cursor: pointer;
+    max-width: 8%;
     height: auto;
-    margin-left: 70px;
-    margin-top: 30px;
+    margin-left: 3vw;
+    margin-top: 2vh;
     cursor: pointer;
 }
 
@@ -102,18 +113,30 @@ input {
 }
 
 .free {
+    // height: 55x;
+    // text-justify: auto ;
+    // width: 330px;
+    // color: white;
+    // background-color: red ;
+    // border: none;
+    // margin-top: -50;
+    // display: inline-block;
+    // font-size: 28px;
+    // padding-bottom: 22px;
+    // padding-top: 18px;
+    // font: Arial ;
     height: 55x;
-    text-justify: auto ;
-    width: 330px;
+    text-justify: auto;
+    width: 15vw;
     color: white;
-    background-color: red ;
+    background-color: red;
     border: none;
     margin-top: -50;
     display: inline-block;
-    font-size: 28px;
-    padding-bottom: 22px;
+    font-size: 1.25vw;
+    padding-bottom: 1.4vh;
     padding-top: 18px;
-    font: Arial ;
+    font: Arial;
 }
 
 .free:hover{
@@ -136,26 +159,26 @@ input {
     color: white;
     font-family: Arial;
     font-weight: bold;
-    font-size: 50px;
-    margin-left: 26%;
-    margin-top: 6%;
-    margin-bottom: 1%;
-    display: inline-block;
+    font-size: 2.3vw;
+    margin-left: 25.7vw;
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+    display: inline-block
 }
 
 .watchon{
     color: white;
-    font-size: 26px;
+    font-size: 1.15vw;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 26%;
-    margin-top: -.25%;
+    margin-left: 25.9vw;
+    margin-top: -.25vh
 }
 
 .tvstyle{
-    width: 30%;
+    width: 30vw;
     float: right;
-    margin-top: -11.5%;
-    margin-right: 18%;
+    margin-top: -16.5vh;
+    margin-right: 18vw;
 }
 
 .splashbottom {

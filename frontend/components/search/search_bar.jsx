@@ -11,11 +11,11 @@ class SearchBar extends React.Component {
     super(props);
     this.state = {
       queryString: "",
-    }
+    };
    this.timer = null;
   }
 
-  update(field) {
+  update(field){
     return e => this.setState({
       [field]: e.target.value, 
       
@@ -25,8 +25,6 @@ class SearchBar extends React.Component {
               queryString: e.target.value
                  })});
   };
-
-  
 
   render() {
     return (
@@ -38,7 +36,7 @@ class SearchBar extends React.Component {
             minLength={3}
             type="search"
             debounceTimeout={300}
-            value={this.state.queryString}
+            // value={this.state.queryString}
             onChange={this.update("queryString")} />
             
         </form>  

@@ -5,8 +5,6 @@ import Enjoy from './enjoy'
 
 class Splash extends React.Component {
     render(){
-        const birthday = false
-        console.log(birthday === true)
         return(
             <div className="blackbg">
                 <div className="wrapper">
@@ -19,20 +17,13 @@ class Splash extends React.Component {
                         </Link>
                         <h1 className="unlimited">Unlimited movies, films,<br />
                             flicks, and more</h1>
-                            {birthday ? 
+                           
                                 <form className="sign-up">
                                     <Link to="/signup">
-                                        <button className="free">TRUE</button>
-                                            {/* <button className="free">TRY 30 DAYS FREE</button> */}
+                                        {/* <button className="free">TRUE</button> */}
+                                            <button className="free">TRY 30 DAYS FREE</button>
                                     </Link>
-                                </form> :
-                                <form className="sign-up">
-                                    <Link to="/home">
-                                            <button className="free">False</button>
-                                    </Link>
-                                </form>
-                            }
-
+                                </form> 
                         <p className="ready">Ready to watch? Click below to create or restart your membership.</p>
                         <h2 className="watch-anywhere">Watch anywhere. Cancel anytime.</h2>   
                     </div>

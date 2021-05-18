@@ -13,16 +13,20 @@ class Search extends React.Component {
   }
 
   fetchQuery() {
-    console.log(this.props.history.location.search.split("=")[1])
-    return this.props.history.location.search.split("=")[1];
+      return this.props.history.location.search.split("=")[1];    
   }
 
   findFilms() {
+    if(this.fetchQuery() === ""){
+      findFilms : {
+        return(<h1 className='unlimited'>Please Search for a Film or Genre</h1>)
+      break findFilms
+    }
+    }
+    
     const films = this.props.films.map((film) => {
       let lowerCaseTitle = (film.title.split(" ").join("%20")).toLowerCase();
-      console.log(lowerCaseTitle)
       let lowerCaseGenre= (film.genre).toLowerCase();
-  
       if (lowerCaseTitle.includes(this.fetchQuery().toLowerCase()) || lowerCaseGenre.includes(this.fetchQuery().toLowerCase())) 
       {
          return (
@@ -30,8 +34,9 @@ class Search extends React.Component {
             key = {film.title}
             film = {film}
          /> )
-      }
-    })
+      } 
+      
+    });
     return films;
   }
 
@@ -42,8 +47,8 @@ class Search extends React.Component {
     return (
       <div className="searchbg">
           <Nav 
-                logout = {logout}
-                />
+            logout = {logout}
+          />
         <div className='movie-search-results'>
            
         {this.findFilms()}

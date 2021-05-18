@@ -3,24 +3,15 @@ import { Link } from 'react-router-dom';
 import { RiArrowDownSFill } from 'react-icons/ri'
 import shortid from 'shortid';
 import SearchBarContainer from '../search/search_bar_container'
-import { FaSearch } from 'react-icons/fa'
 
 class Nav extends React.Component{
      constructor(props){
-        super(props)
-        //  this.handleSubmit = this.handleSubmit.bind(this);
+        super(props);
     }
-
-    //    handleSubmit(e){
-    //        let { logout } = this.props
-    //         e.preventDefault();
-    //             logout;
-    //     }
 
     render(){
         
          let { logout } = this.props
-
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 10) {
                     $(".browsenav").addClass("scrolling");
@@ -41,23 +32,17 @@ class Nav extends React.Component{
                             <span>Home</span>
                         </Link>
 
-                        {/* <Link to="/browse"> 
-                            <span className="browsenavlinks">Latest</span>
-                        </Link>
-
-                        <Link to="/browse"> 
-                        <span className="browsenavlinks">My List</span>
-                        </Link> */}
+                        {/* <Link to="/queue"> 
+                        <span className="browsenavlinkshome">My Queue</span>
+                        </Link>  */}
 
                         
                     </nav>
 
                     <nav className="browsenavright">
                         
-                         <SearchBarContainer />
-                             {/* <Link to="/browse"> 
-                        <span className="searchicon"><FaSearch className="playicon"/></span> 
-                        </Link>  */}
+                         <SearchBarContainer/>
+                             
                            <div>
                                <ul>
                                 <li key={shortid.generate()} className="browselogout">Account

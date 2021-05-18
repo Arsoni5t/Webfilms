@@ -1,7 +1,7 @@
+  
 import React from "react";
 import { Link } from "react-router-dom";
 const FilmShow = props => { 
-    // let title1 = props.props.title[0].toString()
     return(
     <div  className="modal">
 
@@ -10,8 +10,6 @@ const FilmShow = props => {
         </Link>
         <img className="poster" src={props.props.poster} alt="" />
         <div className="detailscont">
-            
-             {/* <h2 color="white">{props.props.title} </h2> */}
             <div>   
                 <div className="ratingdetails">
                     <span className='details'>{props.props.year}</span><br></br>

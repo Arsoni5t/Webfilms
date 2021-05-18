@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdArrowBack } from 'react-icons/io'
-
+//Movie playback screen
+//--------------------
 
 class FilmItem extends React.Component{
     constructor(props){
@@ -34,22 +35,22 @@ class FilmItem extends React.Component{
         });
 
         return (
-            <div className="filmshowbg">
-                <Link to="/browse">
-                <IoMdArrowBack className="backbutton hidden"/>
-                </Link>
-                <div className="playback" >
-                    <video 
-                        src={this.props.film.film}
-                        poster={this.props.film.poster}
-                        width = "100%"
-                        height = "100%"
-                        controls
-                        autoPlay
-                    />
-                </div>
+          <div className="filmshowbg">
+            <Link to="/browse">
+              <IoMdArrowBack className="backbutton hidden" />
+            </Link>
+            <div className="playback">
+              <video
+                src={this.props.film.film}
+                poster={this.props.film.poster}
+                width="100%"
+                height="100%"
+                controls
+                autoPlay
+              />
             </div>
-        )
+          </div>
+        );
     }
 }
 

@@ -7,7 +7,13 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token
 
-    # has_one_attached :photo
+    has_many :queues,
+    foreign_key: :user_id,
+    class_name: :Queue
+    
+    has_many :films,
+    through: :queues,
+    source: :film
 
         def self.find_by_credentials(email,password)
         user = User.find_by(email: email)

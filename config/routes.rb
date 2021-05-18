@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :users, only:[:create]
     resource :session, only:[:create, :destroy]
     resources :films, only:[:index, :show]
+    resources :queues, only:[:index, :create, :show, :destroy]
   end
 root to: "static_pages#root"
 end

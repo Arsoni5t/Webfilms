@@ -6,6 +6,7 @@ class Enjoy extends React.Component {
 
     render() {
         return <div className="subbar"> 
+                {/* <img src='https://webfilms-films.s3.amazonaws.com/keykey.png' className="enjoyontv"/> */}
                     <h2 className="enjoyontv">Enjoy on your TV.</h2>
                         <div >   
                             <p className="watchon">Watch on WebTV, TurboGrafx-16, </p><br/>
@@ -15,7 +16,7 @@ class Enjoy extends React.Component {
                             <p className="watchon">Microwaves, Zune, LaserDisc players, and</p><br/>
                             <p className="watchon">more.</p>
 
-                        </div>
+                         </div>
                 </div>
     }
 }
