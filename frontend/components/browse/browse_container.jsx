@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-// import Browse from './browse';
 import Browse from "./browse_fc";
 import { logout } from '../../actions/session_actions';
 import { fetchFilms, fetchFilm } from '../../actions/film_actions';

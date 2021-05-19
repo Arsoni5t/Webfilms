@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import FilmInfo from "../modal/modal";
 
 function Genres({films, openModal, genre}){
-    const matches = useMemo(() => {return films.filter((film) => film.genre.includes(genre))},
+    const matches = useMemo(() => {
+      return films.filter((film) => film.genre.includes(genre))},
       [films, genre]
       ) 
       
