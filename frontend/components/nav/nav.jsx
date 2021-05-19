@@ -31,11 +31,6 @@ class Nav extends React.Component{
                         <Link to="/browse" className="browsenavlinkshome">
                             <span>Home</span>
                         </Link>
-
-                        {/* <Link to="/queue"> 
-                        <span className="browsenavlinkshome">My Queue</span>
-                        </Link>  */}
-
                         
                     </nav>
 

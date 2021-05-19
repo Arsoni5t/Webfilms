@@ -10,7 +10,6 @@ import NavContainer from './nav/nav_container';
 import SearchResultsContainer from './search/search_results_container';
 import FilmContainer from './film/film_container';
 import Modal from './modal/modal';
-// import QueueContainer from './queue/queue_container';
 
 const App = () => (
     <div >
@@ -24,7 +23,6 @@ const App = () => (
             <ProtectedRoute exact path="/browse" component={BrowseFormContainer}/>
             <ProtectedRoute exact path="/browse" component={NavContainer}/>
             <ProtectedRoute exact path="/search" component={SearchResultsContainer} />
-            {/* <ProtectedRoute path="/queue" component={QueueContainer}/> */}
         </Switch>
     </div>
 );
