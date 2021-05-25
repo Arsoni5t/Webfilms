@@ -30,84 +30,11 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
 
   ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
   
-For the carousel, I tried to implement a simple solution that leveraged the strength of JavaScript to scroll left and right through the rows of genres using two buttons to jump ahead and back through the content of each row. 
+For the carousel, I tried to implement a simple solution that leveraged the strength of CSS, jQuery, ES6 fat arrow bindings and React useMemo hook to create a dynamic and scalable carosel for each genre. 
   
   ```
-CSS
-#prev {
-display: inline-block;
-    position: absolute;
-    left: -3px;
-    font-size: 72px;
-    height: 20px;
-    cursor: pointer;
-    top: 10px;
-    color: #E5E5E5;
-    z-index: 2;
-    height: 200px;
-    background-color: transparent;
-    border: hidden;
-    outline: none;
-    visibility: hidden;
-}
+    
 
-.carousel:hover{
-    #prev{
-        visibility: visible;
-    }
-    #next{
-        visibility: visible;
-    }
-}
-
-#scary{
-    display: flex;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    outline: none;
-    background-color: black;
-    width: 100%;
-    flex-direction: row;
-    margin-right: 22px;
-    margin-bottom: 20px;
-}
-
-
-JS
-$('#prev').on('click', function() {
-  $('#scary').animate({
-    scrollLeft: '-=750'
-  }, 300);
-});
-
-$('#next').on('click', function() {
-  $('#scary').animate({
-    scrollLeft: '+=750'
-  }, 300);
-});
-
-HTML
-      <div className="carousel">
-                
-               <h1 className="genretitle">Scary</h1>
-               
-                <div id="scroller">
-                   <button id="next">&gt;</button>
-               <button id="prev">&#60;</button>
-               </div>
-                <div id="scary">
-                    {films.map(film => {
-                        if(film.genre === 'scary'){
-                        return (
-                           <Link to = {`/browse/${film.id}`}> 
-                             <img id="movie" src = {film.poster} />
-                           </Link>
-                        )
-                    }})}
-                         
-                </div>
-               </div>
 ```
 
   
