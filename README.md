@@ -30,7 +30,7 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
 
   ![alt text]( https://webfilms-films.s3.amazonaws.com/carousel.gif "carousel")
   
-For the carousel, I tried to implement a simple solution that leveraged the strength of CSS, jQuery, ES6 fat arrow bindings and React useMemo hook to create a dynamic and scalable carosel for each genre. 
+For the carousel, I tried to implement a simple solution that leveraged the strength of HTML5, CSS, jQuery, JavaScript ES6 fat arrow bindings and the React useMemo hook to create a dynamic and scalable carosel for each genre, that allows a preview of the film when hovering over the title cards on the browse page. 
   
   ```
     function Genres({films, openModal, genre}){
@@ -42,7 +42,7 @@ For the carousel, I tried to implement a simple solution that leveraged the stre
     const clickNext = () => {
       $("#" + genre).animate(
         {scrollLeft: "+=750",},300);
-      }
+      }HTML
 
     const clickPrev = () => {
       $("#" + genre).animate(
@@ -81,13 +81,5 @@ For the carousel, I tried to implement a simple solution that leveraged the stre
 export default Genres
 
 ```
-
-  
-## UPCOMING FEATURES
-
-In the coming weeks, new features will include:
-* Popout/modal when user clicks on film poster that dispays details about the film.
-* Ability for the user to search films by title or genre.
-* User will have the ability to make a queue of films to watch later. 
 
 ![alt text](https://webfilms-films.s3.amazonaws.com/github/tv.png "symbol")
