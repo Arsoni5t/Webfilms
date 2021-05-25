@@ -33,7 +33,52 @@ Over two-dozen of your favorite film trailers are available at the click of a bu
 For the carousel, I tried to implement a simple solution that leveraged the strength of CSS, jQuery, ES6 fat arrow bindings and React useMemo hook to create a dynamic and scalable carosel for each genre. 
   
   ```
-    
+    function Genres({films, openModal, genre}){
+    const matches = useMemo(() => {
+      return films.filter((film) => film.genre.includes(genre))},
+      [films, genre]
+      ) 
+      
+    const clickNext = () => {
+      $("#" + genre).animate(
+        {scrollLeft: "+=750",},300);
+      }
+
+    const clickPrev = () => {
+      $("#" + genre).animate(
+        {scrollLeft: "-=750",},300);
+      };
+    console.log(matches)
+  return (
+    <>
+      <div id="scroller">
+        <button id="next" onClick={clickNext}>&gt;</button>
+        <button id="prev" onClick={clickPrev}>&#60;</button>
+      </div>
+      <div key={genre} id={genre}>
+          {matches && matches.map((film) => {
+            return (
+              <Link key={film.id} to={`/`}>
+                <video
+                  id="movie"
+                  src={film.film}
+                  poster={film.poster}
+                  onClick={() => openModal("show", film.id)}
+                  muted
+                  onMouseOver={(e)=>e.target.play()}
+                  onMouseOut={(e)=>e.target.load()}
+                />
+              </Link>
+            );
+          })
+          }
+      </div>
+      <FilmInfo />
+    </>
+  );
+}
+
+export default Genres
 
 ```
 
